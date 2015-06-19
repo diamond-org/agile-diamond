@@ -1,0 +1,21 @@
+# Scope Planning: {{project_name}}
+
+## Table of Contents
+
+0. Deliverables
+0. Requirements
+
+## Deliverables
+
+
+
+## Requirements
+
+### Business
+
+### Funtional
+
+The project:
+
+0. must blah
+1. must blee
