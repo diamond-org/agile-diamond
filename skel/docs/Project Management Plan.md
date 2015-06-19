@@ -1,0 +1,91 @@
+# Project Management Plan: {{project_name}}
+
+## Table of Contents
+
+0. Executive Summary
+0. Project Goals
+0. Project Organization Chart
+0. Stakeholder Management
+0. Project Deliverables
+0. Project Scope/Boundary
+0. Success Criteria
+0. Project Schedule
+0. Project Budget
+0. Quality Plan
+0. Staffing Plan
+0. Risks and Issues
+0. Communication Management Plan
+0. Procurement Plan
+0. Change Management Procedures
+0. Assumptions and Constraints
+
+## Executive Summary
+
+
+
+## Project Goals
+
+
+
+## Project Organization Chart
+
+- product owner: 
+- product lead: 
+- product users:
+- lead developer: 
+- testing: 
+- database: 
+- quality: 
+- SMEs: 
+
+## Stakeholder Management
+
+
+
+## Project Deliverables
+
+
+
+## Project Scope/Boundary
+
+
+
+## Success Criteria
+
+
+
+## Project Schedule
+
+
+
+## Project Budget
+
+
+
+## Quality Plan
+
+
+
+## Staffing Plan
+
+
+
+## Risks and Issues
+
+
+
+## Communication Management Plan
+
+
+
+## Procurement Plan
+
+
+
+## Change Management Procedures
+
+
+
+## Assumptions and Constraints
+
+

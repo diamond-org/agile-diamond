@@ -1,0 +1,52 @@
+# Project Charter: {{project_name}}
+
+## Table of Contents
+
+0. Executive Summary
+0. Project Sponsor and Key Stakeholders
+0. Business Case
+0. Objectives and Success Criteria
+0. High Level Cost/Benefit Analysis
+0. Risk Assessment
+0. Assumptions and Constraints
+
+## Executive Summary
+
+
+
+## Project Sponsor and Key Stakeholders
+
+
+
+## Business Case
+
+
+
+## Objectives and Success Criteria
+
+
+
+## High Level Cost/Benefit Analysis
+
+### Benefits
+
+
+### Costs
+
+
+
+## Risk Assessment
+
+An event may occur leading to an impact.
+
+
+
+## Assumptions and Constraints
+
+### The successful execution of this project depends upon the following assumptions
+
+
+
+### The project is constrained by the following factors
+
+
