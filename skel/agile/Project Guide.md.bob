@@ -1,12 +1,18 @@
 # Project Guide: {{{project_name}}}
 
-## Agile Management
+## Communication
 
 - [Project Guide](Project%20Guide.md)
-- [Agile Management Plan](Agile%20Management%20Plan.md)
+- [Project Blog]()
+- [Project Documentation]()
+- [Create an Issue]()
+
+## Agile Management
+
 - [Vision](Vision.md)
 - [Stories](Stories.md)
 - [Roadmap](Roadmap.md)
+- [Agile Management Plan](Agile%20Management%20Plan.md)
 
 ## Design
 
@@ -22,6 +28,10 @@
 
 ## Development
 
+- [Agile Work Board]()
+- [Source Code Repository]()
+- [Continuous Integration]()
+- [Code Reviews]()
 - [API Documentation]()
 
 ## Usage
