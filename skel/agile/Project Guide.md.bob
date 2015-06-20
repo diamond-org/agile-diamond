@@ -1,0 +1,35 @@
+# Project Guide: {{{project_name}}}
+
+## Agile Management
+
+- [Project Guide](Project%20Guide.md)
+- [Agile Management Plan](Agile%20Management%20Plan.md)
+- [Vision](Vision.md)
+- [Stories](Stories.md)
+- [Roadmap](Roadmap.md)
+
+## Design
+
+- [Entity Relationship Diagram]()
+- [Wireframes]()
+- [Processes]()
+
+## Specifications
+
+- [Data Model Specification]()
+- [Functional Specification]()
+- [Technical Specification]()
+
+## Development
+
+- [API Documentation]()
+
+## Usage
+
+- [User Guide]()
+- [Admin Guide]()
+
+## System
+
+- [Installation]()
+- [Upgrading]()
