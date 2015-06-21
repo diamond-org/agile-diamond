@@ -32,7 +32,6 @@ agile:
 	pandoc -f markdown -t html "docs/usage/Admin Guide.md.bob" -o "output/usage/Admin Guide.html"
 	pandoc -f markdown -t html "docs/usage/User Guide.md.bob" -o "output/usage/User Guide.html"
 
-	mkdir output/design
 	cp -r assets output
 	mv output/assets/index.html output
 

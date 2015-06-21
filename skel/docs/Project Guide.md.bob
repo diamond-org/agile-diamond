@@ -31,9 +31,9 @@ Projects are integrated into the production environment for release to users. Th
 
 A Model-View-Controller architecture is designed in terms of these documents.  The ERD corresponds to the **Model**, the Wireframes correspond to the **View**, and the Processes correspond to the **Controller**.
 
-- [Entity Relationship Diagram](design/)
-- [Wireframes](design/)
-- [Processes](design/)
+- [Entity Relationship Diagram](assets/design/)
+- [Wireframes](assets/design/)
+- [Processes](assets/design/)
 
 ## Specifications
 
@@ -55,10 +55,10 @@ When the project must comply with certain standards/criteria, there will be a nu
 
 This is an agile project that is controlled according to these documents.
 
-- [Checklist](assets/)
+- [Checklist](assets/agile/)
 - [Charter](agile/Charter.html)
 - [Story Planning](agile/Story%20Planning.html)
-- [Stories](assets/)
-- [Timeline](assets/)
+- [Stories](assets/agile/)
+- [Timeline](assets/agile/)
 - [Agile Management Plan](agile/Agile%20Management%20Plan.html)
 - [Project Guide](Project%20Guide.html)
