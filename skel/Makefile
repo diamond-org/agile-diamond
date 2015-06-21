@@ -12,7 +12,7 @@ agile:
 		output/spec \
 		output/usage
 
-	pandoc -f markdown -t html "agile/Project Guide.md.bob" -o "output/agile/Project Guide.html"
+	pandoc -f markdown -t html "Project Guide.md.bob" -o "output/Project Guide.html"
 	pandoc -f markdown -t html "agile/Charter.md.bob" -o "output/agile/Charter.html"
 	pandoc -f markdown -t html "agile/Agile Management Plan.md.bob" -o "output/agile/Agile Management Plan.html"
 	pandoc -f markdown -t html "agile/Story Planning.md.bob" -o "output/agile/Story Planning.html"
