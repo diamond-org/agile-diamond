@@ -11,8 +11,8 @@ The Agile Management Plan is a pattern for how to run an Agile project.  This do
 0. Working
 0. Source Code
 0. Testing
-0. Releases
 0. Reviews
+0. Releases
 0. Documentation
 0. Training
 0. Quality
@@ -59,12 +59,11 @@ Most projects involve distributed team members, so this project involves communi
 
 External forces, such as time, budget, business requirements, and customer requirements, influence the project.  These planning documents are concerned with modeling the project environment in order to communicate the vision to all the stakeholders.
 
-0. Charter
-0. Timeline
-0. Organization View
-0. Story Planning
-0. Stories
-0. Releases in Timeline
+0. **Charter** - this document initiates the project, articulates a vision, and determines scope
+0. **Timeline** - deliverables and releases are planned in the timeline
+0. **Organization View** - a diagram of project stakeholders and their relationships
+0. **Story Planning** - the groundwork for eliciting stories and organizing them into releases
+0. **Stories** - the backlog of stories
 
 ## Design
 
@@ -106,30 +105,57 @@ The design process is captured in a series of documents that help to communicate
 - Integration tests, which have external dependencies, are executed by the Continuous Integration server
 - Any time code is committed to the version control repository, the Continuous Integration server executes Unit Tests.
 - Each time code is committed to the develop or master branch, the Continuous Integration server executes Integration Tests in addition to Unit Tests.
-
-## Releases
-
-
+- Tests are assigned numbers, which are stored in the test code comment header
 
 ## Reviews
 
+TODO; need more experience with code reviews before writing this section.
 
+## Releases
+
+- each release is tagged with a version number
+- a major **X.0.0** release breaks backwards compatibility
+- a minor **0.X.0** release adds features but does not break compatibility
+- a bugfix **0.0.X** release corrects the behavior of a feature
+
+### Release process
+
+0. ensure integration tests are passing in the develop branch
+0. merge from develop to master and ensure integration tests pass in the master branch
+0. add a new version tag to the master branch and push the tag to the repository
+0. notify IT Ops that a new release is available
 
 ## Documentation
 
-
+- Markdown format is used for documents stored in version control
+- HTML is used for documents in the wiki
+- Code documentation is created with Python Sphinx, which uses the ReST language
+- Design documentation is shared via PDF or PNG format
+- Collaborative design work is accomplished with an online diagram editor
 
 ## Training
 
-
+- A guide document is created for each Persona that will use the project
+- A site visit is scheduled to describe the work flows to end users and assess understanding
 
 ## Quality
 
-
+- A story is designed before any work is conducted
+- Each story contains its own acceptance criteria ("definition of done")
+- Acceptance criteria are converted into tests that become part of the code
+- Tests are automatically executed when code is checked into the source code repo
+- Persona workflows are tested using Integration Tests which operate upon live testing servers
+- Stories, code branches, and tests may be connected and traced for compliance auditing
 
 ## Hazards and Mitigations
 
-
+- *Hazards* are the things that could conceivably go wrong with the software
+- *Mitigations* are ways to minimize *Hazards*
+- The *Hazards* are stored in a register with a unique number assigned to each one
+- The *Mitigations* are stored in a separate register; *Hazards* are linked to *Mitigations*
+- *Mitigations* are used as inspiration for new *Stories*
+- By linking *Hazards* to *Mitigations* to *Stories* to *Branches* to *Tests*, we ensure *Hazards* are actually worked upon and ultimately mitigated.
 
 ## Security
 
+TODO; need to observe a security audit before writing this section.
