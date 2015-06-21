@@ -1,3 +1,4 @@
-# [{{{project_name}}}](../Project%20Guide.html) - Functional Specification
-
-## Table of Contents
+---
+title: "{{{project_name}}} Functional Specification"
+back: "../Project%20Guide.html"
+---

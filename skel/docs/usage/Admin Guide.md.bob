@@ -1,3 +1,4 @@
-# [{{{project_name}}}](../Project%20Guide.html) - Admin Guide
-
-## Table of Contents
+---
+title: "{{{project_name}}} Admin Guide"
+back: "../Project%20Guide.html"
+---

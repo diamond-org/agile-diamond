@@ -1,21 +1,18 @@
-# [{{{project_name}}}](../Project%20Guide.html) - Story Planning
+---
+title: "{{{project_name}}} Story Planning"
+back: "../Project%20Guide.html"
+---
 
-## Table of Contents
-
-0. Personae
-0. Stories
-0. Story Map
-
-## Personae
+# Personae
 
 0. **First Persona**:
 0. **Second Persona**:
 
-## Stories
+# Stories
 
 The stories are brainstormed using Stories.oo3 (or index cards) and are then added to Agile planning software.
 
-## Story Map
+# Story Map
 
 This defines the releases
 
