@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+0. Agile Bootstrap
 0. Communication
 0. Planning
 0. Working
@@ -9,49 +10,67 @@
 0. Releases
 0. Testing
 0. Reviews
-0. Designs
+0. Design
 0. Documentation
 0. Training
 0. Quality
 0. Hazards and Mitigations
 0. Security
 
+## Agile Bootstrap
+
+Every project must first be bootstrapped.  To get a project started, the following documents need to be updated to ensure they are applicable to the project that will be undertaken.  The Checklist can then be followed to ensure the rest of the steps happen.
+
+0. Create project space
+0. Scaffold **project-management skel** into project space
+0. Checklist
+0. Agile Management Plan
+0. Project Guide
+
 ## Communication
 
 Most projects involve distributed team members, so this project involves communication tools that are suited to online collaboration.
 
-### Routine
+### Routine communication
 
-- The project is documented with a wiki (e.g. Confluence)
-- The master project document is the Project Guide, which links all documentation
-- project artifacts (e.g. images, docs) are stored in the wiki
-- team members send direct messages with IRC, Slack, or Skype
-- a project/team blog communicates key updates (e.g. meetings, sprints)
+- The project is documented [with a wiki]()
+- The master project document is the [Project Guide](), which links all documentation
+- Project artifacts (e.g. images, docs) are [stored in the wiki]()
+- Team members send direct messages with [IRC]()
+- [The blog]() communicates key project updates (e.g. meetings, sprints)
 
-### Work
+### Work communication
 
-- an online Agile board (e.g. JIRA, Trello) displays the Story Backlog and the current sprint
-- source code is shared using a distributed version control system (e.g. git)
-- the version control system is accessible via web interface (e.g. GitLab, Stash)
-- continuous integration results (e.g. Travis, Bamboo) are pushed the team (e.g. Slack, email)
+- The online [Agile Board]() displays the Story Backlog and the current sprint
+- Source code is shared using a [distributed version control system]()
+- The version control system is accessible via [web interface]()
+- Continuous integration results are [pushed the team]()
 
 ### Meetings
 
-- online group meetings are held using Google Hangouts
-- online group presentations are performed with join.me
+- online group meetings are held using [Google Hangouts]()
+- online group presentations are performed with [join.me]()
 - IRL group meetings take place at a library meeting room or university cafeteria
 
 ## Planning
 
-0. Checklist
+External forces, such as time, budget, business requirements, and customer requirements, influence the project.  These planning documents are concerned with modeling the project environment in order to communicate the vision to all the stakeholders.
+
 0. Charter
+0. Timeline
+0. Organization View
 0. Story Planning
 0. Stories
-0. Timeline
+0. Releases in Timeline
 
 ## Working
 
-
+- A story contains a unit of business functionality, and it takes work to complete a story.
+- The project is completed largely by writing code.
+- The stories are grouped into themes, which in turn become releases.
+- During *Agile Sprints* of 1-2 weeks, we work on a certain number of stories at a time.
+- The Agile Board indicates which stories are todo, in progress, and done.
+- A story is done when its tests have been written and the tests are passing.
 
 ## Source Code
 
@@ -69,7 +88,7 @@ Most projects involve distributed team members, so this project involves communi
 
 
 
-## Designs
+## Design
 
 
 

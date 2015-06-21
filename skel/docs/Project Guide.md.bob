@@ -51,14 +51,18 @@ When the project must comply with certain standards/criteria, there will be a nu
 - [Mitigations](compliance/Mitigations.html)
 - [Security](compliance/Security.html)
 
+## Planning
+
+- [Charter](agile/Charter.html)
+- [Organization View](assets/agile/)
+- [Story Planning](agile/Story%20Planning.html)
+- [Stories](assets/agile/)
+- [Timeline](assets/agile/)
+
 ## Agile Management
 
 This is an agile project that is controlled according to these documents.
 
 - [Checklist](assets/agile/)
-- [Charter](agile/Charter.html)
-- [Story Planning](agile/Story%20Planning.html)
-- [Stories](assets/agile/)
-- [Timeline](assets/agile/)
 - [Agile Management Plan](agile/Agile%20Management%20Plan.html)
 - [Project Guide](Project%20Guide.html)
