@@ -3,13 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>ActiveLayerIndex</key>
-	<integer>2</integer>
+	<integer>0</integer>
 	<key>AllLayers</key>
 	<array>
 		<string>Layer 1</string>
-		<string>Metadata 1</string>
-		<string>Metadata</string>
 		<string>Organizations</string>
+		<string>Metadata 1</string>
 	</array>
 	<key>ApplicationVersion</key>
 	<array>
@@ -67,7 +66,7 @@
 			<key>ID</key>
 			<integer>45</integer>
 			<key>Layer</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Style</key>
 			<dict>
 				<key>fill</key>
@@ -117,7 +116,7 @@
 			<key>ID</key>
 			<integer>44</integer>
 			<key>Layer</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Style</key>
 			<dict>
 				<key>shadow</key>
@@ -166,7 +165,7 @@
 			<key>ID</key>
 			<integer>42</integer>
 			<key>Layer</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Style</key>
 			<dict>
 				<key>fill</key>
@@ -216,7 +215,7 @@
 			<key>ID</key>
 			<integer>41</integer>
 			<key>Layer</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Style</key>
 			<dict>
 				<key>shadow</key>
@@ -265,7 +264,7 @@
 			<key>ID</key>
 			<integer>40</integer>
 			<key>Layer</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Style</key>
 			<dict>
 				<key>fill</key>
@@ -315,7 +314,7 @@
 			<key>ID</key>
 			<integer>39</integer>
 			<key>Layer</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Style</key>
 			<dict>
 				<key>shadow</key>
@@ -377,16 +376,6 @@
 			<string>NO</string>
 			<key>Name</key>
 			<string>Layer 1</string>
-			<key>Print</key>
-			<string>YES</string>
-			<key>View</key>
-			<string>YES</string>
-		</dict>
-		<dict>
-			<key>Lock</key>
-			<string>NO</string>
-			<key>Name</key>
-			<string>Metadata</string>
 			<key>Print</key>
 			<string>YES</string>
 			<key>View</key>
@@ -1146,7 +1135,7 @@
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2015-06-21 16:30:47 +0000</string>
+	<string>2015-06-21 16:36:05 +0000</string>
 	<key>Modifier</key>
 	<string>Ian Miller</string>
 	<key>NotesVisible</key>
