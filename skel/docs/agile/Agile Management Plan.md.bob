@@ -16,7 +16,7 @@ The Agile Management Plan is a pattern for how to run an Agile project.  This do
 0. Documentation
 0. Training
 0. Quality
-0. Hazards and Mitigations
+0. Hazards
 0. Security
 
 ## Agile Bootstrap
@@ -147,7 +147,7 @@ TODO; need more experience with code reviews before writing this section.
 - Persona workflows are tested using Integration Tests which operate upon live testing servers
 - Stories, code branches, and tests may be connected and traced for compliance auditing
 
-## Hazards and Mitigations
+## Hazards
 
 - *Hazards* are the things that could conceivably go wrong with the software
 - *Mitigations* are ways to minimize *Hazards*
