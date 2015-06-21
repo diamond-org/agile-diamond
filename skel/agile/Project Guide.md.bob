@@ -17,15 +17,15 @@ There are a number of project resources that are used on a day-to-day basis in t
 
 Different sorts of users (personae) have different functional uses of the project.  There is a separate guide for each Persona that explains how to use the relevant functionality.
 
-- [User Guide](../usage/User%20Guide.md)
-- [Admin Guide](../usage/Admin%20Guide.md)
+- [User Guide](../usage/User%20Guide.html)
+- [Admin Guide](../usage/Admin%20Guide.html)
 
 ## Integration
 
 Projects are integrated into the production environment for release to users. The release cycle describes the interaction between development and integration.  The following documents describe IT Ops tasks during the release cycle.
 
-- [Installation](../itops/Installation.md)
-- [Upgrading](../itops/Upgrading.md)
+- [Installation](../itops/Installation.html)
+- [Upgrading](../itops/Upgrading.html)
 
 ## Design
 
@@ -39,23 +39,26 @@ A Model-View-Controller architecture is designed in terms of these documents.  T
 
 Specifications are derived from design documentation. As with design, these specifications correspond to the Model-View-Controller architecture.
 
-- [Data Model Specification](../spec/Data Model%20Specification.md)
-- [Functional Specification](../spec/Functional%20Specification.md)
-- [Technical Specification](../spec/Technical%20Specification.md)
+- [Data Model Specification](../spec/Data Model%20Specification.html)
+- [Functional Specification](../spec/Functional%20Specification.html)
+- [Technical Specification](../spec/Technical%20Specification.html)
 
 ## Compliance
 
 When the project must comply with certain standards/criteria, there will be a number of compliance documents that demonstrate compliance.
 
-- [Hazards](../compliance/Hazards.md)
-- [Mitigations](../compliance/Mitigations.md)
-- [Security](../compliance/Security.md)
+- [Hazards](../compliance/Hazards.html)
+- [Mitigations](../compliance/Mitigations.html)
+- [Security](../compliance/Security.html)
 
 ## Agile Management
 
 This is an agile project that is controlled according to these documents.
 
-- [Charter](Charter.md)
-- [Story Planning](Story%20Planning.md)
-- [Agile Management Plan](Agile%20Management%20Plan.md)
-- [Project Guide](Project%20Guide.md)
+- [Checklist](../assets)
+- [Charter](Charter.html)
+- [Story Planning](Story%20Planning.html)
+- [Stories](../assets)
+- [Timeline](../assets)
+- [Agile Management Plan](Agile%20Management%20Plan.html)
+- [Project Guide](Project%20Guide.html)
