@@ -11,13 +11,30 @@
 0. Reviews
 0. Designs
 0. Documentation
+0. Training
 0. Quality
 0. Hazards and Mitigations
 0. Security
 
 ## Communication
 
+- The project is documented with a wiki (e.g. Confluence)
+- project artifacts (e.g. images, docs) are stored in the wiki
+- team members send direct messages with IRC, Slack, or Skype
+- a project/team blog communicates key updates (e.g. meetings, sprints)
 
+### Work
+
+- an online Agile board displays the Story Backlog and the current sprint
+- source code is shared using a distributed version control system (e.g. git)
+- the version control system is accessible via web interface
+- continuous integration results (e.g. Travis, Bamboo) are pushed the team (e.g. Slack, email)
+
+### Meetings
+
+- online group meetings are held using Google Hangouts
+- online group presentations are performed with join.me
+- IRL group meetings take place at a library meeting room or university cafeteria
 
 ## Planning
 
@@ -48,6 +65,10 @@
 
 
 ## Documentation
+
+
+
+## Training
 
 
 
