@@ -1,17 +1,23 @@
 # Project Guide: {{{project_name}}}
 
-## Communication
+## Development
 
-- [Project Guide](Project%20Guide.md)
-- [Project Blog]()
-- [Project Documentation]()
 - [Create an Issue]()
+- [Agile Work Board]()
+- [Source Code Repository]()
+- [Continuous Integration]()
+- [Code Reviews]()
+- [API Documentation]()
 
-## Agile Management
+## Usage
 
-- [Charter](Charter.md)
-- [Story Planning](Story%20Planning.md)
-- [Agile Management Plan](Agile%20Management%20Plan.md)
+- [User Guide]()
+- [Admin Guide]()
+
+## IT Operations
+
+- [Installation]()
+- [Upgrading]()
 
 ## Design
 
@@ -25,20 +31,9 @@
 - [Functional Specification]()
 - [Technical Specification]()
 
-## Development
+## Agile Management
 
-- [Agile Work Board]()
-- [Source Code Repository]()
-- [Continuous Integration]()
-- [Code Reviews]()
-- [API Documentation]()
-
-## Usage
-
-- [User Guide]()
-- [Admin Guide]()
-
-## System
-
-- [Installation]()
-- [Upgrading]()
+- [Charter](Charter.md)
+- [Story Planning](Story%20Planning.md)
+- [Agile Management Plan](Agile%20Management%20Plan.md)
+- [Project Guide](Project%20Guide.md)
