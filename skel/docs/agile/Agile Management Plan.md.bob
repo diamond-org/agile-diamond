@@ -1,15 +1,17 @@
 # [{{{project_name}}}](../Project%20Guide.html) - Agile Management Plan
 
+The Agile Management Plan is a pattern for how to run an Agile project.  This document contains information about the conventions and processes that will be used to get this project done.
+
 ## Table of Contents
 
 0. Agile Bootstrap
 0. Communication
 0. Planning
-0. Working
 0. Design
+0. Working
 0. Source Code
-0. Releases
 0. Testing
+0. Releases
 0. Reviews
 0. Documentation
 0. Training
@@ -22,10 +24,10 @@
 Every project must first be bootstrapped.  To get a project started, the following documents need to be updated to ensure they are applicable to the project that will be undertaken.  The Checklist can then be followed to ensure the rest of the steps happen.
 
 0. Create project space
-0. Scaffold **project-management skel** into project space
-0. Checklist
-0. Agile Management Plan
-0. Project Guide
+0. Scaffold *project-management skel*
+0. **Checklist** - all of the steps required to start and finish this project
+0. **Agile Management Plan** - the way this project is approached (i.e. this document)
+0. **Project Guide** - an overview of the documentation and resources related to this project
 
 ## Communication
 
@@ -33,23 +35,24 @@ Most projects involve distributed team members, so this project involves communi
 
 ### Routine communication
 
-- The project is documented [with a wiki]()
-- The master project document is the [Project Guide](), which links all documentation
-- Project artifacts (e.g. images, docs) are [stored in the wiki]()
-- Team members send direct messages with [IRC]()
-- [The blog]() communicates key project updates (e.g. meetings, sprints)
+- The project is documented with a wiki
+- The master project document is the Project Guide, which links all documentation
+- Project artifacts (e.g. images, docs) are stored in the wiki
+- Team members send direct messages through the team chat room
+- The blog communicates key project updates (e.g. meetings, sprints)
+- The team calendar is used to let others know when you will be unavailable
 
 ### Work communication
 
-- The online [Agile Board]() displays the Story Backlog and the current sprint
-- Source code is shared using a [distributed version control system]()
-- The version control system is accessible via [web interface]()
-- Continuous integration results are [pushed the team]()
+- The online Agile Board displays the Story Backlog and the current sprint
+- Source code is shared using a distributed version control system
+- The version control system is accessible via web interface
+- Continuous integration results are pushed to the team
 
 ### Meetings
 
-- online group meetings are held using [Google Hangouts]()
-- online group presentations are performed with [join.me]()
+- online group meetings are held using Google Hangouts
+- online group presentations are performed with join.me
 - IRL group meetings take place at a library meeting room or university cafeteria
 
 ## Planning
@@ -63,6 +66,16 @@ External forces, such as time, budget, business requirements, and customer requi
 0. Stories
 0. Releases in Timeline
 
+## Design
+
+The design process is captured in a series of documents that help to communicate design ideas to the rest of the team.  It is not always necessary to use each of these documents for every project.
+
+0. **Wireframes** - a mock-up of the screens in a user interface
+0. **Site Map** - a diagram indicating which screens are connected to which
+0. **Entity Relationship Diagram** - the things we are modeling and how they relate to one another
+0. **Process Map** - a sequence of actions taken by users in our system
+0. **System Map** - the users, networks, servers, and processes involved in this project
+
 ## Working
 
 - A story contains a unit of business functionality, and it takes work to complete a story.
@@ -72,19 +85,29 @@ External forces, such as time, budget, business requirements, and customer requi
 - The Agile Board indicates which stories are todo, in progress, and done.
 - A story is done when its tests have been written and the tests are passing.
 
-## Design
-
-
-
 ## Source Code
 
-
-
-## Releases
-
-
+- We use Git for controlling our source code
+- We generally follow the Git Flow branching pattern
+- The master branch is stable and potentially releasable
+- The develop branch is where completed work is initially integrated
+- Each story has its own branch, which is merged from develop and after completion is merged back into develop
+- Branches are not especially important, once they have been merged, and so they may be deleted whenever it is convenient
 
 ## Testing
+
+- Tests are created directly in the project
+- A story, which provides a 'description of done,' is used as a primary source for test creation
+- When possible, tests are written before the feature is implemented
+- The project supports multiple testing methods during development
+    + `make test` - run all of the tests
+    + `make single` - run only tests marked with the 'single' attribute
+    + `make watch` - watch for changes to the source code and repeatedly invoke 'make single'
+- Integration tests, which have external dependencies, are executed by the Continuous Integration server
+- Any time code is committed to the version control repository, the Continuous Integration server executes Unit Tests.
+- Each time code is committed to the develop or master branch, the Continuous Integration server executes Integration Tests in addition to Unit Tests.
+
+## Releases
 
 
 
