@@ -33,9 +33,9 @@ A Model-View-Controller architecture is designed in terms of these documents.  T
 
 - [Entity Relationship Diagram](assets/design/)
 - [Wireframes](assets/design/)
-- [Processes](assets/design/)
-- [Network Topology](assets/design/)
-- [Sitemap](assets/design/)
+- [Process Map](assets/design/)
+- [System Map](assets/design/)
+- [Site Map](assets/design/)
 
 ## Specifications
 
