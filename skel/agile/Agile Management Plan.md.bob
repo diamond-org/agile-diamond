@@ -12,9 +12,8 @@
 0. Designs
 0. Documentation
 0. Quality
-0. Hazards Audit
-0. Risk Audit
-0. Security Audit
+0. Hazards and Mitigations
+0. Security
 
 ## Communication
 
@@ -56,13 +55,9 @@
 
 
 
-## Hazards Audit
+## Hazards and Mitigations
 
 
 
-## Risk Audit
-
-
-
-## Security Audit
+## Security
 
