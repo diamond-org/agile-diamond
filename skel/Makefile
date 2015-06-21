@@ -1,6 +1,9 @@
 # Ian Dennis Miller
 # project-management skeleton makefile
 
+PANDOC=pandoc -f markdown -t html
+STYLE=-c assets/style.css -s --self-contained -o
+
 all: clean agile
 	@echo done
 
@@ -12,25 +15,25 @@ agile:
 		output/spec \
 		output/usage
 
-	pandoc -f markdown -t html "docs/Project Guide.md.bob" -o "output/Project Guide.html"
+	$(PANDOC) "docs/Project Guide.md.bob" $(STYLE) "output/Project Guide.html"
 
-	pandoc -f markdown -t html "docs/agile/Charter.md.bob" -o "output/agile/Charter.html"
-	pandoc -f markdown -t html "docs/agile/Agile Management Plan.md.bob" -o "output/agile/Agile Management Plan.html"
-	pandoc -f markdown -t html "docs/agile/Story Planning.md.bob" -o "output/agile/Story Planning.html"
+	$(PANDOC) "docs/agile/Charter.md.bob" $(STYLE) "output/agile/Charter.html"
+	$(PANDOC) "docs/agile/Agile Management Plan.md.bob" $(STYLE) "output/agile/Agile Management Plan.html"
+	$(PANDOC) "docs/agile/Story Planning.md.bob" $(STYLE) "output/agile/Story Planning.html"
 
-	pandoc -f markdown -t html "docs/compliance/Hazards.md.bob" -o "output/compliance/Hazards.html"
-	pandoc -f markdown -t html "docs/compliance/Mitigations.md.bob" -o "output/compliance/Mitigations.html"
-	pandoc -f markdown -t html "docs/compliance/Security.md.bob" -o "output/compliance/Security.html"
+	$(PANDOC) "docs/compliance/Hazards.md.bob" $(STYLE) "output/compliance/Hazards.html"
+	$(PANDOC) "docs/compliance/Mitigations.md.bob" $(STYLE) "output/compliance/Mitigations.html"
+	$(PANDOC) "docs/compliance/Security.md.bob" $(STYLE) "output/compliance/Security.html"
 
-	pandoc -f markdown -t html "docs/itops/Installation.md.bob" -o "output/itops/Installation.html"
-	pandoc -f markdown -t html "docs/itops/Upgrading.md.bob" -o "output/itops/Upgrading.html"
+	$(PANDOC) "docs/itops/Installation.md.bob" $(STYLE) "output/itops/Installation.html"
+	$(PANDOC) "docs/itops/Upgrading.md.bob" $(STYLE) "output/itops/Upgrading.html"
 
-	pandoc -f markdown -t html "docs/spec/Data Model Specification.md.bob" -o "output/spec/Data Model Specification.html"
-	pandoc -f markdown -t html "docs/spec/Functional Specification.md.bob" -o "output/spec/Functional Specification.html"
-	pandoc -f markdown -t html "docs/spec/Technical Specification.md.bob" -o "output/spec/Technical Specification.html"
+	$(PANDOC) "docs/spec/Data Model Specification.md.bob" $(STYLE) "output/spec/Data Model Specification.html"
+	$(PANDOC) "docs/spec/Functional Specification.md.bob" $(STYLE) "output/spec/Functional Specification.html"
+	$(PANDOC) "docs/spec/Technical Specification.md.bob" $(STYLE) "output/spec/Technical Specification.html"
 
-	pandoc -f markdown -t html "docs/usage/Admin Guide.md.bob" -o "output/usage/Admin Guide.html"
-	pandoc -f markdown -t html "docs/usage/User Guide.md.bob" -o "output/usage/User Guide.html"
+	$(PANDOC) "docs/usage/Admin Guide.md.bob" $(STYLE) "output/usage/Admin Guide.html"
+	$(PANDOC) "docs/usage/User Guide.md.bob" $(STYLE) "output/usage/User Guide.html"
 
 	cp -r assets output
 	mv output/assets/index.html output
