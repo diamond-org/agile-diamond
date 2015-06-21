@@ -47,7 +47,7 @@
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1, 1}}</string>
+				<string>{{0, 0}, {1468, 576}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -309,7 +309,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{505.54196873982733, 552.8165795243666}, {47, 11}}</string>
+					<string>{{517.04196873982733, 552.8165795243666}, {24, 11}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -354,7 +354,7 @@
 \deftab720
 \pard\pardeftab720\qc
 
-\f0\fs18 \cf0 2015-06-19}</string>
+\f0\fs18 \cf0 DATE}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -516,7 +516,7 @@
 \deftab720
 \pard\pardeftab720\qc
 
-\f0\fs18 \cf0 0.1}</string>
+\f0\fs18 \cf0 REV}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -707,7 +707,7 @@
 				<string>YES</string>
 			</dict>
 			<key>HPages</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>KeepToScale</key>
 			<false/>
 			<key>Layers</key>
@@ -763,7 +763,7 @@
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1, 1}}</string>
+				<string>{{0, 0}, {734, 576}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -4435,7 +4435,7 @@
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2015-06-21 15:41:34 +0000</string>
+	<string>2015-06-21 16:29:28 +0000</string>
 	<key>Modifier</key>
 	<string>Ian Miller</string>
 	<key>NotesVisible</key>
@@ -4701,7 +4701,7 @@
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {734, 576}}</string>
+				<string>{{0, 0}, {1468, 576}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -4857,7 +4857,7 @@
 				<string>YES</string>
 			</dict>
 			<key>HPages</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>KeepToScale</key>
 			<false/>
 			<key>Layers</key>
