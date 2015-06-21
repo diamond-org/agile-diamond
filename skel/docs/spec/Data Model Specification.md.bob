@@ -1,3 +1,4 @@
-# [{{{project_name}}}](../Project%20Guide.html) - Data Model Specification
-
-## Table of Contents
+---
+title: "{{{project_name}}} Data Model Specification"
+back: "../Project%20Guide.html"
+---
