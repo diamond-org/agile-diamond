@@ -18,17 +18,21 @@
 
 ## Communication
 
+Most projects involve distributed team members, so this project involves communication tools that are suited to online collaboration.
+
+### Routine
+
 - The project is documented with a wiki (e.g. Confluence)
-- The master project document is the Project Guide
+- The master project document is the Project Guide, which links all documentation
 - project artifacts (e.g. images, docs) are stored in the wiki
 - team members send direct messages with IRC, Slack, or Skype
 - a project/team blog communicates key updates (e.g. meetings, sprints)
 
 ### Work
 
-- an online Agile board displays the Story Backlog and the current sprint
+- an online Agile board (e.g. JIRA, Trello) displays the Story Backlog and the current sprint
 - source code is shared using a distributed version control system (e.g. git)
-- the version control system is accessible via web interface
+- the version control system is accessible via web interface (e.g. GitLab, Stash)
 - continuous integration results (e.g. Travis, Bamboo) are pushed the team (e.g. Slack, email)
 
 ### Meetings
@@ -39,7 +43,11 @@
 
 ## Planning
 
-
+0. Checklist
+0. Charter
+0. Story Planning
+0. Stories
+0. Timeline
 
 ## Working
 
