@@ -1,4 +1,4 @@
-# Agile Management Plan: {{{project_name}}}
+# Agile Management Plan: [{{{project_name}}}](../Project%20Guide.html)
 
 ## Table of Contents
 
@@ -6,11 +6,11 @@
 0. Communication
 0. Planning
 0. Working
+0. Design
 0. Source Code
 0. Releases
 0. Testing
 0. Reviews
-0. Design
 0. Documentation
 0. Training
 0. Quality
@@ -72,6 +72,10 @@ External forces, such as time, budget, business requirements, and customer requi
 - The Agile Board indicates which stories are todo, in progress, and done.
 - A story is done when its tests have been written and the tests are passing.
 
+## Design
+
+
+
 ## Source Code
 
 
@@ -85,10 +89,6 @@ External forces, such as time, budget, business requirements, and customer requi
 
 
 ## Reviews
-
-
-
-## Design
 
 
 
