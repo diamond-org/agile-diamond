@@ -153,7 +153,9 @@
   <editor content-size="{599, 699}" vertical-scrollbar-visible-width="15" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
     <drawer display="sections" width="185" palette-height="477"/>
     <note-split-view height="141"/>
-    <selected-rows ids="msc9w0btROz"/>
+    <selected-rows ids="j0Us_gKY1Dq"/>
+    <selected-columns ids="jFqHUGd_Dg1"/>
+    <selected-characters range="{15, 0}"/>
   </editor>
   <outline-title>
     <text>
@@ -245,7 +247,7 @@
             <text>
               <p>
                 <run>
-                  <lit>source code repository</lit>
+                  <lit>version control repo for management documentation</lit>
                 </run>
               </p>
             </text>
