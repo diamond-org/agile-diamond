@@ -13,22 +13,22 @@ assets:
 		output/assets/design
 
 	# Organization View
-	osascript ~/og-export.scpt "$$PWD/assets/agile/$(PROJECT_NAME) Organization View.graffle" '/tmp/$(PROJECT_NAME) Organization View.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Organization View.pdf' output/assets/agile
+	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/agile/$(PROJECT_NAME) Organization View.graffle" '/tmp/$(PROJECT_NAME) Organization View.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Organization View.pdf' output/assets/agile
 
 	# Entity Relationship Diagram
-	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' output/assets/design
+	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' output/assets/design
 
 	# Process Map
-	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Process Map.graffle" '/tmp/$(PROJECT_NAME) Process Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Process Map.pdf' output/assets/design
+	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Process Map.graffle" '/tmp/$(PROJECT_NAME) Process Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Process Map.pdf' output/assets/design
 
 	# Site Map
-	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Site Map.graffle" '/tmp/$(PROJECT_NAME) Site Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Site Map.pdf' output/assets/design
+	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Site Map.graffle" '/tmp/$(PROJECT_NAME) Site Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Site Map.pdf' output/assets/design
 
 	# System Map
-	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) System Map.graffle" '/tmp/$(PROJECT_NAME) System Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) System Map.pdf' output/assets/design
+	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) System Map.graffle" '/tmp/$(PROJECT_NAME) System Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) System Map.pdf' output/assets/design
 
 	# Wireframes
-	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Wireframes.graffle" '/tmp/$(PROJECT_NAME) Wireframes.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Wireframes.pdf' output/assets/design
+	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Wireframes.graffle" '/tmp/$(PROJECT_NAME) Wireframes.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Wireframes.pdf' output/assets/design
 
 docs:
 	mkdir -p \
