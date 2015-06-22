@@ -10,8 +10,11 @@ skel: clean
 test: skel
 	cd output && make docs pdf
 
+test-graffle: skel
+	cd output && make assets
+
 clean:
 	rm -rf output
 	mkdir output
 
-.PHONY: all clean skel
+.PHONY: all clean skel test test-graffle
