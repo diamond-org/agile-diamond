@@ -1,7 +1,7 @@
 # Ian Dennis Miller
 # project-management skeleton makefile
 
-PANDOC=pandoc -f markdown -t html --toc --template assets/template.html -c assets/ryangray-style.css -c assets/style.css -s --self-contained
+PANDOC=pandoc -f markdown -t html --toc --template assets/www/template.html -c assets/www/ryangray-style.css -c assets/www/style.css -s --self-contained
 
 all: clean agile
 	@echo done
@@ -35,7 +35,7 @@ agile:
 	$(PANDOC) -o "output/usage/User Guide.html" "docs/usage/User Guide.md"
 
 	cp -r assets output
-	mv output/assets/index.html output
+	cp assets/www/index.html output
 
 clean:
 	rm -rf output

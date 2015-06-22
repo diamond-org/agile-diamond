@@ -1,10 +1,26 @@
 # project-management skeleton
 
-## first clone the skeleton
+The **project-management** skeleton contains everything needed to start and control an Agile software project.
 
-git clone git@oxford.saperea.com:skel/project-management.git ~/scratch/project-management
+## Clone the skeleton
 
-## then use it to scaffold in the current directory
+    git clone git@oxford.saperea.com:skel/project-management.git ~/scratch/project-management
 
-workon mrbob
-mrbob -w ~/scratch/project-management/skel
+## Scaffold the skeleton in the current directory
+
+    workon mrbob
+    mrbob -w ~/scratch/project-management/skel
+    deactivate mrbob
+
+## Open the agile checklist
+
+The steps required to complete the project are delineated in the Checklist.  Open up that file and take it from there.
+
+    open assets/agile/Checklist.oo3
+
+## Render the documentation and view in a browser
+
+This project's documentation are designed to be rendered as a website.
+
+    make
+    open output/index.html
