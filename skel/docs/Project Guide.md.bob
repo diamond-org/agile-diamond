@@ -41,11 +41,11 @@ Projects are integrated into the production environment for release to users. Th
 
 A Model-View-Controller architecture is designed in terms of these documents.  The ERD corresponds to the **Model**, the Wireframes correspond to the **View**, and the Processes correspond to the **Controller**.
 
-- [Entity Relationship Diagram](assets/design/)
-- [Wireframes](assets/design/)
-- [Process Map](assets/design/)
-- [System Map](assets/design/)
-- [Site Map](assets/design/)
+- [Entity Relationship Diagram](assets/design/{{{project_name}}}%20Entity%20Relationship%20Diagram.pdf)
+- [Wireframes](assets/design/{{{project_name}}}%20Wireframes.pdf)
+- [Process Map](assets/design/{{{project_name}}}%20Process%20Map.pdf)
+- [System Map](assets/design/{{{project_name}}}%20System%20Map.pdf)
+- [Site Map](assets/design/{{{project_name}}}%20Site%20Map.pdf)
 
 ## Specifications
 
@@ -59,8 +59,9 @@ Specifications are derived from design documentation. As with design, these spec
 
 When the project must comply with certain standards/criteria, there will be a number of compliance documents that demonstrate compliance.
 
-- [Hazards](compliance/Hazards.html)
-- [Mitigations](compliance/Mitigations.html)
+- [Risks Register](compliance/Risks%20Register.html)
+- [Hazards Register](compliance/Hazards%20Register.html)
+- [Mitigations Register](compliance/Mitigations%20Register.html)
 - [Security](compliance/Security.html)
 
 ## Planning

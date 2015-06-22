@@ -9,7 +9,7 @@ The Agile Management Plan is a pattern for how to run an Agile project.  This do
 
 Every project must first be bootstrapped.  To get a project started, the following documents need to be updated to ensure they are applicable to the project that will be undertaken.  The Checklist can then be followed to ensure the rest of the steps happen.
 
-0. Create project space
+0. Create project management space
 0. Scaffold *project-management skel*
 0. **Checklist** - all of the steps required to start and finish this project
 0. **Agile Management Plan** - the way this project is approached (i.e. this document)
@@ -86,6 +86,7 @@ Specifications are derived from design documentation. As with design, these spec
 
 - A story contains a unit of business functionality, and it takes work to complete a story.
 - The project is completed largely by writing code.
+- Story complexity is estimated in terms of points from the Fibonacci sequence: 1, 2, 3, 5, 8, 13, 21, 34
 - The stories are grouped into themes, which in turn become releases.
 - During *Agile Sprints* of 1-2 weeks, we work on a certain number of stories at a time.
 - The Agile Board indicates which stories are todo, in progress, and done.
@@ -93,11 +94,12 @@ Specifications are derived from design documentation. As with design, these spec
 
 # Source Code
 
+- Whenever the Python language is used, the code style should meet [PEP8](https://www.python.org/dev/peps/pep-0008/)
 - We use Git for controlling our source code
-- We generally follow the Git Flow branching pattern
-- The master branch is stable and potentially releasable
-- The develop branch is where completed work is initially integrated
-- Each story has its own branch, which is merged from develop and after completion is merged back into develop
+- We generally follow the [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) branching pattern
+    + The *master* branch is stable and potentially releasable
+    + The *develop* branch is where completed work is initially integrated
+    + Each story has its own branch, which is merged from develop and after completion is merged back into develop
 - Branches are not especially important, once they have been merged, and so they may be deleted whenever it is convenient
 
 # Testing
@@ -160,6 +162,11 @@ Projects are integrated into the production environment for release to users. Th
 - Tests are automatically executed when code is checked into the source code repo
 - Persona workflows are tested using Integration Tests which operate upon live testing servers
 - Stories, code branches, and tests may be connected and traced for compliance auditing
+
+# Risks
+
+- When a risk is identified, it is entered into the **Risk Register**
+- 
 
 # Hazards
 

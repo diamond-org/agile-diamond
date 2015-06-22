@@ -4,31 +4,31 @@
 PROJECT_NAME={{{project_name}}}
 PANDOC=pandoc -f markdown -t html --toc --template assets/www/template.html -c assets/www/ryangray-style.css -c assets/www/style.css -s --self-contained
 
-all: clean pdf docs
+all: assets docs
 	@echo done
 
 assets:
-	mkdir -p
+	mkdir -p \
 		output/assets/agile \
 		output/assets/design
 
 	# Organization View
-	omnigraffle-export -f pdf "assets/agile/$(PROJECT_NAME) Organization View.graffle" "output/assets/agile/$(PROJECT_NAME) Organization View"
+	osascript ~/og-export.scpt "$$PWD/assets/agile/$(PROJECT_NAME) Organization View.graffle" '/tmp/$(PROJECT_NAME) Organization View.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Organization View.pdf' output/assets/agile
 
 	# Entity Relationship Diagram
-	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" "output/assets/design/$(PROJECT_NAME) Entity Relationship Diagram"
+	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' output/assets/design
 
 	# Process Map
-	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) Process Map.graffle" "output/assets/design/$(PROJECT_NAME) Process Map"
+	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Process Map.graffle" '/tmp/$(PROJECT_NAME) Process Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Process Map.pdf' output/assets/design
 
 	# Site Map
-	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) Site Map.graffle" "output/assets/design/$(PROJECT_NAME) Site Map"
+	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Site Map.graffle" '/tmp/$(PROJECT_NAME) Site Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Site Map.pdf' output/assets/design
 
 	# System Map
-	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) System Map.graffle" "output/assets/design/$(PROJECT_NAME) System Map"
+	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) System Map.graffle" '/tmp/$(PROJECT_NAME) System Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) System Map.pdf' output/assets/design
 
 	# Wireframes
-	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) Wireframes.graffle" "output/assets/design/$(PROJECT_NAME) Wireframes"
+	osascript ~/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Wireframes.graffle" '/tmp/$(PROJECT_NAME) Wireframes.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Wireframes.pdf' output/assets/design
 
 docs:
 	mkdir -p \
@@ -44,8 +44,9 @@ docs:
 	$(PANDOC) -o "output/agile/Agile Management Plan.html" "docs/agile/Agile Management Plan.md"
 	$(PANDOC) -o "output/agile/Story Planning.html" "docs/agile/Story Planning.md"
 
-	$(PANDOC) -o "output/compliance/Hazards.html" "docs/compliance/Hazards.md"
-	$(PANDOC) -o "output/compliance/Mitigations.html" "docs/compliance/Mitigations.md"
+	$(PANDOC) -o "output/compliance/Risks Register.html" "docs/compliance/Risks Register.md"
+	$(PANDOC) -o "output/compliance/Hazards Register.html" "docs/compliance/Hazards Register.md"
+	$(PANDOC) -o "output/compliance/Mitigations Register.html" "docs/compliance/Mitigations Register.md"
 	$(PANDOC) -o "output/compliance/Security.html" "docs/compliance/Security.md"
 
 	$(PANDOC) -o "output/itops/Installation.html" "docs/itops/Installation.md"
@@ -61,8 +62,27 @@ docs:
 	# cp -r assets output
 	cp assets/www/index.html output
 
+pdf:
+	mkdir -p output
+	pandoc -f markdown -t latex --toc -o output/Project.pdf \
+		"docs/Project Guide.md" \
+		"docs/agile/Charter.md" \
+		"docs/agile/Agile Management Plan.md" \
+		"docs/agile/Story Planning.md" \
+		"docs/compliance/Risks Register.md" \
+		"docs/compliance/Hazards Register.md" \
+		"docs/compliance/Mitigations Register.md" \
+		"docs/compliance/Security.md" \
+		"docs/itops/Installation.md" \
+		"docs/itops/Upgrading.md" \
+		"docs/spec/Data Model Specification.md" \
+		"docs/spec/Functional Specification.md" \
+		"docs/spec/Technical Specification.md" \
+		"docs/usage/Admin Guide.md" \
+		"docs/usage/User Guide.md"
+
 clean:
 	rm -rf output
 	mkdir output
 
-.PHONY: all clean docs assets
+.PHONY: all clean docs assets pdf blah
