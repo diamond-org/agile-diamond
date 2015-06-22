@@ -24,3 +24,10 @@ This project's documentation are designed to be rendered as a website.
 
     make
     open output/index.html
+
+## Test the skeleton
+
+It is possible to test the skeleton in the local directory.  The following process will build everything.
+
+    make test
+
