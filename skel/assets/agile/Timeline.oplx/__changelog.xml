@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
   <version>2.1</version>
+  <task-change-set user="Ian Miller" date="2015-06-22T01:24:26.121Z" timestamp="2015-06-22T01:24:26.121Z">
+    <change idref="t5" attribute="internalPrerequisitesString" type="string" to="2FS" resolved="yes"/>
+    <change idref="t9" attribute="internalPrerequisitesString" type="string" to="5FS" resolved="yes"/>
+    <change idref="t15" attribute="internalPrerequisitesString" type="string" to="9FS" resolved="yes"/>
+    <change idref="t23" attribute="internalPrerequisitesString" type="string" to="15FS" resolved="yes"/>
+    <change idref="t37" attribute="internalPrerequisitesString" type="string" to="23FS" resolved="yes"/>
+    <change idref="t43" attribute="internalPrerequisitesString" type="string" to="37FS" resolved="yes"/>
+    <change idref="t47" attribute="internalPrerequisitesString" type="string" to="43FS" resolved="yes"/>
+    <change idref="t52" attribute="internalPrerequisitesString" type="string" to="47FS" resolved="yes"/>
+  </task-change-set>
+  <metadata-change-set user="Ian Miller" date="2015-06-22T01:21:48.220Z" timestamp="2015-06-22T01:21:48.220Z">
+    <change idref="m1" attribute="fixedDate" type="date" to="2015-06-22T12:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
 </changelog>
