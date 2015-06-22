@@ -548,6 +548,43 @@
   <task-change-set user="Ian Miller" date="2015-06-22T02:25:58.004Z" timestamp="2015-06-22T02:25:58.004Z">
     <change idref="t2" attribute="title" type="string" from="startup sprint" to="Startup Sprint" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Ian Miller" date="2015-06-22T02:36:58.878Z" timestamp="2015-06-22T02:36:58.878Z">
+    <change idref="t64" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.278431&quot;;
+        g = &quot;0.721569&quot;;
+        r = &quot;0.8&quot;;
+    };
+}" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Ian Miller" date="2015-06-22T02:41:37.260Z" timestamp="2015-06-22T02:41:37.260Z">
+    <change idref="t38" attribute="resourceLeveledDate" type="date" from="2001-01-03T17:00:00.000Z" to="2001-01-03T22:00:00.000Z" resolved="yes"/>
+    <change idref="t39" attribute="resourceLeveledDate" type="date" from="2001-01-08T17:00:00.000Z" to="2001-01-08T22:00:00.000Z" resolved="yes"/>
+    <change idref="t40" attribute="resourceLeveledDate" type="date" from="2001-01-08T22:00:00.000Z" to="2001-01-09T17:00:00.000Z" resolved="yes"/>
+    <change idref="t41" attribute="effort" type="real" from="14400" to="28800" resolved="yes"/>
+    <change idref="t41" attribute="resourceLeveledDate" type="date" from="2001-01-09T15:00:00.000Z" to="2001-01-09T20:00:00.000Z" resolved="yes"/>
+    <change idref="t42" attribute="resourceLeveledDate" type="date" from="2001-01-09T20:00:00.000Z" to="2001-01-10T20:00:00.000Z" resolved="yes"/>
+    <change idref="t44" attribute="resourceLeveledDate" type="date" from="2001-01-11T18:00:00.000Z" to="2001-01-15T13:00:00.000Z" resolved="yes"/>
+    <change idref="t45" attribute="resourceLeveledDate" type="date" from="2001-01-11T22:00:00.000Z" to="2001-01-15T17:00:00.000Z" resolved="yes"/>
+    <change idref="t46" attribute="resourceLeveledDate" type="date" from="2001-01-12T17:00:00.000Z" to="2001-01-15T22:00:00.000Z" resolved="yes"/>
+    <change idref="t48" attribute="resourceLeveledDate" type="date" from="2001-01-09T22:00:00.000Z" to="2001-01-10T22:00:00.000Z" resolved="yes"/>
+    <change idref="t49" attribute="resourceLeveledDate" type="date" from="2001-01-10T15:00:00.000Z" to="2001-01-11T15:00:00.000Z" resolved="yes"/>
+    <change idref="t50" attribute="resourceLeveledDate" type="date" from="2001-01-10T22:00:00.000Z" to="2001-01-11T17:00:00.000Z" resolved="yes"/>
+    <change idref="t51" attribute="resourceLeveledDate" type="date" from="2001-01-10T22:00:00.000Z" to="2001-01-11T17:00:00.000Z" resolved="yes"/>
+    <change idref="t53" attribute="resourceLeveledDate" type="date" from="2001-01-10T17:00:00.000Z" to="2001-01-11T17:00:00.000Z" resolved="yes"/>
+    <change idref="t54" attribute="effort" type="real" from="14400" to="28800" resolved="yes"/>
+    <change idref="t54" attribute="resourceLeveledDate" type="date" from="2001-01-11T13:00:00.000Z" to="2001-01-12T13:00:00.000Z" resolved="yes"/>
+    <change idref="t68" attribute="effort" type="real" from="14400" to="28800" resolved="yes"/>
+    <change idref="t72" attribute="resourceLeveledDate" type="date" from="2001-01-03T17:00:00.000Z" to="2001-01-03T22:00:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="resourceLeveledDate" type="date" from="2001-01-03T22:00:00.000Z" to="2001-01-04T17:00:00.000Z" resolved="yes"/>
+    <change idref="t75" attribute="resourceLeveledDate" type="date" from="2001-01-03T22:00:00.000Z" to="2001-01-04T17:00:00.000Z" resolved="yes"/>
+    <change idref="t76" attribute="resourceLeveledDate" type="date" from="2001-01-03T22:00:00.000Z" to="2001-01-04T17:00:00.000Z" resolved="yes"/>
+    <change idref="t79" attribute="resourceLeveledDate" type="date" from="2001-01-11T18:00:00.000Z" to="2001-01-15T13:00:00.000Z" resolved="yes"/>
+    <change idref="t83" attribute="resourceLeveledDate" type="date" from="2001-01-03T17:00:00.000Z" to="2001-01-03T22:00:00.000Z" resolved="yes"/>
+    <change idref="t86" attribute="resourceLeveledDate" type="date" from="2001-01-18T18:00:00.000Z" to="2001-01-22T13:00:00.000Z" resolved="yes"/>
+    <change idref="t87" attribute="resourceLeveledDate" type="date" from="2001-01-18T22:00:00.000Z" to="2001-01-22T17:00:00.000Z" resolved="yes"/>
+    <change idref="t88" attribute="resourceLeveledDate" type="date" from="2001-01-18T18:00:00.000Z" to="2001-01-22T13:00:00.000Z" resolved="yes"/>
+  </task-change-set>
   <resource-change-set user="Ian Miller" date="2015-06-22T02:13:13.616Z" timestamp="2015-06-22T02:13:13.616Z">
     <change idref="r-1" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
     <change idref="r-1" attribute="costPerHour" type="real" from="0" resolved="yes"/>
@@ -570,6 +607,50 @@
     <change idref="r0" attribute="resourceTypeRank" type="real" from="0" resolved="yes"/>
     <change idref="r0" attribute="costPerUse" type="real" from="0" resolved="yes"/>
     <change idref="r0" attribute="unitsAvailable" type="real" from="1" resolved="yes"/>
+  </resource-change-set>
+  <resource-change-set user="Ian Miller" date="2015-06-22T02:36:58.876Z" timestamp="2015-06-22T02:36:58.876Z">
+    <change idref="r2" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="r3" attribute="styleDict" type="dict" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.34902&quot;;
+        g = &quot;0.34902&quot;;
+        r = &quot;0.34902&quot;;
+    };
+}" resolved="yes"/>
+  </resource-change-set>
+  <resource-change-set user="Ian Miller" date="2015-06-22T02:40:08.869Z" timestamp="2015-06-22T02:40:08.869Z">
+    <change idref="r2" attribute="styleDict" type="dict" from="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.796078&quot;;
+        g = &quot;0.737255&quot;;
+        r = &quot;0.4&quot;;
+    };
+}" resolved="yes"/>
+    <change idref="r3" attribute="styleDict" type="dict" from="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.34902&quot;;
+        g = &quot;0.34902&quot;;
+        r = &quot;0.34902&quot;;
+    };
+}" to="{
+    &quot;gantt-fill-color&quot; =     {
+        b = &quot;0.74902&quot;;
+        g = &quot;0.74902&quot;;
+        r = &quot;0.74902&quot;;
+    };
+}" resolved="yes"/>
   </resource-change-set>
   <metadata-change-set user="Ian Miller" date="2015-06-22T01:21:48.220Z" timestamp="2015-06-22T01:21:48.220Z">
     <change idref="m1" attribute="fixedDate" type="date" to="2015-06-22T12:00:00.000Z" resolved="yes"/>

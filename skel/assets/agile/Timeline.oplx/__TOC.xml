@@ -7,16 +7,15 @@
     <draw-folded/>
     <status-display>basic</status-display>
     <task-view>
-      <split-view-divider-position>355</split-view-divider-position>
-      <outline x="0" y="735" w="355" h="485">
+      <split-view-divider-position>390</split-view-divider-position>
+      <outline x="0" y="0" w="390" h="485">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
-        <column name="Title" width="240"/>
+        <column name="Title" width="275"/>
         <column name="Effort" width="70"/>
-        <expanded-items idrefs="t78 t37 t2 t47"/>
         <selected-items-at-filter-time idrefs="t77 t66 t61 t86 t69 t58 t64 t78 t67 t62 t56 t59 t60 t85 t68 t63 t57 t79"/>
       </outline>
-      <gantt-view x="-9" y="735" w="601" h="485">
+      <gantt-view x="-52" y="0" w="566" h="485">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -70,7 +69,7 @@
         <column name="#" width="75"/>
         <selected-items-at-filter-time idrefs="r3 r2"/>
       </outline>
-      <timeline x="-235" y="611" w="671" h="485">
+      <timeline x="385" y="0" w="622" h="485">
         <offtime-display>none</offtime-display>
         <show-project-end/>
         <task-bar-label task-type="group" position="left">
@@ -166,10 +165,19 @@
       <style>
         <value key="font-name">HelveticaNeue-Medium</value>
         <value key="font-weight">6</value>
+        <value key="gantt-fill-color">
+          <color r="0.34902" g="0.34902" b="0.34902"/>
+        </value>
       </style>
     </group-task-style>
     <milestone-task-style>
-      <style/>
+      <style>
+        <value key="font-name">HelveticaNeue-Thin</value>
+        <value key="font-weight">2</value>
+        <value key="gantt-fill-color">
+          <color r="0.8" g="0.721569" b="0.278431"/>
+        </value>
+      </style>
     </milestone-task-style>
     <resource-style>
       <style/>

@@ -35,10 +35,20 @@
   <resource id="r2">
     <name>Product Lead</name>
     <type>Staff</type>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.4" g="0.737255" b="0.796078"/>
+      </value>
+    </style>
   </resource>
   <resource id="r3">
     <name>Developer</name>
     <type>Staff</type>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.74902" g="0.74902" b="0.74902"/>
+      </value>
+    </style>
   </resource>
   <top-task idref="t-1"/>
   <task id="t-1">
@@ -144,49 +154,49 @@
   <task id="t38">
     <title>Wireframes</title>
     <type>milestone</type>
-    <leveled-start>2001-01-03T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-03T22:00:00.000Z</leveled-start>
     <prerequisite-task idref="t68"/>
     <assignment idref="r2"/>
   </task>
   <task id="t39">
     <title>Create Site Map</title>
-    <leveled-start>2001-01-08T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-08T22:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t40">
     <title>Create Entity Relationship Diagram</title>
-    <leveled-start>2001-01-08T22:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-09T17:00:00.000Z</leveled-start>
     <effort>7200</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t41">
     <title>Create Process Map</title>
-    <leveled-start>2001-01-09T15:00:00.000Z</leveled-start>
-    <effort>14400</effort>
+    <leveled-start>2001-01-09T20:00:00.000Z</leveled-start>
+    <effort>28800</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t42">
     <title>Create System Map</title>
-    <leveled-start>2001-01-09T20:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-10T20:00:00.000Z</leveled-start>
     <effort>7200</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t44">
     <title>Create Data Model Specification</title>
-    <leveled-start>2001-01-11T18:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-15T13:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t45">
     <title>Create Functional Specification</title>
-    <leveled-start>2001-01-11T22:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-15T17:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t46">
     <title>Create Technical Specification</title>
-    <leveled-start>2001-01-12T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-15T22:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <assignment idref="r2"/>
   </task>
@@ -204,40 +214,40 @@
   </task>
   <task id="t48">
     <title>Revise IT Ops Installation</title>
-    <leveled-start>2001-01-09T22:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-10T22:00:00.000Z</leveled-start>
     <effort>7200</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t49">
     <title>Revise IT Ops Upgrading</title>
-    <leveled-start>2001-01-10T15:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-11T15:00:00.000Z</leveled-start>
     <effort>7200</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t50">
     <title>Admin Usage Guide</title>
     <type>milestone</type>
-    <leveled-start>2001-01-10T22:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-11T17:00:00.000Z</leveled-start>
     <prerequisite-task idref="t86"/>
     <assignment idref="r2"/>
   </task>
   <task id="t51">
     <title>User  Guide</title>
     <type>milestone</type>
-    <leveled-start>2001-01-10T22:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-11T17:00:00.000Z</leveled-start>
     <prerequisite-task idref="t87"/>
     <assignment idref="r2"/>
   </task>
   <task id="t53">
     <title>Perform Security Analysis</title>
-    <leveled-start>2001-01-10T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-11T17:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t54">
     <title>Perform Hazard Analysis</title>
-    <leveled-start>2001-01-11T13:00:00.000Z</leveled-start>
-    <effort>14400</effort>
+    <leveled-start>2001-01-12T13:00:00.000Z</leveled-start>
+    <effort>28800</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t56">
@@ -293,6 +303,11 @@
     <title>Project Repository</title>
     <type>milestone</type>
     <leveled-start>2001-01-01T15:00:00.000Z</leveled-start>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
     <prerequisite-task idref="t4"/>
     <assignment idref="r2"/>
   </task>
@@ -320,7 +335,7 @@
   <task id="t68">
     <title>Create wireframes</title>
     <leveled-start>2001-01-08T13:00:00.000Z</leveled-start>
-    <effort>14400</effort>
+    <effort>28800</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t70">
@@ -340,7 +355,7 @@
   <task id="t72">
     <title>Process Map</title>
     <type>milestone</type>
-    <leveled-start>2001-01-03T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-03T22:00:00.000Z</leveled-start>
     <prerequisite-task idref="t41"/>
     <assignment idref="r2"/>
   </task>
@@ -354,21 +369,21 @@
   <task id="t74">
     <title>Data Model Specification</title>
     <type>milestone</type>
-    <leveled-start>2001-01-03T22:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-04T17:00:00.000Z</leveled-start>
     <prerequisite-task idref="t44"/>
     <assignment idref="r2"/>
   </task>
   <task id="t75">
     <title>Functional Specification</title>
     <type>milestone</type>
-    <leveled-start>2001-01-03T22:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-04T17:00:00.000Z</leveled-start>
     <prerequisite-task idref="t45"/>
     <assignment idref="r2"/>
   </task>
   <task id="t76">
     <title>Technical Specification</title>
     <type>milestone</type>
-    <leveled-start>2001-01-03T22:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-04T17:00:00.000Z</leveled-start>
     <prerequisite-task idref="t46"/>
     <assignment idref="r2"/>
   </task>
@@ -384,7 +399,7 @@
   </task>
   <task id="t79">
     <title>Work on Stories</title>
-    <leveled-start>2001-01-11T18:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-15T13:00:00.000Z</leveled-start>
     <effort>144000</effort>
     <assignment idref="r3"/>
   </task>
@@ -412,25 +427,25 @@
   <task id="t83">
     <title>Hazards and Mitigations</title>
     <type>milestone</type>
-    <leveled-start>2001-01-03T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-03T22:00:00.000Z</leveled-start>
     <prerequisite-task idref="t54"/>
     <assignment idref="r2"/>
   </task>
   <task id="t86">
     <title>Create Admin Usage Guide</title>
-    <leveled-start>2001-01-18T18:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-22T13:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t87">
     <title>Create User Guide</title>
-    <leveled-start>2001-01-18T22:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-22T17:00:00.000Z</leveled-start>
     <effort>14400</effort>
     <assignment idref="r2"/>
   </task>
   <task id="t88">
     <title>Work on Stories</title>
-    <leveled-start>2001-01-18T18:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-22T13:00:00.000Z</leveled-start>
     <effort>144000</effort>
     <assignment idref="r3"/>
   </task>
