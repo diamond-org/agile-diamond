@@ -150,9 +150,12 @@
     </print-info>
     <auto-generate-level-styles>no</auto-generate-level-styles>
   </settings>
-  <editor content-size="{454, 699}" vertical-scrollbar-visible-width="15" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
-    <drawer display="sections" width="185" palette-height="478"/>
+  <editor content-size="{599, 699}" vertical-scrollbar-visible-width="15" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
+    <drawer display="sections" width="185" palette-height="477"/>
     <note-split-view height="141"/>
+    <selected-rows ids="hyEUQYUdiEe"/>
+    <selected-columns ids="jFqHUGd_Dg1"/>
+    <selected-characters range="{17, 0}"/>
   </editor>
   <outline-title>
     <text>
@@ -181,7 +184,7 @@
         </text>
       </title>
     </column>
-    <column id="jFqHUGd_Dg1" type="text" width="267" minimum-width="13" maximum-width="1000000" text-export-width="72" is-outline-column="yes">
+    <column id="jFqHUGd_Dg1" type="text" width="281" minimum-width="13" maximum-width="1000000" text-export-width="72" is-outline-column="yes">
       <title>
         <text>
           <p>
@@ -192,7 +195,7 @@
         </text>
       </title>
     </column>
-    <column id="eZS7NEvLSl-" type="checkbox" width="150" minimum-width="13" maximum-width="1000000" text-export-width="40">
+    <column id="eZS7NEvLSl-" type="checkbox" width="55" minimum-width="13" maximum-width="1000000" text-export-width="40">
       <style>
         <value key="paragraph-alignment">center</value>
       </style>
@@ -206,11 +209,264 @@
         </text>
       </title>
     </column>
+    <column id="fcZAtu_Szbn" type="date" width="107" minimum-width="13" maximum-width="1000000" text-export-width="40">
+      <style>
+        <value key="paragraph-alignment">center</value>
+      </style>
+      <title>
+        <text>
+          <p>
+            <run>
+              <lit>Date</lit>
+            </run>
+          </p>
+        </text>
+      </title>
+      <formatter type="date" allow-natural-language="yes" date="short" time="none">short-date-format</formatter>
+    </column>
   </columns>
   <root>
     <style>
       <value key="font-weight">6</value>
     </style>
+    <item id="msc9w0btROz" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Project space</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+      <children>
+        <item id="eSwr6iCDa2h">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>source code repository</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="j0Us_gKY1Dq">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>scaffold project-management skel</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="ogrz8Gxt0hF">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Start this Checklist</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+    </item>
+    <item id="c3uFw9cnNpC" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Team space</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+      <children>
+        <item id="pl9MuYfXsz1">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>wiki for file and document sharing</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="jhP5SQcm43b">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>web space for agile documents</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="fzQyvdQj1Kn">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>agile board and story backlog</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="bxi6EZcARFj">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>web access to source code</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="g63T2NCkcN0">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>web space for API documentation</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="mbrus0gSg4e">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>development server</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="osg3xmUk0TN">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>staging server</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="diG0XkV-uOw">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>production server</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="hyEUQYUdiEe">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>continuous integration system</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="olOiTGNZCQn">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>code review system</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="fsFVLyW_sT0">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>team IRC chatroom</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="jr6E9xzgode">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>blog for project updates</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="gnlyvu9cjLh">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>calendar for team</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
     <item id="mdc36Oqedbf">
       <values>
         <text>
@@ -221,9 +477,23 @@
           </p>
         </text>
         <checkbox>unchecked</checkbox>
+        <null/>
       </values>
     </item>
-    <item id="n9Cr4BPjkMA">
+    <item id="dzySGBu2_yt">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Project Guide</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+    </item>
+    <item id="n9Cr4BPjkMA" expanded="yes">
       <values>
         <text>
           <p>
@@ -233,9 +503,103 @@
           </p>
         </text>
         <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+      <children>
+        <item id="nrBu9akuHIx">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Roadmap</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="dIYUXSsNBBt">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Stakeholders</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="iB0Qb9C4da4">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Time</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="hfl8YGSgaeA">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Budget</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="dCheBMH4eS7">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Team</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="cb4siIa5xTc">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Timeline</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
       </values>
     </item>
-    <item id="lNxdkUVcLys">
+    <item id="kNujEYUO1RF">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Organization View</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+    </item>
+    <item id="lNxdkUVcLys" expanded="yes">
       <values>
         <text>
           <p>
@@ -245,7 +609,317 @@
           </p>
         </text>
         <checkbox>unchecked</checkbox>
+        <null/>
       </values>
+      <children>
+        <item id="bBVKppj4VsS">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Personae</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="bu2mG5nh0oW">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Stories</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="anhQWrwsWsU">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Story Map</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="cj6HA6TeG-F">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Release Timeline</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+    </item>
+    <item id="nK0i5tL_3lr" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Design</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+      <children>
+        <item id="hEyWKEqGhoT">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Wireframes</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="kcEfgchoYXy">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Site Map</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="hIFTHAbkW5_">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Entity Relationship Diagram</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="n4N7EsDmCRE">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Process Map</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="h1TjsyXuCyQ">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>System Map</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="a32W41rsgO8" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Specifications</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+      <children>
+        <item id="kJKQE7tdz38">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Data Model Specification</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="i8DHuSflkt-">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Functional Specification</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="dRNVA1KtYsZ">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Technical Specification</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="kAgj6Ta8w9w" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Documentation</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+      <children>
+        <item id="b9y68Z2o9P_">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>IT Ops Installation</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="gjQDBC3fw3F">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>IT Ops Upgrading</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="hN4lsmorg8Z">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Admin Usage Guide</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="d_kkUp0QZPN">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>User Usage Guide</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="mY6oioUy-fW" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Compliance</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+      <children>
+        <item id="n6CT7pEnyq9">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Security</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="lYJgQCHyLU5">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Hazards</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="dZBNGHlnKei">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Mitigations</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
     </item>
   </root>
 </outline>

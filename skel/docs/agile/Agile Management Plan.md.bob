@@ -51,15 +51,36 @@ External forces, such as time, budget, business requirements, and customer requi
 0. **Story Planning** - the groundwork for eliciting stories and organizing them into releases
 0. **Stories** - the backlog of stories
 
+# Platform
+
+- Python is a pretty good language for agile software development
+- The MVC architecture is built on top of Flask-Diamond
+- The completed software project installs to a UNIX-like system (BSD, Linux)
+- The software typically runs as a non-root system daemon
+- Multiple systems are required for development and deployment:
+    + development host for routine integration testing
+    + staging host for IT Ops to integrate in a clone of production environment
+    + production host for live operations
+
 # Design
 
-The design process is captured in a series of documents that help to communicate design ideas to the rest of the team.  It is not always necessary to use each of these documents for every project.
+The design process is captured in a series of documents that help to communicate design ideas to the rest of the team.  It is not always necessary to use each of these documents for every project.  These documents may never be complete, so it is good enough to just get them started.
+
+A Model-View-Controller architecture is designed in terms of these documents.  The ERD corresponds to the **Model**, the Wireframes correspond to the **View**, and the Process Map correspond to the **Controller**.
 
 0. **Wireframes** - a mock-up of the screens in a user interface
 0. **Site Map** - a diagram indicating which screens are connected to which
 0. **Entity Relationship Diagram** - the things we are modeling and how they relate to one another
 0. **Process Map** - a sequence of actions taken by users in our system
 0. **System Map** - the users, networks, servers, and processes involved in this project
+
+# Specifications
+
+Specifications are derived from design documentation. As with design, these specifications correspond to the Model-View-Controller architecture.
+
+0. **Data Model Specification** - extended information about the models: attributes, data types, field description, usage notes, etc.
+0. **Functional Specification** - each screen in the wireframe has a short narrative here  in the functional specs.
+0. **Technical Specification** - each step in the process map corresponds to a longer description here in the technical specs.  If the project includes an API, it is defined here.
 
 # Working
 
@@ -118,6 +139,13 @@ TODO; need more experience with code reviews before writing this section.
 - Code documentation is created with Python Sphinx, which uses the ReST language
 - Design documentation is shared via PDF or PNG format
 - Collaborative design work is accomplished with an online diagram editor
+
+# Integration
+
+Projects are integrated into the production environment for release to users. The release cycle describes the interaction between development and integration.  The following documents describe IT Ops tasks during the release cycle.
+
+0. **Installation** - the process for setting up an environment and installing the project inside it
+0. **Upgrading** - the process for getting the latest source code and applying the update
 
 # Training
 
