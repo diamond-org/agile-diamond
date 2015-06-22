@@ -15,6 +15,9 @@ assets:
 	# Organization View
 	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/agile/$(PROJECT_NAME) Organization View.graffle" '/tmp/$(PROJECT_NAME) Organization View.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Organization View.pdf' output/assets/agile
 
+	# Team Resources
+	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/agile/Team Resources.graffle" '/tmp/Team Resources.pdf' pdf && mv '/tmp/Team Resources.pdf' output/assets/agile
+
 	# Entity Relationship Diagram
 	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' output/assets/design
 

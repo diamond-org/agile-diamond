@@ -16,7 +16,7 @@ The **project-management** skeleton contains everything needed to start and cont
 
 The steps required to complete the project are delineated in the Checklist.  Open up that file and take it from there.
 
-    open assets/agile/Checklist.oo3
+    open assets/agile/*Checklist.oo3
 
 ## Render the documentation and view in a browser
 
@@ -30,4 +30,8 @@ This project's documentation are designed to be rendered as a website.
 It is possible to test the skeleton in the local directory.  The following process will build everything.
 
     make test
+
+Also, test the graffle-rendering function
+
+    make test-graffle
 
