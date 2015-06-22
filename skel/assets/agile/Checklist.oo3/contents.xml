@@ -153,9 +153,7 @@
   <editor content-size="{599, 699}" vertical-scrollbar-visible-width="15" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
     <drawer display="sections" width="185" palette-height="477"/>
     <note-split-view height="141"/>
-    <selected-rows ids="hyEUQYUdiEe"/>
-    <selected-columns ids="jFqHUGd_Dg1"/>
-    <selected-characters range="{17, 0}"/>
+    <selected-rows ids="msc9w0btROz"/>
   </editor>
   <outline-title>
     <text>
@@ -270,18 +268,247 @@
         </item>
       </children>
     </item>
-    <item id="ogrz8Gxt0hF">
+    <item id="f09gFHMc-gq" expanded="yes">
       <values>
         <text>
           <p>
             <run>
-              <lit>Start this Checklist</lit>
+              <lit>Agile Bootstrap</lit>
             </run>
           </p>
         </text>
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <children>
+        <item id="ogrz8Gxt0hF">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Checklist</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="mdc36Oqedbf">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Agile Management Plan</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="dzySGBu2_yt">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Project Guide</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="n9Cr4BPjkMA" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Charter</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+      <children>
+        <item id="nrBu9akuHIx">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Roadmap</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="dIYUXSsNBBt">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Stakeholders</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="iB0Qb9C4da4">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Time</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="hfl8YGSgaeA">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Budget</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="dCheBMH4eS7">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Team</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="nYr6-z6NjM-" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Scope</lit>
+            </run>
+          </p>
+        </text>
+        <checkbox>unchecked</checkbox>
+        <null/>
+      </values>
+      <children>
+        <item id="cb4siIa5xTc">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Timeline</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="kNujEYUO1RF">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Organization View</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+        <item id="lNxdkUVcLys" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Story Planning</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+          <children>
+            <item id="bBVKppj4VsS">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Personae</lit>
+                    </run>
+                  </p>
+                </text>
+                <checkbox>unchecked</checkbox>
+                <null/>
+              </values>
+            </item>
+            <item id="bu2mG5nh0oW">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Stories</lit>
+                    </run>
+                  </p>
+                </text>
+                <checkbox>unchecked</checkbox>
+                <null/>
+              </values>
+            </item>
+            <item id="anhQWrwsWsU">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Story Map</lit>
+                    </run>
+                  </p>
+                </text>
+                <checkbox>unchecked</checkbox>
+                <null/>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="cj6HA6TeG-F">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Release Timeline</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+        </item>
+      </children>
     </item>
     <item id="c3uFw9cnNpC" expanded="yes">
       <values>
@@ -466,205 +693,6 @@
           </values>
         </item>
       </children>
-    </item>
-    <item id="mdc36Oqedbf">
-      <values>
-        <text>
-          <p>
-            <run>
-              <lit>Agile Management Plan</lit>
-            </run>
-          </p>
-        </text>
-        <checkbox>unchecked</checkbox>
-        <null/>
-      </values>
-    </item>
-    <item id="dzySGBu2_yt">
-      <values>
-        <text>
-          <p>
-            <run>
-              <lit>Project Guide</lit>
-            </run>
-          </p>
-        </text>
-        <checkbox>unchecked</checkbox>
-        <null/>
-      </values>
-    </item>
-    <item id="n9Cr4BPjkMA" expanded="yes">
-      <values>
-        <text>
-          <p>
-            <run>
-              <lit>Charter</lit>
-            </run>
-          </p>
-        </text>
-        <checkbox>unchecked</checkbox>
-        <null/>
-      </values>
-      <children>
-        <item id="nrBu9akuHIx">
-          <values>
-            <text>
-              <p>
-                <run>
-                  <lit>Roadmap</lit>
-                </run>
-              </p>
-            </text>
-            <checkbox>unchecked</checkbox>
-            <null/>
-          </values>
-        </item>
-        <item id="dIYUXSsNBBt">
-          <values>
-            <text>
-              <p>
-                <run>
-                  <lit>Stakeholders</lit>
-                </run>
-              </p>
-            </text>
-            <checkbox>unchecked</checkbox>
-            <null/>
-          </values>
-        </item>
-        <item id="iB0Qb9C4da4">
-          <values>
-            <text>
-              <p>
-                <run>
-                  <lit>Time</lit>
-                </run>
-              </p>
-            </text>
-            <checkbox>unchecked</checkbox>
-            <null/>
-          </values>
-        </item>
-        <item id="hfl8YGSgaeA">
-          <values>
-            <text>
-              <p>
-                <run>
-                  <lit>Budget</lit>
-                </run>
-              </p>
-            </text>
-            <checkbox>unchecked</checkbox>
-            <null/>
-          </values>
-        </item>
-        <item id="dCheBMH4eS7">
-          <values>
-            <text>
-              <p>
-                <run>
-                  <lit>Team</lit>
-                </run>
-              </p>
-            </text>
-            <checkbox>unchecked</checkbox>
-            <null/>
-          </values>
-        </item>
-      </children>
-    </item>
-    <item id="cb4siIa5xTc">
-      <values>
-        <text>
-          <p>
-            <run>
-              <lit>Timeline</lit>
-            </run>
-          </p>
-        </text>
-        <checkbox>unchecked</checkbox>
-        <null/>
-      </values>
-    </item>
-    <item id="kNujEYUO1RF">
-      <values>
-        <text>
-          <p>
-            <run>
-              <lit>Organization View</lit>
-            </run>
-          </p>
-        </text>
-        <checkbox>unchecked</checkbox>
-        <null/>
-      </values>
-    </item>
-    <item id="lNxdkUVcLys" expanded="yes">
-      <values>
-        <text>
-          <p>
-            <run>
-              <lit>Story Planning</lit>
-            </run>
-          </p>
-        </text>
-        <checkbox>unchecked</checkbox>
-        <null/>
-      </values>
-      <children>
-        <item id="bBVKppj4VsS">
-          <values>
-            <text>
-              <p>
-                <run>
-                  <lit>Personae</lit>
-                </run>
-              </p>
-            </text>
-            <checkbox>unchecked</checkbox>
-            <null/>
-          </values>
-        </item>
-        <item id="bu2mG5nh0oW">
-          <values>
-            <text>
-              <p>
-                <run>
-                  <lit>Stories</lit>
-                </run>
-              </p>
-            </text>
-            <checkbox>unchecked</checkbox>
-            <null/>
-          </values>
-        </item>
-        <item id="anhQWrwsWsU">
-          <values>
-            <text>
-              <p>
-                <run>
-                  <lit>Story Map</lit>
-                </run>
-              </p>
-            </text>
-            <checkbox>unchecked</checkbox>
-            <null/>
-          </values>
-        </item>
-      </children>
-    </item>
-    <item id="cj6HA6TeG-F">
-      <values>
-        <text>
-          <p>
-            <run>
-              <lit>Release Timeline</lit>
-            </run>
-          </p>
-        </text>
-        <checkbox>unchecked</checkbox>
-        <null/>
-      </values>
     </item>
     <item id="nK0i5tL_3lr" expanded="yes">
       <values>
