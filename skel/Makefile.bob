@@ -1,12 +1,36 @@
 # Ian Dennis Miller
 # project-management skeleton makefile
 
+PROJECT_NAME={{{project_name}}}
 PANDOC=pandoc -f markdown -t html --toc --template assets/www/template.html -c assets/www/ryangray-style.css -c assets/www/style.css -s --self-contained
 
-all: clean agile
+all: clean pdf docs
 	@echo done
 
-agile:
+assets:
+	mkdir -p
+		output/assets/agile \
+		output/assets/design
+
+	# Organization View
+	omnigraffle-export -f pdf "assets/agile/$(PROJECT_NAME) Organization View.graffle" "output/assets/agile/$(PROJECT_NAME) Organization View"
+
+	# Entity Relationship Diagram
+	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" "output/assets/design/$(PROJECT_NAME) Entity Relationship Diagram"
+
+	# Process Map
+	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) Process Map.graffle" "output/assets/design/$(PROJECT_NAME) Process Map"
+
+	# Site Map
+	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) Site Map.graffle" "output/assets/design/$(PROJECT_NAME) Site Map"
+
+	# System Map
+	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) System Map.graffle" "output/assets/design/$(PROJECT_NAME) System Map"
+
+	# Wireframes
+	omnigraffle-export -f pdf "assets/design/$(PROJECT_NAME) Wireframes.graffle" "output/assets/design/$(PROJECT_NAME) Wireframes"
+
+docs:
 	mkdir -p \
 		output/agile \
 		output/compliance \
@@ -34,11 +58,11 @@ agile:
 	$(PANDOC) -o "output/usage/Admin Guide.html" "docs/usage/Admin Guide.md"
 	$(PANDOC) -o "output/usage/User Guide.html" "docs/usage/User Guide.md"
 
-	cp -r assets output
+	# cp -r assets output
 	cp assets/www/index.html output
 
 clean:
 	rm -rf output
 	mkdir output
 
-.PHONY: all clean agile
+.PHONY: all clean docs assets
