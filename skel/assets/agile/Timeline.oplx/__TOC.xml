@@ -8,14 +8,15 @@
     <status-display>basic</status-display>
     <task-view>
       <split-view-divider-position>390</split-view-divider-position>
-      <outline x="0" y="0" w="390" h="485">
+      <outline x="0" y="4" w="390" h="485">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="275"/>
         <column name="Effort" width="70"/>
-        <selected-items-at-filter-time idrefs="t77 t66 t61 t86 t69 t58 t64 t78 t67 t62 t56 t59 t60 t85 t68 t63 t57 t79"/>
+        <expanded-items idrefs="t37 t78 t47 t2"/>
+        <selected-items-at-filter-time idrefs="t66 t61 t92 t86 t64 t58 t89 t78 t67 t56 t62 t59 t60 t79 t68 t91 t63 t57"/>
       </outline>
-      <gantt-view x="-52" y="0" w="566" h="485">
+      <gantt-view x="-54" y="4" w="566" h="485">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -62,14 +63,14 @@
     </task-view>
     <resource-view>
       <split-view-divider-position>306</split-view-divider-position>
-      <outline x="0" y="0" w="291" h="485">
+      <outline x="0" y="0" w="306" h="500">
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
         <column name="Resource" width="135"/>
         <column name="#" width="75"/>
         <selected-items-at-filter-time idrefs="r3 r2"/>
       </outline>
-      <timeline x="385" y="0" w="622" h="485">
+      <timeline x="-192" y="0" w="637" h="500">
         <offtime-display>none</offtime-display>
         <show-project-end/>
         <task-bar-label task-type="group" position="left">
@@ -113,7 +114,7 @@
     </resource-view>
     <calendar>
       <split-view-divider-position>290</split-view-divider-position>
-      <outline x="0" y="0" w="275" h="461">
+      <outline x="0" y="0" w="290" h="465">
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
         <column name="Resource" width="139"/>
@@ -123,7 +124,7 @@
     </calendar>
   </window>
   <project>
-    <next-task-id>89</next-task-id>
+    <next-task-id>93</next-task-id>
     <next-resource-id>4</next-resource-id>
     <scenario id="i_rvi_v8Elr" name="Actual" filename="i_rvi_v8Elr.xml"/>
     <date-display dates="true" times="true" seconds="false"/>

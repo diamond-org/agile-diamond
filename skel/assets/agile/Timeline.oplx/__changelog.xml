@@ -585,6 +585,73 @@
     <change idref="t87" attribute="resourceLeveledDate" type="date" from="2001-01-18T22:00:00.000Z" to="2001-01-22T17:00:00.000Z" resolved="yes"/>
     <change idref="t88" attribute="resourceLeveledDate" type="date" from="2001-01-18T18:00:00.000Z" to="2001-01-22T13:00:00.000Z" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Ian Miller" date="2015-06-22T02:43:32.366Z" timestamp="2015-06-22T02:43:32.366Z">
+    <change idref="t89" to="t47" to-position="1" resolved="yes">
+      <change idref="t89" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t89" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t89" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t89" attribute="resourceLeveledDate" type="date" to="2001-01-04T13:00:00.000Z"/>
+      <change idref="t89" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t89" attribute="title" type="string" to="Release 1"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Ian Miller" date="2015-06-22T02:44:09.182Z" timestamp="2015-06-22T02:44:09.182Z">
+    <change idref="t90" to="t78" to-position="1" resolved="yes">
+      <change idref="t90" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t90" attribute="internalAssignments" type="string" from="" to="2"/>
+      <change idref="t90" attribute="internalPrerequisitesString" type="string" to="79FS"/>
+      <change idref="t90" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t90" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t90" attribute="resourceLeveledDate" type="date" to="2001-01-11T13:00:00.000Z"/>
+      <change idref="t90" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t90" attribute="title" type="string" to="Release 2"/>
+    </change>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" from="2001-01-04T13:00:00.000Z" to="2001-01-10T22:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="internalAssignments" type="string" from="" to="2" resolved="yes"/>
+    <change idref="t89" attribute="internalPrerequisitesString" type="string" to="79FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Ian Miller" date="2015-06-22T02:44:38.764Z" timestamp="2015-06-22T02:44:38.764Z">
+    <change idref="t90" attribute="internalPrerequisitesString" type="string" from="79FS" to="88FS" resolved="yes"/>
+    <change idref="t90" attribute="resourceLeveledDate" type="date" from="2001-01-11T13:00:00.000Z" to="2001-01-17T22:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Ian Miller" date="2015-06-22T02:46:04.506Z" timestamp="2015-06-22T02:46:04.506Z">
+    <change idref="t91" to="t37" to-position="10" resolved="yes">
+      <change idref="t91" attribute="effort" type="real" from="28800" to="57600"/>
+      <change idref="t91" attribute="resourceLeveledDate" type="date" to="2001-01-08T13:00:00.000Z"/>
+      <change idref="t91" attribute="title" type="string" to="Prototype"/>
+    </change>
+    <change idref="t92" to="t37" to-position="11" resolved="yes">
+      <change idref="t92" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t92" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t92" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t92" attribute="resourceLeveledDate" type="date" to="2001-01-03T13:00:00.000Z"/>
+      <change idref="t92" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t92" attribute="title" type="string" to="Release 0"/>
+    </change>
+    <change idref="t50" attribute="resourceLeveledDate" type="date" from="2001-01-11T17:00:00.000Z" to="2001-01-12T17:00:00.000Z" resolved="yes"/>
+    <change idref="t51" attribute="resourceLeveledDate" type="date" from="2001-01-11T17:00:00.000Z" to="2001-01-12T17:00:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="resourceLeveledDate" type="date" from="2001-01-04T17:00:00.000Z" to="2001-01-05T17:00:00.000Z" resolved="yes"/>
+    <change idref="t75" attribute="resourceLeveledDate" type="date" from="2001-01-04T17:00:00.000Z" to="2001-01-05T17:00:00.000Z" resolved="yes"/>
+    <change idref="t76" attribute="resourceLeveledDate" type="date" from="2001-01-04T17:00:00.000Z" to="2001-01-05T17:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" from="2001-01-10T22:00:00.000Z" to="2001-01-11T22:00:00.000Z" resolved="yes"/>
+    <change idref="t90" attribute="resourceLeveledDate" type="date" from="2001-01-17T22:00:00.000Z" to="2001-01-18T22:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Ian Miller" date="2015-06-22T02:46:35.594Z" timestamp="2015-06-22T02:46:35.594Z">
+    <change idref="t50" attribute="resourceLeveledDate" type="date" from="2001-01-12T17:00:00.000Z" to="2001-01-12T20:00:00.000Z" resolved="yes"/>
+    <change idref="t51" attribute="resourceLeveledDate" type="date" from="2001-01-12T17:00:00.000Z" to="2001-01-12T20:00:00.000Z" resolved="yes"/>
+    <change idref="t54" attribute="resourceLeveledDate" type="date" from="2001-01-12T13:00:00.000Z" to="2001-01-11T22:00:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="resourceLeveledDate" type="date" from="2001-01-05T17:00:00.000Z" to="2001-01-05T20:00:00.000Z" resolved="yes"/>
+    <change idref="t75" attribute="resourceLeveledDate" type="date" from="2001-01-05T17:00:00.000Z" to="2001-01-05T20:00:00.000Z" resolved="yes"/>
+    <change idref="t76" attribute="resourceLeveledDate" type="date" from="2001-01-05T17:00:00.000Z" to="2001-01-05T20:00:00.000Z" resolved="yes"/>
+    <change idref="t89" attribute="resourceLeveledDate" type="date" from="2001-01-11T22:00:00.000Z" to="2001-01-12T15:00:00.000Z" resolved="yes"/>
+    <change idref="t90" attribute="resourceLeveledDate" type="date" from="2001-01-18T22:00:00.000Z" to="2001-01-19T15:00:00.000Z" resolved="yes"/>
+    <change idref="t91" attribute="title" type="string" from="Prototype" to="Work on Prototype" resolved="yes"/>
+    <change idref="t91" attribute="resourceLeveledDate" type="date" from="2001-01-08T13:00:00.000Z" to="2001-01-11T13:00:00.000Z" resolved="yes"/>
+    <change idref="t91" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+    <change idref="t91" attribute="internalPrerequisitesString" type="string" to="73FS" resolved="yes"/>
+    <change idref="t92" attribute="resourceLeveledDate" type="date" from="2001-01-03T13:00:00.000Z" to="2001-01-05T15:00:00.000Z" resolved="yes"/>
+    <change idref="t92" attribute="internalPrerequisitesString" type="string" to="91FS" resolved="yes"/>
+  </task-change-set>
   <resource-change-set user="Ian Miller" date="2015-06-22T02:13:13.616Z" timestamp="2015-06-22T02:13:13.616Z">
     <change idref="r-1" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
     <change idref="r-1" attribute="costPerHour" type="real" from="0" resolved="yes"/>

@@ -141,6 +141,8 @@
     <child-task idref="t72"/>
     <child-task idref="t42"/>
     <child-task idref="t73"/>
+    <child-task idref="t91"/>
+    <child-task idref="t92"/>
     <child-task idref="t48"/>
     <child-task idref="t80"/>
     <child-task idref="t49"/>
@@ -204,6 +206,7 @@
     <title>Dev Sprint 1</title>
     <type>group</type>
     <child-task idref="t79"/>
+    <child-task idref="t89"/>
     <child-task idref="t44"/>
     <child-task idref="t74"/>
     <child-task idref="t45"/>
@@ -227,14 +230,14 @@
   <task id="t50">
     <title>Admin Usage Guide</title>
     <type>milestone</type>
-    <leveled-start>2001-01-11T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-12T20:00:00.000Z</leveled-start>
     <prerequisite-task idref="t86"/>
     <assignment idref="r2"/>
   </task>
   <task id="t51">
     <title>User  Guide</title>
     <type>milestone</type>
-    <leveled-start>2001-01-11T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-12T20:00:00.000Z</leveled-start>
     <prerequisite-task idref="t87"/>
     <assignment idref="r2"/>
   </task>
@@ -246,7 +249,7 @@
   </task>
   <task id="t54">
     <title>Perform Hazard Analysis</title>
-    <leveled-start>2001-01-12T13:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-11T22:00:00.000Z</leveled-start>
     <effort>28800</effort>
     <assignment idref="r2"/>
   </task>
@@ -369,21 +372,21 @@
   <task id="t74">
     <title>Data Model Specification</title>
     <type>milestone</type>
-    <leveled-start>2001-01-04T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-05T20:00:00.000Z</leveled-start>
     <prerequisite-task idref="t44"/>
     <assignment idref="r2"/>
   </task>
   <task id="t75">
     <title>Functional Specification</title>
     <type>milestone</type>
-    <leveled-start>2001-01-04T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-05T20:00:00.000Z</leveled-start>
     <prerequisite-task idref="t45"/>
     <assignment idref="r2"/>
   </task>
   <task id="t76">
     <title>Technical Specification</title>
     <type>milestone</type>
-    <leveled-start>2001-01-04T17:00:00.000Z</leveled-start>
+    <leveled-start>2001-01-05T20:00:00.000Z</leveled-start>
     <prerequisite-task idref="t46"/>
     <assignment idref="r2"/>
   </task>
@@ -391,6 +394,7 @@
     <title>Dev Sprint 2</title>
     <type>group</type>
     <child-task idref="t88"/>
+    <child-task idref="t90"/>
     <child-task idref="t86"/>
     <child-task idref="t50"/>
     <child-task idref="t87"/>
@@ -448,6 +452,33 @@
     <leveled-start>2001-01-22T13:00:00.000Z</leveled-start>
     <effort>144000</effort>
     <assignment idref="r3"/>
+  </task>
+  <task id="t89">
+    <title>Release 1</title>
+    <type>milestone</type>
+    <leveled-start>2001-01-12T15:00:00.000Z</leveled-start>
+    <prerequisite-task idref="t79"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t90">
+    <title>Release 2</title>
+    <type>milestone</type>
+    <leveled-start>2001-01-19T15:00:00.000Z</leveled-start>
+    <prerequisite-task idref="t88"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t91">
+    <title>Work on Prototype</title>
+    <leveled-start>2001-01-11T13:00:00.000Z</leveled-start>
+    <effort>57600</effort>
+    <prerequisite-task idref="t73"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t92">
+    <title>Release 0</title>
+    <type>milestone</type>
+    <leveled-start>2001-01-05T15:00:00.000Z</leveled-start>
+    <prerequisite-task idref="t91"/>
   </task>
   <critical-path root="-1" enabled="true" resources="false">
     <color r="1" g="0.5" b="0.5"/>
