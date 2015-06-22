@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="146" y="158" w="1021" h="619">
+  <window x="8" y="158" w="972" h="619">
     <editing-scenario>i_rvi_v8Elr</editing-scenario>
     <view>task</view>
     <change-tracking/>
     <draw-folded/>
     <status-display>basic</status-display>
     <task-view>
-      <split-view-divider-position>306</split-view-divider-position>
-      <outline x="0" y="0" w="306" h="485">
+      <split-view-divider-position>355</split-view-divider-position>
+      <outline x="0" y="735" w="355" h="485">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
-        <column name="Title" width="191"/>
+        <column name="Title" width="240"/>
         <column name="Effort" width="70"/>
+        <expanded-items idrefs="t78 t37 t2 t47"/>
+        <selected-items-at-filter-time idrefs="t77 t66 t61 t86 t69 t58 t64 t78 t67 t62 t56 t59 t60 t85 t68 t63 t57 t79"/>
       </outline>
-      <gantt-view x="-54" y="0" w="699" h="485">
+      <gantt-view x="-9" y="735" w="601" h="485">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -35,7 +37,7 @@
           <key/>
         </task-bar-label>
         <task-bar-label task-type="milestone" position="right">
-          <key>Assigned</key>
+          <key>Title</key>
         </task-bar-label>
         <task-bar-label task-type="task" position="left">
           <key/>
@@ -44,9 +46,9 @@
           <key/>
         </task-bar-label>
         <task-bar-label task-type="task" position="right">
-          <key>Assigned</key>
+          <key/>
         </task-bar-label>
-        <scale scale-name="Automatic" full-day-width="155.29">
+        <scale scale-name="Automatic" full-day-width="92.463">
           <selected/>
         </scale>
         <scale scale-name="Day" full-day-width="1215"/>
@@ -61,13 +63,14 @@
     </task-view>
     <resource-view>
       <split-view-divider-position>306</split-view-divider-position>
-      <outline x="0" y="0" w="291" h="496">
+      <outline x="0" y="0" w="291" h="485">
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
         <column name="Resource" width="135"/>
         <column name="#" width="75"/>
+        <selected-items-at-filter-time idrefs="r3 r2"/>
       </outline>
-      <timeline x="5" y="0" w="549" h="496">
+      <timeline x="-235" y="611" w="671" h="485">
         <offtime-display>none</offtime-display>
         <show-project-end/>
         <task-bar-label task-type="group" position="left">
@@ -121,11 +124,12 @@
     </calendar>
   </window>
   <project>
-    <next-task-id>56</next-task-id>
-    <next-resource-id>2</next-resource-id>
+    <next-task-id>89</next-task-id>
+    <next-resource-id>4</next-resource-id>
     <scenario id="i_rvi_v8Elr" name="Actual" filename="i_rvi_v8Elr.xml"/>
     <date-display dates="true" times="true" seconds="false"/>
     <numbering-style>wbs</numbering-style>
+    <auto-level/>
     <critical-path-slack>0</critical-path-slack>
     <currency-format>$1,234.56</currency-format>
     <duration-format hours-per-day="8" hours-per-week="40" hours-per-month="160" hours-per-year="1920" hours="true" days="true" weeks="true"/>
