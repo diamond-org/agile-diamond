@@ -795,7 +795,7 @@
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{321.88153833444454, 552.8165795243666}, {117, 11}}</string>
+					<string>{{305.38153833444454, 552.8165795243666}, {150, 11}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -840,7 +840,7 @@
 \deftab720
 \pard\pardeftab720\qc
 
-\f0\b\fs18 \cf0 Project - Organization View}</string>
+\f0\b\fs18 \cf0 &lt;%Document%&gt;}</string>
 						<key>VerticalPad</key>
 						<integer>0</integer>
 					</dict>
@@ -1135,7 +1135,7 @@
 		</dict>
 	</array>
 	<key>ModificationDate</key>
-	<string>2015-06-21 16:36:05 +0000</string>
+	<string>2015-06-22 23:52:39 +0000</string>
 	<key>Modifier</key>
 	<string>Ian Miller</string>
 	<key>NotesVisible</key>
