@@ -150,12 +150,12 @@
     </print-info>
     <auto-generate-level-styles>no</auto-generate-level-styles>
   </settings>
-  <editor content-size="{599, 699}" vertical-scrollbar-visible-width="15" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
+  <editor content-size="{599, 699}" vertical-scrollbar-visible-width="15" scroll-position="{0, 1857}" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
     <drawer display="sections" width="185" palette-height="477"/>
     <note-split-view height="141"/>
-    <selected-rows ids="j0Us_gKY1Dq"/>
-    <selected-columns ids="jFqHUGd_Dg1"/>
-    <selected-characters range="{15, 0}"/>
+    <selected-rows ids="mY6oioUy-fW"/>
+    <selected-columns ids="dTpN3JwYpBn"/>
+    <selected-characters range="{212, 0}"/>
   </editor>
   <outline-title>
     <text>
@@ -241,19 +241,37 @@
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>Instantiate a space for containing project management work.</lit>
+            </run>
+          </p>
+        </text>
+      </note>
       <children>
         <item id="eSwr6iCDa2h">
           <values>
             <text>
               <p>
                 <run>
-                  <lit>version control repo for management documentation</lit>
+                  <lit>management version control</lit>
                 </run>
               </p>
             </text>
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Create a version controlled repository for project management documentation.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
         <item id="j0Us_gKY1Dq">
           <values>
@@ -267,6 +285,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Populate the management space with the templates that generally apply to all Agile projects.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
       </children>
     </item>
@@ -282,6 +309,15 @@
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>Each of these must be reviewed to ensure the points are relevant to the current project.  The documents are interrelated, so a change to one document likely precipitates to the others.</lit>
+            </run>
+          </p>
+        </text>
+      </note>
       <children>
         <item id="ogrz8Gxt0hF">
           <values>
@@ -295,6 +331,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Once the Checklist (i.e. this document) is reviewed, it may be followed through the rest of the steps.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
         <item id="mdc36Oqedbf">
           <values>
@@ -308,6 +353,37 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>This plan collects all of the processes and approaches that will be used in the execution of this project.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
+        </item>
+        <item id="cAGb0n1bi5V">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Team Resources Diagram</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>The technical resources available to the team are laid out in this diagram.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
         <item id="dzySGBu2_yt">
           <values>
@@ -321,6 +397,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>The master document is the Project Guide.  This document links to all of the other documents that will be used to complete the project.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
       </children>
     </item>
@@ -336,6 +421,15 @@
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>The Charter officially instantiates the project.  This document embodies the vision and real-world constraints that act upon the project.</lit>
+            </run>
+          </p>
+        </text>
+      </note>
       <children>
         <item id="nrBu9akuHIx">
           <values>
@@ -349,6 +443,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>The roadmap articulates the vision and the general process that will lead us towards that vision.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
         <item id="dIYUXSsNBBt">
           <values>
@@ -362,6 +465,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>The stakeholders are the internal and external people and organizations that have an interest in this project.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
         <item id="iB0Qb9C4da4">
           <values>
@@ -375,6 +487,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Time constraints will impact the project.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
         <item id="hfl8YGSgaeA">
           <values>
@@ -388,6 +509,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>What is the available budget?  Are there budgetary considerations?</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
         <item id="dCheBMH4eS7">
           <values>
@@ -401,6 +531,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Who will work on this project?</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
       </children>
     </item>
@@ -416,6 +555,15 @@
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>The scope of the project is determined by the stories that are used to describe the finished product.</lit>
+            </run>
+          </p>
+        </text>
+      </note>
       <children>
         <item id="cb4siIa5xTc">
           <values>
@@ -429,6 +577,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Review the Timeline to ensure it includes all of the anticipated tasks.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
         <item id="kNujEYUO1RF">
           <values>
@@ -442,6 +599,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>The Organization View is the first analysis document that maps out the relationships between the stakeholders.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
         <item id="lNxdkUVcLys" expanded="yes">
           <values>
@@ -455,6 +621,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Stories are articulated through a multi-stage process.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
           <children>
             <item id="bBVKppj4VsS">
               <values>
@@ -468,6 +643,15 @@
                 <checkbox>unchecked</checkbox>
                 <null/>
               </values>
+              <note expanded="yes">
+                <text>
+                  <p>
+                    <run>
+                      <lit>The users of the system are analyzed to create Personae.</lit>
+                    </run>
+                  </p>
+                </text>
+              </note>
             </item>
             <item id="bu2mG5nh0oW">
               <values>
@@ -481,6 +665,15 @@
                 <checkbox>unchecked</checkbox>
                 <null/>
               </values>
+              <note expanded="yes">
+                <text>
+                  <p>
+                    <run>
+                      <lit>Collect the stories that describe how Personae interact with the system.</lit>
+                    </run>
+                  </p>
+                </text>
+              </note>
             </item>
             <item id="anhQWrwsWsU">
               <values>
@@ -494,6 +687,15 @@
                 <checkbox>unchecked</checkbox>
                 <null/>
               </values>
+              <note expanded="yes">
+                <text>
+                  <p>
+                    <run>
+                      <lit>Organize stories by theme to create a release plan.</lit>
+                    </run>
+                  </p>
+                </text>
+              </note>
             </item>
           </children>
         </item>
@@ -509,6 +711,15 @@
             <checkbox>unchecked</checkbox>
             <null/>
           </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>With the story map in hand, update the timeline to mention the product releases.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
         </item>
       </children>
     </item>
@@ -517,13 +728,22 @@
         <text>
           <p>
             <run>
-              <lit>Team space</lit>
+              <lit>Team Resources</lit>
             </run>
           </p>
         </text>
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>The team resources are described in the Team Resources Diagram.  At this stage in the checklist, it is time to ensure all of these resources actually exist.</lit>
+            </run>
+          </p>
+        </text>
+      </note>
       <children>
         <item id="pl9MuYfXsz1">
           <values>
@@ -708,6 +928,15 @@
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>The product is designed using a series of artifacts that serve to communicate among team members.</lit>
+            </run>
+          </p>
+        </text>
+      </note>
       <children>
         <item id="hEyWKEqGhoT">
           <values>
@@ -788,6 +1017,15 @@
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>The product design is described in fairly precise terms so that implementation and development becomes possible.</lit>
+            </run>
+          </p>
+        </text>
+      </note>
       <children>
         <item id="kJKQE7tdz38">
           <values>
@@ -842,6 +1080,15 @@
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>After development is complete, several documents are required for the operation of the product.</lit>
+            </run>
+          </p>
+        </text>
+      </note>
       <children>
         <item id="b9y68Z2o9P_">
           <values>
@@ -909,7 +1156,38 @@
         <checkbox>unchecked</checkbox>
         <null/>
       </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>Some projects seek various certifications for their completed products.  In order to meet compliance requirements, there are often specific documents that must be produced to demonstrate certain product criteria.</lit>
+            </run>
+          </p>
+        </text>
+      </note>
       <children>
+        <item id="eQ5QeCoCWgT">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Risk</lit>
+                </run>
+              </p>
+            </text>
+            <checkbox>unchecked</checkbox>
+            <null/>
+          </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>What events may occur that could impact the project?</lit>
+                </run>
+              </p>
+            </text>
+          </note>
+        </item>
         <item id="n6CT7pEnyq9">
           <values>
             <text>
