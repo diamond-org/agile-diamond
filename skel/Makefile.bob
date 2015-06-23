@@ -4,7 +4,7 @@
 PROJECT_NAME={{{project_name}}}
 PANDOC=pandoc -f markdown -t html --toc --template assets/www/template.html -c assets/www/ryangray-style.css -c assets/www/style.css -s --self-contained
 
-all: assets docs
+all: assets docs pdf
 	@echo done
 
 assets:
@@ -16,7 +16,7 @@ assets:
 	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/agile/$(PROJECT_NAME) Organization View.graffle" '/tmp/$(PROJECT_NAME) Organization View.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Organization View.pdf' output/assets/agile
 
 	# Team Resources
-	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/agile/Team Resources.graffle" '/tmp/Team Resources.pdf' pdf && mv '/tmp/Team Resources.pdf' output/assets/agile
+	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/agile/Team Resources Diagram.graffle" '/tmp/Team Resources Diagram.pdf' pdf && mv '/tmp/Team Resources Diagram.pdf' output/assets/agile
 
 	# Entity Relationship Diagram
 	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' output/assets/design
@@ -67,7 +67,9 @@ docs:
 
 pdf:
 	mkdir -p output
-	pandoc -f markdown -t latex --toc -o output/Project.pdf \
+
+	# combine project documentation
+	pandoc -f markdown -t latex --toc -o /tmp/project.pdf \
 		"docs/Project Guide.md" \
 		"docs/agile/Charter.md" \
 		"docs/agile/Agile Management Plan.md" \
@@ -83,6 +85,19 @@ pdf:
 		"docs/spec/Technical Specification.md" \
 		"docs/usage/Admin Guide.md" \
 		"docs/usage/User Guide.md"
+
+	# combine project assets
+	pdfjam --landscape -o "/tmp/assets.pdf" \
+		output/assets/agile/*.pdf \
+		output/assets/design/*.pdf
+
+	# make a single document
+	pdfjam --rotateoversize true -o "output/$(PROJECT_NAME) Project.pdf" \
+		/tmp/project.pdf \
+		/tmp/assets.pdf
+
+	# clean up
+	rm /tmp/project.pdf /tmp/assets.pdf
 
 clean:
 	rm -rf output
