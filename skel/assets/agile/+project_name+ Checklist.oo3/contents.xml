@@ -150,12 +150,12 @@
     </print-info>
     <auto-generate-level-styles>no</auto-generate-level-styles>
   </settings>
-  <editor content-size="{599, 699}" vertical-scrollbar-visible-width="15" scroll-position="{0, 1857}" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
+  <editor content-size="{599, 699}" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
     <drawer display="sections" width="185" palette-height="477"/>
     <note-split-view height="141"/>
-    <selected-rows ids="mY6oioUy-fW"/>
+    <selected-rows ids="msc9w0btROz"/>
     <selected-columns ids="dTpN3JwYpBn"/>
-    <selected-characters range="{212, 0}"/>
+    <selected-characters range="{59, 0}"/>
   </editor>
   <outline-title>
     <text>
@@ -195,20 +195,6 @@
         </text>
       </title>
     </column>
-    <column id="eZS7NEvLSl-" type="checkbox" width="55" minimum-width="13" maximum-width="1000000" text-export-width="40">
-      <style>
-        <value key="paragraph-alignment">center</value>
-      </style>
-      <title>
-        <text>
-          <p>
-            <run>
-              <lit>Done</lit>
-            </run>
-          </p>
-        </text>
-      </title>
-    </column>
     <column id="fcZAtu_Szbn" type="date" width="107" minimum-width="13" maximum-width="1000000" text-export-width="40">
       <style>
         <value key="paragraph-alignment">center</value>
@@ -217,7 +203,7 @@
         <text>
           <p>
             <run>
-              <lit>Date</lit>
+              <lit>Completed on</lit>
             </run>
           </p>
         </text>
@@ -238,7 +224,6 @@
             </run>
           </p>
         </text>
-        <checkbox>unchecked</checkbox>
         <null/>
       </values>
       <note expanded="yes">
@@ -260,7 +245,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -282,7 +266,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -306,7 +289,6 @@
             </run>
           </p>
         </text>
-        <checkbox>unchecked</checkbox>
         <null/>
       </values>
       <note expanded="yes">
@@ -328,7 +310,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -350,7 +331,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -372,7 +352,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -394,7 +373,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -418,7 +396,6 @@
             </run>
           </p>
         </text>
-        <checkbox>unchecked</checkbox>
         <null/>
       </values>
       <note expanded="yes">
@@ -440,7 +417,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -462,7 +438,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -484,7 +459,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -506,7 +480,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -528,7 +501,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -552,7 +524,6 @@
             </run>
           </p>
         </text>
-        <checkbox>unchecked</checkbox>
         <null/>
       </values>
       <note expanded="yes">
@@ -574,7 +545,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -596,7 +566,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -618,7 +587,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -640,7 +608,6 @@
                     </run>
                   </p>
                 </text>
-                <checkbox>unchecked</checkbox>
                 <null/>
               </values>
               <note expanded="yes">
@@ -662,7 +629,6 @@
                     </run>
                   </p>
                 </text>
-                <checkbox>unchecked</checkbox>
                 <null/>
               </values>
               <note expanded="yes">
@@ -684,7 +650,6 @@
                     </run>
                   </p>
                 </text>
-                <checkbox>unchecked</checkbox>
                 <null/>
               </values>
               <note expanded="yes">
@@ -708,7 +673,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -732,7 +696,6 @@
             </run>
           </p>
         </text>
-        <checkbox>unchecked</checkbox>
         <null/>
       </values>
       <note expanded="yes">
@@ -754,7 +717,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -767,7 +729,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -780,7 +741,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -793,7 +753,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -806,7 +765,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -819,7 +777,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -832,7 +789,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -845,7 +801,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -858,7 +813,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -871,7 +825,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -884,7 +837,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -897,7 +849,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -910,7 +861,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -925,7 +875,6 @@
             </run>
           </p>
         </text>
-        <checkbox>unchecked</checkbox>
         <null/>
       </values>
       <note expanded="yes">
@@ -947,7 +896,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -960,7 +908,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -973,7 +920,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -986,7 +932,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -999,7 +944,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1014,7 +958,6 @@
             </run>
           </p>
         </text>
-        <checkbox>unchecked</checkbox>
         <null/>
       </values>
       <note expanded="yes">
@@ -1036,7 +979,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1049,7 +991,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1062,7 +1003,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1077,7 +1017,6 @@
             </run>
           </p>
         </text>
-        <checkbox>unchecked</checkbox>
         <null/>
       </values>
       <note expanded="yes">
@@ -1099,7 +1038,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1112,7 +1050,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1125,7 +1062,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1138,7 +1074,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1153,7 +1088,6 @@
             </run>
           </p>
         </text>
-        <checkbox>unchecked</checkbox>
         <null/>
       </values>
       <note expanded="yes">
@@ -1175,7 +1109,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
           <note expanded="yes">
@@ -1197,7 +1130,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1210,7 +1142,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
@@ -1223,7 +1154,6 @@
                 </run>
               </p>
             </text>
-            <checkbox>unchecked</checkbox>
             <null/>
           </values>
         </item>
