@@ -9,14 +9,14 @@ The Agile Management Plan is a pattern for how to run an Agile project.  This do
 
 Every project must first be bootstrapped.  To get a project started, the following documents need to be updated to ensure they are applicable to the project that will be undertaken.  The Checklist can then be followed to ensure the rest of the steps happen.
 
-0. Create the project management space.
-0. Scaffold *project-management skel*.
+## Agile Documents
+
 0. **Checklist** - all of the steps required to start and finish this project.
 0. **Agile Management Plan** - the way this project is approached (i.e. this document).
 0. **Team Resources Diagram** - an overview of the technical resources that are available for the team to use in completing this project.
 0. **Project Guide** - the master document; an overview of the documentation related to this project.
 
-# Communication
+# Communication {.allowframebreaks}
 
 Most projects involve distributed team members, so this project involves communication tools that are suited to online collaboration.
 
@@ -63,11 +63,13 @@ External forces, such as time, budget, business requirements, and customer requi
     + staging host for IT Ops to integrate in a clone of production environment.
     + production host for live operations.
 
-# Design
+# Design {.allowframebreaks}
 
 The design process is captured in a series of documents that help to communicate design ideas to the rest of the team.  It is not always necessary to use each of these documents for every project.  These documents may never be complete, so it is good enough to just get them started.
 
 A Model-View-Controller architecture is designed in terms of these documents.  The ERD corresponds to the **Model**, the Wireframes correspond to the **View**, and the Process Map correspond to the **Controller**.
+
+## Design Documents
 
 0. **Wireframes** - a mock-up of the screens in a user interface
 0. **Site Map** - a diagram indicating which screens are connected to which
@@ -103,7 +105,7 @@ Specifications are derived from design documentation. As with design, these spec
     + Each story has its own branch, which is merged from develop and after completion is merged back into develop.
 - Branches are not especially important, once they have been merged, and so they may be deleted whenever it is convenient.
 
-# Testing
+# Testing {.allowframebreaks}
 
 - Automated tests are created directly in the project.
 - A story, which provides a 'description of done,' is used as a primary source for test creation.

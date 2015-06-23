@@ -99,8 +99,13 @@ pdf:
 	# clean up
 	rm /tmp/project.pdf /tmp/assets.pdf
 
+presentations:
+	mkdir -p output/assets/presentations
+	pandoc -t beamer docs/agile/Charter.md -o "output/assets/presentations/$(PROJECT_NAME) Charter.pdf"
+	pandoc -t beamer "docs/agile/Agile Management Plan.md" -o "output/assets/presentations/Agile Management Plan.pdf"
+
 clean:
 	rm -rf output
 	mkdir output
 
-.PHONY: all clean docs assets pdf blah
+.PHONY: all clean docs assets pdf presentation
