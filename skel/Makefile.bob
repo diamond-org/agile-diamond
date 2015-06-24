@@ -13,40 +13,45 @@ assets: outlines
 		output/assets/design
 
 	# Organization View
-	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/agile/$(PROJECT_NAME) Organization View.graffle" '/tmp/$(PROJECT_NAME) Organization View.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Organization View.pdf' output/assets/agile
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/agile/$(PROJECT_NAME) Organization View.graffle" '/tmp/$(PROJECT_NAME) Organization View.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Organization View.pdf' output/assets/agile
 
 	# Team Resources
-	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/agile/Team Resources Diagram.graffle" '/tmp/Team Resources Diagram.pdf' pdf && mv '/tmp/Team Resources Diagram.pdf' output/assets/agile
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/agile/Team Resources Diagram.graffle" '/tmp/Team Resources Diagram.pdf' pdf && mv '/tmp/Team Resources Diagram.pdf' output/assets/agile
 
 	# Entity Relationship Diagram
-	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' output/assets/design
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' output/assets/design
 
 	# Process Map
-	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Process Map.graffle" '/tmp/$(PROJECT_NAME) Process Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Process Map.pdf' output/assets/design
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Process Map.graffle" '/tmp/$(PROJECT_NAME) Process Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Process Map.pdf' output/assets/design
 
 	# Site Map
-	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Site Map.graffle" '/tmp/$(PROJECT_NAME) Site Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Site Map.pdf' output/assets/design
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Site Map.graffle" '/tmp/$(PROJECT_NAME) Site Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Site Map.pdf' output/assets/design
 
 	# System Map
-	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) System Map.graffle" '/tmp/$(PROJECT_NAME) System Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) System Map.pdf' output/assets/design
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) System Map.graffle" '/tmp/$(PROJECT_NAME) System Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) System Map.pdf' output/assets/design
 
 	# Wireframes
-	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Wireframes.graffle" '/tmp/$(PROJECT_NAME) Wireframes.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Wireframes.pdf' output/assets/design
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Wireframes.graffle" '/tmp/$(PROJECT_NAME) Wireframes.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Wireframes.pdf' output/assets/design
 
 outlines:
 	# Stories
-	osascript $$PWD/assets/script/omnioutliner-export.scpt \
+	osascript $$PWD/assets/script/omnioutliner-export.applescript \
 		"$$PWD/assets/agile/$(PROJECT_NAME) Stories.oo3" /tmp/tmp.rtf "public.rtf" && \
 		textutil -convert docx /tmp/tmp.rtf -output /tmp/tmp.docx && \
 		pandoc -o /tmp/tmp.pdf /tmp/tmp.docx && \
 		mv /tmp/tmp.pdf "output/assets/agile/$(PROJECT_NAME) Stories.pdf"
 
 	# Checklist
-#	osascript $$PWD/assets/script/omnioutliner-export.scpt \
+#	osascript $$PWD/assets/script/omnioutliner-export.applescript \
 #		"$$PWD/assets/agile/$(PROJECT_NAME) Checklist.oo3" /tmp/tmp.rtf "public.rtf" && \
 #		textutil -convert docx /tmp/tmp.rtf -output /tmp/tmp.docx && \
 #		pandoc -o /tmp/tmp.pdf /tmp/tmp.docx && \
 #		mv /tmp/tmp.pdf "output/assets/agile/$(PROJECT_NAME) Checklist.pdf"
+
+	# Timeline
+	osascript $$PWD/assets/script/omniplan-export.applescript \
+		"$$PWD/assets/agile/$(PROJECT_NAME) Timeline.oplx" /tmp/plan.pdf PDF && \
+		mv /tmp/plan.pdf "output/assets/agile/$(PROJECT_NAME) Timeline.pdf"
 
 docs:
 	mkdir -p \
@@ -110,6 +115,20 @@ pdf:
 	pdfjam --rotateoversize true -o "output/$(PROJECT_NAME) Project.pdf" \
 		/tmp/project.pdf \
 		/tmp/assets.pdf
+
+	# Charter
+	pandoc -f markdown -t latex --toc -o "output/assets/agile/$(PROJECT_NAME) Charter.pdf" \
+		"docs/agile/Charter.md"
+
+	# Scope
+	pandoc -f markdown -t latex --toc -o /tmp/Scope.pdf \
+		"docs/agile/Story Planning.md" \
+
+	pdfjam -o "output/assets/agile/$(PROJECT_NAME) Scope.pdf" \
+		/tmp/Scope.pdf \
+		"output/assets/agile/$(PROJECT_NAME) Organization View.pdf" \
+		"output/assets/agile/$(PROJECT_NAME) Stories.pdf" \
+		"output/assets/agile/$(PROJECT_NAME) Timeline.pdf"
 
 	# clean up
 	rm /tmp/project.pdf /tmp/assets.pdf
