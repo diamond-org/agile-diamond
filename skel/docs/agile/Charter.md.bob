@@ -1,6 +1,9 @@
 ---
 title: "{{{project_name}}} Charter"
 back: "../Project%20Guide.html"
+author: Ian Dennis Miller
+date: Today
+classoption: "aspectratio=169"
 ---
 
 The Charter is a seldom-changing record of the original conditions for an agile project.  The Charter document describes what the finished product might look like and roughly how we'll get there.  The Charter document also describes the parties that have an interest in the project.  Finally, the Charter document describes the time and budgetary constraints for the project.
