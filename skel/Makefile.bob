@@ -126,8 +126,8 @@ pdf:
 
 	pdfjam -o "output/assets/agile/$(PROJECT_NAME) Scope.pdf" \
 		/tmp/Scope.pdf \
-		"output/assets/agile/$(PROJECT_NAME) Organization View.pdf" \
 		"output/assets/agile/$(PROJECT_NAME) Stories.pdf" \
+		"output/assets/agile/$(PROJECT_NAME) Organization View.pdf" \
 		"output/assets/agile/$(PROJECT_NAME) Timeline.pdf"
 
 	# clean up
@@ -143,6 +143,7 @@ presentations:
 	mkdir -p output/assets/presentations
 	pandoc -t beamer docs/agile/Charter.md -o "output/assets/presentations/$(PROJECT_NAME) Charter.pdf"
 	pandoc -t beamer "docs/agile/Agile Management Plan.md" -o "output/assets/presentations/Agile Management Plan.pdf"
+	pandoc -t beamer "docs/Project Guide.md" -o "output/assets/presentations/Project Guide.pdf"
 
 clean:
 	rm -rf output

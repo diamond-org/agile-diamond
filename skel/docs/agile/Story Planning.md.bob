@@ -1,6 +1,9 @@
 ---
 title: "{{{project_name}}} Story Planning"
 back: "../Project%20Guide.html"
+author: Ian Dennis Miller
+date: Today
+classoption: "aspectratio=169"
 ---
 
 # Personae
@@ -8,9 +11,13 @@ back: "../Project%20Guide.html"
 0. **First Persona**:
 0. **Second Persona**:
 
+# Organization view
+
+The relationships between organizations, and between different personae, is roughly captured by this diagram.  This diagram is used to help determine the scope.
+
 # Stories
 
-The stories are brainstormed using Stories.oo3 (or index cards) and are then added to Agile planning software.
+The stories are brainstormed using the Stories Outline (or index cards) and are then added to Agile planning software.  The stories are used in part to define the scope.
 
 # Story Map
 
