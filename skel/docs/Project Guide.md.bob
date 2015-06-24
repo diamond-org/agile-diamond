@@ -68,18 +68,19 @@ When the project must comply with certain standards/criteria, there will be a nu
 
 ## Planning
 
-- [Charter](agile/Charter.html)
-- [Organization View](assets/agile/)
-- [Story Planning](agile/Story%20Planning.html)
-- [Stories](assets/agile/)
-- [Timeline](assets/agile/)
+- [Charter](agile/Charter.html) PDF DOCX Presentation
+- [Organization View](assets/agile/{{{project_name}}}%20Organization%20View.pdf)
+- [Story Planning](agile/Story%20Planning.html) PDF DOCX Presentation
+- [Stories](assets/agile/{{{project_name}}}%20Stories.pdf) DOCX
+- [Timeline](assets/agile/{{{project_name}}}%20Timeline.pdf)
+- [Scope Document](assets/agile/{{{project_name}}}%20Scope.pdf) DOCX
 
 ## Agile Management
 
 This is an agile project that is controlled according to these documents.
 
-- [Checklist](assets/agile/)
+- [Checklist](assets/agile/{{{project_name}}}%20Checklist.pdf) DOCX
 - [Team Resources Diagram](assets/agile/Team%20Resources%20Diagram.pdf)
-- [Agile Management Plan](agile/Agile%20Management%20Plan.html)
-- [Complete {{{project_name}}} Project Document]({{{project_name}}}%20Project.pdf)
+- [Agile Management Plan](agile/Agile%20Management%20Plan.html) PDF DOCX Presentation
+- [Complete {{{project_name}}} Project Document]({{{project_name}}}%20Project.pdf) DOCX
 - [Project Guide](Project%20Guide.html)
