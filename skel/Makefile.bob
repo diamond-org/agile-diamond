@@ -4,10 +4,10 @@
 PROJECT_NAME={{{project_name}}}
 PANDOC=pandoc -f markdown -t html --toc --template assets/www/template.html -c assets/www/ryangray-style.css -c assets/www/style.css -s --self-contained
 
-all: assets docs pdf
+all: assets pdf word docs
 	@echo done
 
-assets:
+assets: outlines
 	mkdir -p \
 		output/assets/agile \
 		output/assets/design
@@ -32,6 +32,21 @@ assets:
 
 	# Wireframes
 	osascript $$PWD/assets/script/og-export.scpt "$$PWD/assets/design/$(PROJECT_NAME) Wireframes.graffle" '/tmp/$(PROJECT_NAME) Wireframes.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Wireframes.pdf' output/assets/design
+
+outlines:
+	# Stories
+	osascript $$PWD/assets/script/omnioutliner-export.scpt \
+		"$$PWD/assets/agile/$(PROJECT_NAME) Stories.oo3" /tmp/tmp.rtf "public.rtf" && \
+		textutil -convert docx /tmp/tmp.rtf -output /tmp/tmp.docx && \
+		pandoc -o /tmp/tmp.pdf /tmp/tmp.docx && \
+		mv /tmp/tmp.pdf "output/assets/agile/$(PROJECT_NAME) Stories.pdf"
+
+	# Checklist
+#	osascript $$PWD/assets/script/omnioutliner-export.scpt \
+#		"$$PWD/assets/agile/$(PROJECT_NAME) Checklist.oo3" /tmp/tmp.rtf "public.rtf" && \
+#		textutil -convert docx /tmp/tmp.rtf -output /tmp/tmp.docx && \
+#		pandoc -o /tmp/tmp.pdf /tmp/tmp.docx && \
+#		mv /tmp/tmp.pdf "output/assets/agile/$(PROJECT_NAME) Checklist.pdf"
 
 docs:
 	mkdir -p \
@@ -99,6 +114,12 @@ pdf:
 	# clean up
 	rm /tmp/project.pdf /tmp/assets.pdf
 
+word:
+	mkdir -p output/assets/word
+
+	pandoc -f markdown -t docx --toc -o "output/assets/word/$(PROJECT_NAME) Charter.docx" \
+		"docs/agile/Charter.md"
+
 presentations:
 	mkdir -p output/assets/presentations
 	pandoc -t beamer docs/agile/Charter.md -o "output/assets/presentations/$(PROJECT_NAME) Charter.pdf"
@@ -108,4 +129,4 @@ clean:
 	rm -rf output
 	mkdir output
 
-.PHONY: all clean docs assets pdf presentation
+.PHONY: all clean docs assets pdf presentation word outlines

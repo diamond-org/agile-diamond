@@ -150,8 +150,8 @@
     </print-info>
     <auto-generate-level-styles>no</auto-generate-level-styles>
   </settings>
-  <editor content-size="{454, 699}" vertical-scrollbar-visible-width="15" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
-    <drawer display="sections" width="185" palette-height="477"/>
+  <editor content-size="{717, 699}" vertical-scrollbar-visible-width="15" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
+    <drawer display="sections" width="185" palette-height="476"/>
     <note-split-view height="141"/>
   </editor>
   <outline-title>
@@ -192,18 +192,18 @@
         </text>
       </title>
     </column>
-    <column id="pb3FR4As3XB" type="text" width="157" minimum-width="13" maximum-width="1000000" text-export-width="40">
+    <column id="pb3FR4As3XB" type="text" width="239" minimum-width="13" maximum-width="1000000" text-export-width="40">
       <title>
         <text>
           <p>
             <run>
-              <lit>I need to perform action</lit>
+              <lit>I need to perform an action</lit>
             </run>
           </p>
         </text>
       </title>
     </column>
-    <column id="gacBvXJpBw1" type="text" width="160" minimum-width="13" maximum-width="1000000" text-export-width="40">
+    <column id="gacBvXJpBw1" type="text" width="271" minimum-width="13" maximum-width="1000000" text-export-width="40">
       <title>
         <text>
           <p>
@@ -214,133 +214,6 @@
         </text>
       </title>
     </column>
-    <column id="bOdo9I6hzKl" type="text" width="150" minimum-width="13" maximum-width="1000000" text-export-width="40">
-      <title>
-        <text>
-          <p>
-            <run>
-              <lit>definition of done</lit>
-            </run>
-          </p>
-        </text>
-      </title>
-    </column>
-    <column id="i7_aF69mRGt" type="enumeration" width="150" minimum-width="20" maximum-width="1000000" text-export-width="40">
-      <title>
-        <text>
-          <p>
-            <run>
-              <lit>business value/priority</lit>
-            </run>
-          </p>
-        </text>
-      </title>
-      <enumeration>
-        <member id="alpctOyBo2z">
-          <text>
-            <p>
-              <run>
-                <lit>must have</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-        <member id="dZRmiGp8Brc">
-          <text>
-            <p>
-              <run>
-                <lit>should have</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-        <member id="iWgj42qc8nW">
-          <text>
-            <p>
-              <run>
-                <lit>could have</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-      </enumeration>
-    </column>
-    <column id="i23Z3Q8XYLA" type="enumeration" width="150" minimum-width="20" maximum-width="1000000" text-export-width="40">
-      <title>
-        <text>
-          <p>
-            <run>
-              <lit>story points</lit>
-            </run>
-          </p>
-        </text>
-      </title>
-      <enumeration>
-        <member id="oPyuZzxreuB">
-          <text>
-            <p>
-              <run>
-                <lit>1</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-        <member id="m5qjLx9Sj_i">
-          <text>
-            <p>
-              <run>
-                <lit>2</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-        <member id="nlndvZdt_bm">
-          <text>
-            <p>
-              <run>
-                <lit>3</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-        <member id="ewygzXyDChT">
-          <text>
-            <p>
-              <run>
-                <lit>5</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-        <member id="ojN1k4iPXsy">
-          <text>
-            <p>
-              <run>
-                <lit>8</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-        <member id="oqclTN-2bab">
-          <text>
-            <p>
-              <run>
-                <lit>13</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-        <member id="jOU6R6I2Ymc">
-          <text>
-            <p>
-              <run>
-                <lit>21</lit>
-              </run>
-            </p>
-          </text>
-        </member>
-      </enumeration>
-    </column>
   </columns>
   <root>
     <style>
@@ -348,9 +221,6 @@
     </style>
     <item id="n9Cr4BPjkMA">
       <values>
-        <null/>
-        <null/>
-        <null/>
         <null/>
         <null/>
         <null/>
