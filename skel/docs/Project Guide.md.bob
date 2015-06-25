@@ -71,7 +71,7 @@ When the project must comply with certain standards/criteria, there will be a nu
 
 - [Charter](agile/Charter.html) [PDF](assets/agile/{{{project_name}}} Charter.pdf) [DOCX](assets/word/{{{project_name}}} Charter.docx) [Presentation](assets/presentations/{{{project_name}}} Charter.pdf)
 - [Organization View](assets/agile/{{{project_name}}} Organization View.pdf)
-- [Story Planning](agile/Story Planning.html) PDF DOCX Presentation
+- [Scope](agile/Scope.html) PDF DOCX Presentation
 - [Stories](assets/agile/{{{project_name}}} Stories.pdf) DOCX
 - [Timeline](assets/agile/{{{project_name}}} Timeline.pdf)
 - [Scope Document](assets/agile/{{{project_name}}} Scope.pdf) DOCX

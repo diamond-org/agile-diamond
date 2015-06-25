@@ -65,7 +65,7 @@ docs:
 
 	$(PANDOC) -o "output/agile/Charter.html" "docs/agile/Charter.md"
 	$(PANDOC) -o "output/agile/Agile Management Plan.html" "docs/agile/Agile Management Plan.md"
-	$(PANDOC) -o "output/agile/Story Planning.html" "docs/agile/Story Planning.md"
+	$(PANDOC) -o "output/agile/Scope.html" "docs/agile/Scope.md"
 
 	$(PANDOC) -o "output/compliance/Risks Register.html" "docs/compliance/Risks Register.md"
 	$(PANDOC) -o "output/compliance/Hazards Register.html" "docs/compliance/Hazards Register.md"
@@ -93,7 +93,7 @@ pdf:
 		"docs/Project Guide.md" \
 		"docs/agile/Charter.md" \
 		"docs/agile/Agile Management Plan.md" \
-		"docs/agile/Story Planning.md" \
+		"docs/agile/Scope.md" \
 		"docs/compliance/Risks Register.md" \
 		"docs/compliance/Hazards Register.md" \
 		"docs/compliance/Mitigations Register.md" \
@@ -122,7 +122,7 @@ pdf:
 
 	# Scope
 	pandoc -f markdown -t latex --toc -o /tmp/Scope.pdf \
-		"docs/agile/Story Planning.md" \
+		"docs/agile/Scope.md" \
 
 	pdfjam -o "output/assets/agile/$(PROJECT_NAME) Scope.pdf" \
 		/tmp/Scope.pdf \
