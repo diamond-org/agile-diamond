@@ -6,7 +6,7 @@ date: Today
 classoption: "aspectratio=169"
 ---
 
-# Personae
+# Personae {.allowframebreaks}
 
 0. **First Persona**:
 0. **Second Persona**:
@@ -15,9 +15,13 @@ classoption: "aspectratio=169"
 
 The relationships between organizations, and between different personae, is roughly captured by this diagram.  This diagram is used to help determine the scope.
 
+**Include Organization view here**
+
 # Stories
 
 The stories are brainstormed using the Stories Outline (or index cards) and are then added to Agile planning software.  The stories are used in part to define the scope.
+
+**Include Stories outline here**
 
 # Story Map
 
