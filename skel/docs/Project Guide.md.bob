@@ -9,79 +9,78 @@ This Project Guide offers an overview of all the documentation and resources rel
 
 ## Communication
 
-- [Create an Issue]()
-- [Team Chat Room]()
-- [Team Video Conference]()
-- [Team Calendar]()
-- [Project Blog]()
-- [Project Wiki]()
+- [Create an Issue](assets/www/unimplemented.html)
+- [Team Chat Room](assets/www/unimplemented.html)
+- [Team Video Conference](assets/www/unimplemented.html)
+- [Team Calendar](assets/www/unimplemented.html)
+- [Project Blog](assets/www/unimplemented.html)
+- [Project Wiki](assets/www/unimplemented.html)
 
 ## Development
 
 There are a number of project resources that are used on a day-to-day basis in the normal course of doing work upon the project.
 
-- [Agile Board]()
-- [Source Code Repository]()
-- [Continuous Integration]()
-- [Code Reviews]()
-- [API Documentation]()
+- [Agile Board](assets/www/unimplemented.html)
+- [Source Code Repository](assets/www/unimplemented.html)
+- [Continuous Integration](assets/www/unimplemented.html)
+- [Code Reviews](assets/www/unimplemented.html)
+- [API Documentation](assets/www/unimplemented.html)
 
 ## Usage
 
 Different sorts of users (personae) have different functional uses of the project.  There is a separate guide for each Persona that explains how to use the relevant functionality.
 
-- [User Guide](usage/User Guide.html)
-- [Admin Guide](usage/Admin Guide.html)
+- [User Guide](usage/User Guide.html) [[PDF]](assets/pdf/{{{project_name}}} User Guide.pdf)
+- [Admin Guide](usage/Admin Guide.html) [[PDF]](assets/pdf/{{{project_name}}} Admin Guide.pdf)
 
 ## Integration
 
 Projects are integrated into the production environment for release to users. The release cycle describes the interaction between development and integration.  The following documents describe IT Ops tasks during the release cycle.
 
-- [Installation](itops/Installation.html)
-- [Upgrading](itops/Upgrading.html)
+- [Installation](itops/Installation.html) [[PDF]](assets/pdf/{{{project_name}}} Installation.pdf)
+- [Upgrading](itops/Upgrading.html) [[PDF]](assets/pdf/{{{project_name}}} Upgrading.pdf)
 
 ## Design
 
 A Model-View-Controller architecture is designed in terms of these documents.  The ERD corresponds to the **Model**, the Wireframes correspond to the **View**, and the Processes correspond to the **Controller**.
 
-- [Entity Relationship Diagram](assets/design/{{{project_name}}} Entity Relationship Diagram.pdf)
-- [Wireframes](assets/design/{{{project_name}}} Wireframes.pdf)
-- [Process Map](assets/design/{{{project_name}}} Process Map.pdf)
-- [System Map](assets/design/{{{project_name}}} System Map.pdf)
-- [Site Map](assets/design/{{{project_name}}} Site Map.pdf)
+- [Entity Relationship Diagram](assets/pdf/{{{project_name}}} Entity Relationship Diagram.pdf) [[ZIP]](assets/zip/{{{project_name}}} Entity Relationship Diagram.zip)
+- [Wireframes](assets/pdf/{{{project_name}}} Wireframes.pdf) [[ZIP]](assets/zip/{{{project_name}}} Wireframes.zip)
+- [Process Map](assets/pdf/{{{project_name}}} Process Map.pdf) [[ZIP]](assets/zip/{{{project_name}}} Process Map.zip)
+- [System Map](assets/pdf/{{{project_name}}} System Map.pdf) [[ZIP]](assets/zip/{{{project_name}}} System Map.zip)
+- [Site Map](assets/pdf/{{{project_name}}} Site Map.pdf) [[ZIP]](assets/zip/{{{project_name}}} Site Map.zip)
 
 ## Specifications
 
 Specifications are derived from design documentation. As with design, these specifications correspond to the Model-View-Controller architecture.
 
-- [Data Model Specification](spec/Data Model Specification.html)
-- [Functional Specification](spec/Functional Specification.html)
-- [Technical Specification](spec/Technical Specification.html)
+- [Data Model Specification](spec/Data Model Specification.html) [[PDF]](assets/pdf/{{{project_name}}} Data Model Specification.pdf)
+- [Functional Specification](spec/Functional Specification.html) [[PDF]](assets/pdf/{{{project_name}}} Functional Specification.pdf)
+- [Technical Specification](spec/Technical Specification.html) [[PDF]](assets/pdf/{{{project_name}}} Technical Specification.pdf)
 
 ## Compliance
 
 When the project must comply with certain standards/criteria, there will be a number of compliance documents that demonstrate compliance.
 
-- [Risks Register](compliance/Risks Register.html)
-- [Hazards Register](compliance/Hazards Register.html)
-- [Mitigations Register](compliance/Mitigations Register.html)
-- [Security](compliance/Security.html)
+- [Risks Register](compliance/Risks Register.html) [[PDF]](assets/pdf/{{{project_name}}} Risks Register.pdf)
+- [Hazards Register](compliance/Hazards Register.html) [[PDF]](assets/pdf/{{{project_name}}} Hazards Register.pdf)
+- [Mitigations Register](compliance/Mitigations Register.html) [[PDF]](assets/pdf/{{{project_name}}} Mitigations Register.pdf)
+- [Security](compliance/Security.html) [[PDF]](assets/pdf/{{{project_name}}} Security.pdf)
 
 ## Planning
 
-- [Charter](agile/Charter.html) [PDF](assets/agile/{{{project_name}}} Charter.pdf) [DOCX](assets/word/{{{project_name}}} Charter.docx) [Presentation](assets/presentations/{{{project_name}}} Charter.pdf)
-- [Organization View](assets/agile/{{{project_name}}} Organization View.pdf)
-- [Scope](agile/Scope.html) PDF DOCX Presentation
-- [Stories](assets/agile/{{{project_name}}} Stories.pdf) DOCX
-- [Timeline](assets/agile/{{{project_name}}} Timeline.pdf)
-- [Scope Document](assets/agile/{{{project_name}}} Scope.pdf) DOCX
+- [Charter](agile/Charter.html) [[PDF]](assets/pdf/{{{project_name}}} Charter.pdf) [[DOCX]](assets/docx/{{{project_name}}} Charter.docx) [[Presentation]](assets/presentations/{{{project_name}}} Charter.pdf)
+- [Organization View](assets/pdf/{{{project_name}}} Organization View.pdf) [[ZIP]](assets/zip/{{{project_name}}} Organization View.zip)
+- [Scope](agile/Scope.html) [[PDF]](assets/pdf/{{{project_name}}} Scope.pdf) [[DOCX]](assets/docx/{{{project_name}}} Scope.docx) [[Presentation]](assets/presentations/{{{project_name}}} Scope.pdf)
+- [Stories](assets/pdf/{{{project_name}}} Stories.pdf) [[DOCX]](assets/docx/{{{project_name}}} Stories.docx) [[ZIP]](assets/zip/{{{project_name}}} Stories.zip)
+- [Timeline](assets/pdf/{{{project_name}}} Timeline.pdf) [[ZIP]](assets/zip/{{{project_name}}} Timeline.zip)
 
 ## Agile Management
 
 This is an agile project that is controlled according to these documents.
 
-- [Checklist](assets/agile/{{{project_name}}} Checklist.pdf) DOCX
-- [Team Resources Diagram](assets/agile/Team Resources Diagram.pdf)
-- [Agile Management Plan](agile/Agile Management Plan.html) PDF DOCX Presentation
-- [Complete {{{project_name}}} Project Document]({{{project_name}}} Project.pdf) DOCX
-- [Project Guide](Project Guide.html) Presentation
+- [Checklist](assets/pdf/{{{project_name}}} Checklist.pdf) [[DOCX]](assets/docx/{{{project_name}}} Checklist.docx) [[ZIP]](assets/zip/{{{project_name}}} Checklist.zip)
+- [Team Resources Diagram](assets/pdf/Team Resources Diagram.pdf) [[ZIP]](assets/zip/Team Resources Diagram.zip)
+- [Agile Management Plan](agile/Agile Management Plan.html) [[PDF]](assets/pdf/Agile Management Plan.pdf) [[DOCX]](assets/docx/Agile Management Plan.docx) [[Presentation]](assets/presentations/Agile Management Plan.pdf)
+- [Complete Project Document](assets/pdf/{{{project_name}}} Project.pdf) [[DOCX]](assets/docx/{{{project_name}}} Project.docx)
+- [Project Guide](Project Guide.html) [[Presentation]](assets/presentations/{{{project_name}}} Project Guide.pdf)
