@@ -4,14 +4,29 @@
 all: skel
 	@echo done
 
-skel: clean
+skel:
 	mrbob -c .mrbob.ini -O output ./skel
 
 test: skel
-	cd output && make docs pdf
+	cd output && make
+
+test-html: skel
+	cd output && make html
 
 test-graffle: skel
 	cd output && make assets
+
+test-zip: skel
+	cd output && make zip
+
+test-docx: skel
+	cd output && make docx
+
+test-pdf: skel
+	cd output && make pdf
+
+test-presentations: skel
+	cd output && make presentations
 
 clean:
 	rm -rf output

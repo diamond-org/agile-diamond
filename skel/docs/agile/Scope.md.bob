@@ -1,5 +1,5 @@
 ---
-title: "{{{project_name}}} Story Planning"
+title: "{{{project_name}}} Scope"
 back: "../Project%20Guide.html"
 author: Ian Dennis Miller
 date: Today
@@ -15,18 +15,24 @@ classoption: "aspectratio=169"
 
 The relationships between organizations, and between different personae, is roughly captured by this diagram.  This diagram is used to help determine the scope.
 
-**Include Organization view here**
+**Include Organization view here, or attach as Appendix**
 
 # Stories
 
 The stories are brainstormed using the Stories Outline (or index cards) and are then added to Agile planning software.  The stories are used in part to define the scope.
 
-**Include Stories outline here**
+**Include Stories outline here, or attach as Appendix**
 
 # Story Map
 
-This defines the releases
+This defines the releases.
 
 0. Theme of release 1
 0. Theme of release 2
 0. Theme of release 3
+
+# Timeline
+
+Releases are plotted on the timeline in terms of sprints.  Using Agile techniques, each sprint contains the stories that make up a Release.
+
+**Include Timeline here, or attach as Appendix**
