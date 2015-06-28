@@ -170,13 +170,8 @@ pdf: paths plans graffles
 	pandoc -f markdown -t latex --toc -o "output/agile/Agile Management Plan.pdf" "docs/agile/Agile Management Plan.md"
 
 	# Scope
-	pandoc -f markdown -t latex --toc -o /tmp/Scope.pdf \
+	pandoc -f markdown -t latex --toc -o "output/agile/$(PROJECT_NAME) Scope.pdf" \
 		"docs/agile/Scope.md"
-
-	pdfjam -o "output/agile/$(PROJECT_NAME) Scope.pdf" \
-		/tmp/Scope.pdf \
-		"output/agile/$(PROJECT_NAME) Organization View.pdf" \
-		"output/agile/$(PROJECT_NAME) Timeline.pdf"
 
 	# clean up
 	rm /tmp/project.pdf /tmp/assets.pdf
