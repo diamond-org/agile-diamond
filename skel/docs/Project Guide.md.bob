@@ -9,29 +9,29 @@ This Project Guide offers an overview of all the documentation and resources rel
 
 ## Communication
 
-- [Create an Issue](assets/www/unimplemented.html)
-- [Team Chat Room](assets/www/unimplemented.html)
-- [Team Video Conference](assets/www/unimplemented.html)
-- [Team Calendar](assets/www/unimplemented.html)
-- [Project Blog](assets/www/unimplemented.html)
-- [Project Wiki](assets/www/unimplemented.html)
+- [Create an Issue](unimplemented.html)
+- [Team Chat Room](unimplemented.html)
+- [Team Video Conference](unimplemented.html)
+- [Team Calendar](unimplemented.html)
+- [Project Blog](unimplemented.html)
+- [Project Wiki](unimplemented.html)
 
 ## Development
 
 There are a number of project resources that are used on a day-to-day basis in the normal course of doing work upon the project.
 
-- [Agile Board](assets/www/unimplemented.html)
-- [Source Code Repository](assets/www/unimplemented.html)
-- [Continuous Integration](assets/www/unimplemented.html)
-- [Code Reviews](assets/www/unimplemented.html)
-- [API Documentation](assets/www/unimplemented.html)
+- [Agile Board](unimplemented.html)
+- [Source Code Repository](unimplemented.html)
+- [Continuous Integration](unimplemented.html)
+- [Code Reviews](unimplemented.html)
+- [API Documentation](unimplemented.html)
 
 ## Usage
 
 Different sorts of users (personae) have different functional uses of the project.  There is a separate guide for each Persona that explains how to use the relevant functionality.
 
-- [User Guide](usage/User Guide.html) [[pdf]](usage/{{{project_name}}} User Guide.pdf) [[docx]](assets/docx/docs/{{{project_name}}} User Guide.docx)
-- [Admin Guide](usage/Admin Guide.html) [[pdf]](usage/{{{project_name}}} Admin Guide.pdf) [[docx]](assets/docx/docs/{{{project_name}}} Admin Guide.docx)
+- [User Guide](usage/User Guide.html) [[pdf]](usage/{{{project_name}}} User Guide.pdf) [[docx]](usage/{{{project_name}}} User Guide.docx)
+- [Admin Guide](usage/Admin Guide.html) [[pdf]](usage/{{{project_name}}} Admin Guide.pdf) [[docx]](usage/{{{project_name}}} Admin Guide.docx)
 
 ## Integration
 

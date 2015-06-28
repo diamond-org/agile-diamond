@@ -15,9 +15,7 @@ paths:
 		output/itops \
 		output/spec \
 		output/usage \
-		output/products \
-		output/products/presentations \
-		output/assets/www
+		output/products
 
 graffles: paths
 	# Organization View
@@ -86,7 +84,7 @@ html: paths
 	$(PANDOC) -o "output/usage/User Guide.html" "docs/usage/User Guide.md"
 
 	# cp -r assets output
-	cp assets/www/unimplemented.html output/assets/www/unimplemented.html
+	cp assets/www/unimplemented.html output/unimplemented.html
 	cp assets/www/index.html output
 
 zip: paths
