@@ -52,7 +52,7 @@ $if(toc)$
 <div id="$idprefix$TOC">
 
 $if(back)$
-<p><a href="$back$">Back to {{{project_name}}} Project Guide</a></p>
+<p><a href="$back$">⬅ Back to {{{project_name}}} Project Guide</a></p>
 $endif$
 
 $toc$
