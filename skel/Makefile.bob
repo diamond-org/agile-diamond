@@ -51,16 +51,16 @@ outlines: paths
 		"$$PWD/assets/agile/$(PROJECT_NAME) Stories.oo3" /tmp/tmp.rtf "public.rtf" && \
 		textutil -convert docx /tmp/tmp.rtf -output /tmp/tmp.docx && \
 		pandoc -o /tmp/tmp.pdf /tmp/tmp.docx && \
-		mv /tmp/tmp.pdf "output/assets/pdf/diagrams/$(PROJECT_NAME) Stories.pdf"
+		mv /tmp/tmp.pdf "output/assets/pdf/diagrams/$(PROJECT_NAME) Stories.pdf" && \
 		mv /tmp/tmp.docx "output/assets/docx/$(PROJECT_NAME) Stories.docx"
 
 	# Checklist
 	osascript $$PWD/assets/script/omnioutliner-export.applescript \
 		"$$PWD/assets/agile/$(PROJECT_NAME) Checklist.oo3" /tmp/tmp.rtf "public.rtf" && \
 		textutil -convert docx /tmp/tmp.rtf -output /tmp/tmp.docx && \
+		pandoc --latex-engine=xelatex -o /tmp/tmp.pdf /tmp/tmp.docx && \
+		mv /tmp/tmp.pdf "output/assets/pdf/diagrams/$(PROJECT_NAME) Checklist.pdf" && \
 		mv /tmp/tmp.docx "output/assets/docx/$(PROJECT_NAME) Checklist.docx"
-#		pandoc -o /tmp/tmp.pdf /tmp/tmp.docx && \
-#		mv /tmp/tmp.pdf "output/assets/pdf/diagrams/$(PROJECT_NAME) Checklist.pdf"
 
 plans: paths
 	# Timeline
