@@ -17,30 +17,33 @@ paths:
 		output/assets/zip \
 		output/assets/www \
 		output/assets/pdf \
+		output/assets/pdf/diagrams \
+		output/assets/pdf/docs \
 		output/assets/docx \
+		output/assets/docx/docs \
 		output/assets/presentations
 
 graffles: paths
 	# Organization View
-	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/agile/$(PROJECT_NAME) Organization View.graffle" '/tmp/$(PROJECT_NAME) Organization View.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Organization View.pdf' output/assets/pdf
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/agile/$(PROJECT_NAME) Organization View.graffle" '/tmp/$(PROJECT_NAME) Organization View.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Organization View.pdf' output/assets/pdf/diagrams
 
 	# Team Resources
-	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/agile/Team Resources Diagram.graffle" '/tmp/Team Resources Diagram.pdf' pdf && mv '/tmp/Team Resources Diagram.pdf' output/assets/pdf
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/agile/Team Resources Diagram.graffle" '/tmp/Team Resources Diagram.pdf' pdf && mv '/tmp/Team Resources Diagram.pdf' output/assets/pdf/diagrams
 
 	# Entity Relationship Diagram
-	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' output/assets/pdf
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Entity Relationship Diagram.graffle" '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Entity Relationship Diagram.pdf' output/assets/pdf/diagrams
 
 	# Process Map
-	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Process Map.graffle" '/tmp/$(PROJECT_NAME) Process Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Process Map.pdf' output/assets/pdf
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Process Map.graffle" '/tmp/$(PROJECT_NAME) Process Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Process Map.pdf' output/assets/pdf/diagrams
 
 	# Site Map
-	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Site Map.graffle" '/tmp/$(PROJECT_NAME) Site Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Site Map.pdf' output/assets/pdf
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Site Map.graffle" '/tmp/$(PROJECT_NAME) Site Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Site Map.pdf' output/assets/pdf/diagrams
 
 	# System Map
-	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) System Map.graffle" '/tmp/$(PROJECT_NAME) System Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) System Map.pdf' output/assets/pdf
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) System Map.graffle" '/tmp/$(PROJECT_NAME) System Map.pdf' pdf && mv '/tmp/$(PROJECT_NAME) System Map.pdf' output/assets/pdf/diagrams
 
 	# Wireframes
-	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Wireframes.graffle" '/tmp/$(PROJECT_NAME) Wireframes.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Wireframes.pdf' output/assets/pdf
+	osascript $$PWD/assets/script/omnigraffle-export.applescript "$$PWD/assets/design/$(PROJECT_NAME) Wireframes.graffle" '/tmp/$(PROJECT_NAME) Wireframes.pdf' pdf && mv '/tmp/$(PROJECT_NAME) Wireframes.pdf' output/assets/pdf/diagrams
 
 outlines: paths
 	# Stories
@@ -48,20 +51,22 @@ outlines: paths
 		"$$PWD/assets/agile/$(PROJECT_NAME) Stories.oo3" /tmp/tmp.rtf "public.rtf" && \
 		textutil -convert docx /tmp/tmp.rtf -output /tmp/tmp.docx && \
 		pandoc -o /tmp/tmp.pdf /tmp/tmp.docx && \
-		mv /tmp/tmp.pdf "output/assets/pdf/$(PROJECT_NAME) Stories.pdf"
+		mv /tmp/tmp.pdf "output/assets/pdf/diagrams/$(PROJECT_NAME) Stories.pdf"
+		mv /tmp/tmp.docx "output/assets/docx/$(PROJECT_NAME) Stories.docx"
 
 	# Checklist
-#	osascript $$PWD/assets/script/omnioutliner-export.applescript \
-#		"$$PWD/assets/agile/$(PROJECT_NAME) Checklist.oo3" /tmp/tmp.rtf "public.rtf" && \
-#		textutil -convert docx /tmp/tmp.rtf -output /tmp/tmp.docx && \
+	osascript $$PWD/assets/script/omnioutliner-export.applescript \
+		"$$PWD/assets/agile/$(PROJECT_NAME) Checklist.oo3" /tmp/tmp.rtf "public.rtf" && \
+		textutil -convert docx /tmp/tmp.rtf -output /tmp/tmp.docx && \
+		mv /tmp/tmp.docx "output/assets/docx/$(PROJECT_NAME) Checklist.docx"
 #		pandoc -o /tmp/tmp.pdf /tmp/tmp.docx && \
-#		mv /tmp/tmp.pdf "output/assets/pdf/$(PROJECT_NAME) Checklist.pdf"
+#		mv /tmp/tmp.pdf "output/assets/pdf/diagrams/$(PROJECT_NAME) Checklist.pdf"
 
 plans: paths
 	# Timeline
 	osascript $$PWD/assets/script/omniplan-export.applescript \
 		"$$PWD/assets/agile/$(PROJECT_NAME) Timeline.oplx" /tmp/plan.pdf PDF && \
-		mv /tmp/plan.pdf "output/assets/pdf/$(PROJECT_NAME) Timeline.pdf"
+		mv /tmp/plan.pdf "output/assets/pdf/diagrams/$(PROJECT_NAME) Timeline.pdf"
 
 html: paths
 	$(PANDOC) -o "output/Project Guide.html" "docs/Project Guide.md"
@@ -135,25 +140,24 @@ zip: paths
 pdf: paths plans outlines graffles
 	# combine project documentation
 	pandoc -f markdown -t latex --toc -o /tmp/project.pdf \
-		"docs/Project Guide.md" \
 		"docs/agile/Charter.md" \
-		"docs/agile/Agile Management Plan.md" \
 		"docs/agile/Scope.md" \
+		"docs/spec/Data Model Specification.md" \
+		"docs/spec/Functional Specification.md" \
+		"docs/spec/Technical Specification.md" \
 		"docs/compliance/Risks Register.md" \
 		"docs/compliance/Hazards Register.md" \
 		"docs/compliance/Mitigations Register.md" \
 		"docs/compliance/Security.md" \
 		"docs/itops/Installation.md" \
 		"docs/itops/Upgrading.md" \
-		"docs/spec/Data Model Specification.md" \
-		"docs/spec/Functional Specification.md" \
-		"docs/spec/Technical Specification.md" \
 		"docs/usage/Admin Guide.md" \
-		"docs/usage/User Guide.md"
+		"docs/usage/User Guide.md" \
+		"docs/agile/Agile Management Plan.md"
 
 	# combine project assets
 	pdfjam --landscape -o "/tmp/assets.pdf" \
-		output/assets/pdf/*.pdf
+		output/assets/pdf/diagrams/*.pdf
 
 	# make a single document
 	pdfjam --rotateoversize true -o "output/assets/pdf/$(PROJECT_NAME) Project.pdf" \
@@ -172,45 +176,45 @@ pdf: paths plans outlines graffles
 
 	pdfjam -o "output/assets/pdf/$(PROJECT_NAME) Scope.pdf" \
 		/tmp/Scope.pdf \
-		"output/assets/pdf/$(PROJECT_NAME) Stories.pdf" \
-		"output/assets/pdf/$(PROJECT_NAME) Organization View.pdf" \
-		"output/assets/pdf/$(PROJECT_NAME) Timeline.pdf"
+		"output/assets/pdf/diagrams/$(PROJECT_NAME) Stories.pdf" \
+		"output/assets/pdf/diagrams/$(PROJECT_NAME) Organization View.pdf" \
+		"output/assets/pdf/diagrams/$(PROJECT_NAME) Timeline.pdf"
 
 	# clean up
 	rm /tmp/project.pdf /tmp/assets.pdf
 
 	# Hazards Register
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Hazards Register.pdf" "docs/compliance/Hazards Register.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Hazards Register.pdf" "docs/compliance/Hazards Register.md"
 
 	# Mitigations Register
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Mitigations Register.pdf" "docs/compliance/Mitigations Register.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Mitigations Register.pdf" "docs/compliance/Mitigations Register.md"
 
 	# Risks Register
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Risks Register.pdf" "docs/compliance/Risks Register.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Risks Register.pdf" "docs/compliance/Risks Register.md"
 
 	# Security
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Security.pdf" "docs/compliance/Security.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Security.pdf" "docs/compliance/Security.md"
 
 	# Installation
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Installation.pdf" "docs/itops/Installation.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Installation.pdf" "docs/itops/Installation.md"
 
 	# Upgrading
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Upgrading.pdf" "docs/itops/Upgrading.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Upgrading.pdf" "docs/itops/Upgrading.md"
 
 	# Data Model Specification
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Data Model Specification.pdf" "docs/spec/Data Model Specification.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Data Model Specification.pdf" "docs/spec/Data Model Specification.md"
 
 	# Functional Specification
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Functional Specification.pdf" "docs/spec/Functional Specification.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Functional Specification.pdf" "docs/spec/Functional Specification.md"
 
 	# Technical Specification
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Technical Specification.pdf" "docs/spec/Technical Specification.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Technical Specification.pdf" "docs/spec/Technical Specification.md"
 
 	# Admin Guide
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) Admin Guide.pdf" "docs/usage/Admin Guide.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) Admin Guide.pdf" "docs/usage/Admin Guide.md"
 
 	# User Guide
-	pandoc -f markdown -t latex --toc -o "output/assets/pdf/$(PROJECT_NAME) User Guide.pdf" "docs/usage/User Guide.md"
+	pandoc -f markdown -t latex --toc -o "output/assets/pdf/docs/$(PROJECT_NAME) User Guide.pdf" "docs/usage/User Guide.md"
 
 docx: paths
 	# Charter
@@ -222,6 +226,56 @@ docx: paths
 	# Agile Management Plan
 	pandoc -f markdown -t docx --toc -o "output/assets/docx/Agile Management Plan.docx" "docs/agile/Agile Management Plan.md"
 
+	# Hazards Register
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Hazards Register.docx" "docs/compliance/Hazards Register.md"
+
+	# Mitigations Register
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Mitigations Register.docx" "docs/compliance/Mitigations Register.md"
+
+	# Risks Register
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Risks Register.docx" "docs/compliance/Risks Register.md"
+
+	# Security
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Security.docx" "docs/compliance/Security.md"
+
+	# Installation
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Installation.docx" "docs/itops/Installation.md"
+
+	# Upgrading
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Upgrading.docx" "docs/itops/Upgrading.md"
+
+	# Data Model Specification
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Data Model Specification.docx" "docs/spec/Data Model Specification.md"
+
+	# Functional Specification
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Functional Specification.docx" "docs/spec/Functional Specification.md"
+
+	# Technical Specification
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Technical Specification.docx" "docs/spec/Technical Specification.md"
+
+	# Admin Guide
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) Admin Guide.docx" "docs/usage/Admin Guide.md"
+
+	# User Guide
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/docs/$(PROJECT_NAME) User Guide.docx" "docs/usage/User Guide.md"
+
+	# complete project documentation
+	pandoc -f markdown -t docx --toc -o "output/assets/docx/$(PROJECT_NAME) Project.docx" \
+		"docs/agile/Charter.md" \
+		"docs/agile/Agile Management Plan.md" \
+		"docs/agile/Scope.md" \
+		"docs/compliance/Risks Register.md" \
+		"docs/compliance/Hazards Register.md" \
+		"docs/compliance/Mitigations Register.md" \
+		"docs/compliance/Security.md" \
+		"docs/itops/Installation.md" \
+		"docs/itops/Upgrading.md" \
+		"docs/spec/Data Model Specification.md" \
+		"docs/spec/Functional Specification.md" \
+		"docs/spec/Technical Specification.md" \
+		"docs/usage/Admin Guide.md" \
+		"docs/usage/User Guide.md"
+
 presentations: paths
 	# Charter
 	pandoc -t beamer docs/agile/Charter.md -o "output/assets/presentations/$(PROJECT_NAME) Charter.pdf"
@@ -231,6 +285,9 @@ presentations: paths
 
 	# Project Guide
 	pandoc -t beamer "docs/Project Guide.md" -o "output/assets/presentations/$(PROJECT_NAME) Project Guide.pdf"
+
+	# Scope
+	pandoc -t beamer "docs/agile/Scope.md" -o "output/assets/presentations/$(PROJECT_NAME) Scope.pdf"
 
 clean:
 	rm -rf output

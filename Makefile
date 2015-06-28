@@ -13,8 +13,11 @@ test: skel
 test-html: skel
 	cd output && make html
 
-test-graffle: skel
-	cd output && make assets
+test-graffles: skel
+	cd output && make graffles
+
+test-outlines: skel
+	cd output && make outlines
 
 test-zip: skel
 	cd output && make zip
