@@ -15,13 +15,15 @@ classoption: "aspectratio=169"
 
 The relationships between organizations, and between different personae, is roughly captured by this diagram.  This diagram is used to help determine the scope.
 
-**Include Organization view here, or attach as Appendix**
+![Organization View](output/agile/{{{project_name}}} Organization View.png)
 
 # Stories
 
-The stories are brainstormed using the Stories Outline (or index cards) and are then added to Agile planning software.  The stories are used in part to define the scope.
+Stories follow the pattern "as a **persona**, I need to perform **an action** so that I achieve **a result**."
 
-**Include Stories outline here, or attach as Appendix**
+as a persona | I need to perform an action | to achieve a result
+-------------+-----------------------------+--------------------
+administrator | logs in with username and password | to prevent unauthorized access
 
 # Story Map
 
@@ -35,4 +37,4 @@ This defines the releases.
 
 Releases are plotted on the timeline in terms of sprints.  Using Agile techniques, each sprint contains the stories that make up a Release.
 
-**Include Timeline here, or attach as Appendix**
+![Timeline](output/agile/{{{project_name}}} Timeline.png)
