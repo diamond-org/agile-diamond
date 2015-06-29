@@ -150,12 +150,12 @@
     </print-info>
     <auto-generate-level-styles>no</auto-generate-level-styles>
   </settings>
-  <editor content-size="{599, 699}" vertical-scrollbar-visible-width="15" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
-    <drawer display="sections" width="185" palette-height="477"/>
+  <editor content-size="{454, 699}" scroll-position="{0, 287}" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
+    <drawer display="sections" width="185" palette-height="476"/>
     <note-split-view height="141"/>
-    <selected-rows ids="msc9w0btROz"/>
+    <selected-rows ids="ouTNdxOGaeX"/>
     <selected-columns ids="dTpN3JwYpBn"/>
-    <selected-characters range="{59, 0}"/>
+    <selected-characters range="{117, 0}"/>
   </editor>
   <outline-title>
     <text>
@@ -184,7 +184,7 @@
         </text>
       </title>
     </column>
-    <column id="jFqHUGd_Dg1" type="text" width="439" minimum-width="13" maximum-width="1000000" text-export-width="72" is-outline-column="yes">
+    <column id="jFqHUGd_Dg1" type="text" width="325" minimum-width="13" maximum-width="1000000" text-export-width="72" is-outline-column="yes">
       <title>
         <text>
           <p>
@@ -385,6 +385,27 @@
             </text>
           </note>
         </item>
+        <item id="lSQIZ5lvVfK">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Timeline</lit>
+                </run>
+              </p>
+            </text>
+            <null/>
+          </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Review the Timeline to ensure it includes all of the anticipated tasks.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
+        </item>
       </children>
     </item>
     <item id="n9Cr4BPjkMA" expanded="yes">
@@ -408,6 +429,27 @@
         </text>
       </note>
       <children>
+        <item id="ouTNdxOGaeX">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Background</lit>
+                </run>
+              </p>
+            </text>
+            <null/>
+          </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Whatever information is needed to understand the context of the project should be included in the background section.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
+        </item>
         <item id="nrBu9akuHIx">
           <values>
             <text>
@@ -515,7 +557,7 @@
         </item>
       </children>
     </item>
-    <item id="nYr6-z6NjM-" expanded="yes">
+    <item id="fJfqDTy7dab" expanded="yes">
       <values>
         <text>
           <p>
@@ -536,12 +578,12 @@
         </text>
       </note>
       <children>
-        <item id="cb4siIa5xTc">
+        <item id="lVRRqUD_8pe">
           <values>
             <text>
               <p>
                 <run>
-                  <lit>Timeline</lit>
+                  <lit>Personae</lit>
                 </run>
               </p>
             </text>
@@ -551,13 +593,13 @@
             <text>
               <p>
                 <run>
-                  <lit>Review the Timeline to ensure it includes all of the anticipated tasks.</lit>
+                  <lit>The users of the system are analyzed to create Personae.</lit>
                 </run>
               </p>
             </text>
           </note>
         </item>
-        <item id="kNujEYUO1RF">
+        <item id="eJzKTcY5luL">
           <values>
             <text>
               <p>
@@ -578,12 +620,12 @@
             </text>
           </note>
         </item>
-        <item id="lNxdkUVcLys" expanded="yes">
+        <item id="gfupv7XRxR5">
           <values>
             <text>
               <p>
                 <run>
-                  <lit>Story Planning</lit>
+                  <lit>Deliverables</lit>
                 </run>
               </p>
             </text>
@@ -593,83 +635,60 @@
             <text>
               <p>
                 <run>
-                  <lit>Stories are articulated through a multi-stage process.</lit>
+                  <lit>The deliverables are artifacts that are going to be used directly by the customer.  These are things that must be created.</lit>
                 </run>
               </p>
             </text>
           </note>
-          <children>
-            <item id="bBVKppj4VsS">
-              <values>
-                <text>
-                  <p>
-                    <run>
-                      <lit>Personae</lit>
-                    </run>
-                  </p>
-                </text>
-                <null/>
-              </values>
-              <note expanded="yes">
-                <text>
-                  <p>
-                    <run>
-                      <lit>The users of the system are analyzed to create Personae.</lit>
-                    </run>
-                  </p>
-                </text>
-              </note>
-            </item>
-            <item id="bu2mG5nh0oW">
-              <values>
-                <text>
-                  <p>
-                    <run>
-                      <lit>Stories</lit>
-                    </run>
-                  </p>
-                </text>
-                <null/>
-              </values>
-              <note expanded="yes">
-                <text>
-                  <p>
-                    <run>
-                      <lit>Collect the stories that describe how Personae interact with the system.</lit>
-                    </run>
-                  </p>
-                </text>
-              </note>
-            </item>
-            <item id="anhQWrwsWsU">
-              <values>
-                <text>
-                  <p>
-                    <run>
-                      <lit>Story Map</lit>
-                    </run>
-                  </p>
-                </text>
-                <null/>
-              </values>
-              <note expanded="yes">
-                <text>
-                  <p>
-                    <run>
-                      <lit>Organize stories by theme to create a release plan.</lit>
-                    </run>
-                  </p>
-                </text>
-              </note>
-            </item>
-          </children>
         </item>
-        <item id="cj6HA6TeG-F">
+        <item id="hvnpPJL0nRN">
           <values>
             <text>
               <p>
                 <run>
-                  <lit>Release Timeline</lit>
+                  <lit>Stories</lit>
+                </run>
+              </p>
+            </text>
+            <null/>
+          </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Collect the stories that describe how Personae interact with the system.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
+        </item>
+        <item id="a_37LNwvVgA">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Story Map</lit>
+                </run>
+              </p>
+            </text>
+            <null/>
+          </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Organize stories by theme to create a release plan.</lit>
+                </run>
+              </p>
+            </text>
+          </note>
+        </item>
+        <item id="fyNYUtv0wp3">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Timeline</lit>
                 </run>
               </p>
             </text>
