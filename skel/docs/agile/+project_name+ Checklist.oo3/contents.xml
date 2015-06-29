@@ -150,12 +150,12 @@
     </print-info>
     <auto-generate-level-styles>no</auto-generate-level-styles>
   </settings>
-  <editor content-size="{454, 699}" scroll-position="{0, 287}" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
+  <editor content-size="{454, 699}" outline-title-display-mode="always" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" is-spellchecking-enabled="yes">
     <drawer display="sections" width="185" palette-height="476"/>
     <note-split-view height="141"/>
-    <selected-rows ids="ouTNdxOGaeX"/>
-    <selected-columns ids="dTpN3JwYpBn"/>
-    <selected-characters range="{117, 0}"/>
+    <selected-rows ids="msc9w0btROz"/>
+    <selected-columns ids="jFqHUGd_Dg1"/>
+    <selected-characters range="{19, 0}"/>
   </editor>
   <outline-title>
     <text>
@@ -220,7 +220,7 @@
         <text>
           <p>
             <run>
-              <lit>Project space</lit>
+              <lit>Project management space</lit>
             </run>
           </p>
         </text>

@@ -1,10 +1,12 @@
 ---
 title: "{{{project_name}}} Scope"
-back: "../Project%20Guide.html"
-author: Ian Dennis Miller
+author: {{{author_name}}}
 date: Today
+back: "../Project%20Guide.html"
 classoption: "aspectratio=169"
 ---
+
+The scope is a planning concept that describes the boundaries of the project.  In order to define the project scope, it is necessary to identify the high-level features of the project (i.e. what does it do).  The features are determined by the actors in the system, their relationships to one another, and the behaviors they will engage in.  The deliverables will be the manifestation of the project (e.g. software, documents, training).  Finally, the rough sequence in which the features will be developed and the presentation of the deliverables determines the timeline for the project.
 
 # Personae {.allowframebreaks}
 

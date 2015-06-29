@@ -1,8 +1,8 @@
 ---
 title: "{{{project_name}}} Charter"
 back: "../Project%20Guide.html"
-author: Ian Dennis Miller
-date: Today
+author: "{{{author_name}}}"
+date: "Today"
 classoption: "aspectratio=169"
 ---
 

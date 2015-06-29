@@ -1,8 +1,8 @@
 ---
 title: "Agile Management Plan"
-back: "../Project%20Guide.html"
-author: "Ian Dennis Miller, Saperea"
+author: "{{{author_name}}}"
 date: "2015-06-23"
+back: "../Project%20Guide.html"
 classoption: "aspectratio=169"
 ---
 
