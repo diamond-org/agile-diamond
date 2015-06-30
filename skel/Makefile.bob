@@ -40,6 +40,7 @@ OO3_TARGETS=$(OO3_ZIP) $(OO3_PDF) $(OO3_PNG)
 define DOCUMENT_ORDER
 docs/agile/$(PROJECT_NAME)_Charter.md \
 docs/agile/$(PROJECT_NAME)_Scope.md \
+docs/design/$(PROJECT_NAME)_Design.md \
 docs/spec/$(PROJECT_NAME)_Data_Model_Specification.md \
 docs/spec/$(PROJECT_NAME)_Functional_Specification.md \
 docs/spec/$(PROJECT_NAME)_Technical_Specification.md \
