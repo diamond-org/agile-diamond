@@ -2,7 +2,7 @@
 title: "Agile Management Plan"
 author: "{{{author_name}}}"
 date: "2015-06-23"
-back: "../Project%20Guide.html"
+back: "../{{{project_name}}}_Project_Guide.html"
 classoption: "aspectratio=169"
 ---
 

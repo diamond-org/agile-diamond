@@ -1,8 +1,8 @@
 ---
 title: "{{{project_name}}} Charter"
-back: "../Project%20Guide.html"
 author: "{{{author_name}}}"
 date: "Today"
+back: "../{{{project_name}}}_Project_Guide.html"
 classoption: "aspectratio=169"
 ---
 

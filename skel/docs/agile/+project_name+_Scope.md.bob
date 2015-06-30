@@ -1,8 +1,8 @@
 ---
 title: "{{{project_name}}} Scope"
-author: {{{author_name}}}
-date: Today
-back: "../Project%20Guide.html"
+author: "{{{author_name}}}"
+date: "Today"
+back: "../{{{project_name}}}_Project_Guide.html"
 classoption: "aspectratio=169"
 ---
 
@@ -17,7 +17,7 @@ The scope is a planning concept that describes the boundaries of the project.  I
 
 The relationships between organizations, and between different personae, is roughly captured by this diagram.  This diagram is used to help determine the scope.
 
-![Organization View](output/agile/{{{project_name}}} Organization View.png)
+![Organization View](output/agile/{{{project_name}}}_Organization_View.png)
 
 # Stories
 
@@ -39,4 +39,4 @@ This defines the releases.
 
 Releases are plotted on the timeline in terms of sprints.  Using Agile techniques, each sprint contains the stories that make up a Release.
 
-![Timeline](output/agile/{{{project_name}}} Timeline.png)
+![Timeline](output/agile/{{{project_name}}}_Timeline.png)
