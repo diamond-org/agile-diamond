@@ -10,10 +10,13 @@ SUBDIRS=agile compliance design itops spec usage
 SUBDIR_TARGETS=$(addprefix $(OUT_DIR)/,$(SUBDIRS))
 
 MD=$(subst $(SRC_DIR)/,,$(wildcard $(SRC_DIR)/**/*.md)) $(PROJECT_NAME)_Project_Guide.md
-HTML=$(addprefix $(OUT_DIR)/,$(MD:.md=.html)) $(OUT_DIR)/index.html $(OUT_DIR)/unimplemented.html
-PDF=$(addprefix $(OUT_DIR)/,$(MD:.md=.pdf)) $(OUT_DIR)/$(PROJECT_NAME)_Project.pdf
-DOCX=$(addprefix $(OUT_DIR)/,$(MD:.md=.docx)) $(OUT_DIR)/$(PROJECT_NAME)_Project.docx
+HTML=$(addprefix $(OUT_DIR)/,$(MD:.md=.html))
+PDF=$(addprefix $(OUT_DIR)/,$(MD:.md=.pdf))
+DOCX=$(addprefix $(OUT_DIR)/,$(MD:.md=.docx))
 DOC_TARGETS=$(DOCX) $(HTML) $(PDF)
+
+WWW_FILES=$(OUT_DIR)/index.html $(OUT_DIR)/unimplemented.html
+PROJECT_TARGETS=$(OUT_DIR)/$(PROJECT_NAME)_Project.pdf $(OUT_DIR)/$(PROJECT_NAME)_Project.docx
 
 GRAFFLE=$(subst $(SRC_DIR)/,,$(wildcard $(SRC_DIR)/**/*.graffle))
 GRAFFLE_ZIP=$(addprefix $(OUT_DIR)/,$(GRAFFLE:.graffle=.zip))
@@ -33,6 +36,7 @@ OO3_ZIP=$(addprefix $(OUT_DIR)/,$(OO3:.oo3=.zip))
 #OO3_PNG=$(addprefix $(OUT_DIR)/,$(OO3:.oo3=.png))
 OO3_TARGETS=$(OO3_ZIP) $(OO3_PDF) $(OO3_PNG)
 
+# When compiling final project documentation, this is the order for combining sub-documents
 define DOCUMENT_ORDER
 docs/agile/$(PROJECT_NAME)_Charter.md \
 docs/agile/$(PROJECT_NAME)_Scope.md \
@@ -52,6 +56,7 @@ docs/usage/$(PROJECT_NAME)_User_Guide.md \
 docs/agile/Agile_Management_Plan.md
 endef
 
+# When compiling final project documentation, this is the order of attachments
 define ASSET_ORDER
 output/agile/$(PROJECT_NAME)_Organization_View.pdf \
 output/agile/$(PROJECT_NAME)_Team_Resources_Diagram.pdf \
@@ -63,6 +68,7 @@ output/design/$(PROJECT_NAME)_System_Map.pdf \
 output/design/$(PROJECT_NAME)_Wireframes.pdf
 endef
 
+# These are the documents that should be rendered as presentations
 define PRESENTATIONS
 $(PROJECT_NAME)_Project_Guide_Presentation.pdf \
 agile/$(PROJECT_NAME)_Charter_Presentation.pdf \
@@ -72,7 +78,10 @@ endef
 
 PRESENTATION_TARGETS=$(addprefix $(OUT_DIR)/,$(PRESENTATIONS))
 
-charter: paths $(PRESENTATION_TARGETS) $(OO3_TARGETS) $(OPLX_TARGETS) $(GRAFFLE_TARGETS) $(DOC_TARGETS)
+all: $(SUBDIR_TARGETS) $(OO3_TARGETS) $(OPLX_TARGETS) $(GRAFFLE_TARGETS) $(DOC_TARGETS) $(PRESENTATION_TARGETS) $(WWW_FILES)
+	@echo done
+
+project: all $(PROJECT_TARGETS)
 	@echo done
 
 # Markdown -> PDF
@@ -94,7 +103,7 @@ $(OUT_DIR)/%.html: $(SRC_DIR)/%.md
 # Markdown -> PDF Presentation
 $(OUT_DIR)/%_Presentation.pdf: $(SRC_DIR)/%.md
 	@echo compiling $< as PDF presentation
-	pandoc -f markdown -t beamer $< -o $@
+	pandoc -f markdown -t beamer -V theme:Warsaw $< -o $@
 
 # OmniGraffle -> ZIP
 $(OUT_DIR)/%.zip: $(SRC_DIR)/%.graffle
@@ -137,7 +146,7 @@ $(OUT_DIR)/%.pdf: $(SRC_DIR)/%.graffle
 # OmniGraffle, OmniPlan PDFs -> PNG
 $(OUT_DIR)/%.png: $(OUT_DIR)/%.pdf
 	@echo converting $< to PNG
-	convert $< $@
+	convert $< $@ && touch $@
 
 # OmniPlan -> PDF
 $(OUT_DIR)/%.pdf: $(SRC_DIR)/%.oplx
@@ -146,7 +155,7 @@ $(OUT_DIR)/%.pdf: $(SRC_DIR)/%.oplx
 		"$$PWD/$<" /tmp/plan.pdf PDF && mv /tmp/plan.pdf $@
 
 # Compile the complete project PDF
-$(OUT_DIR)/$(PROJECT_NAME)_Project.pdf: paths
+$(OUT_DIR)/$(PROJECT_NAME)_Project.pdf:
 	@echo Compile the complete project as PDF $@
 
 	# combine project documentation
@@ -162,26 +171,21 @@ $(OUT_DIR)/$(PROJECT_NAME)_Project.pdf: paths
 	rm /tmp/project.pdf /tmp/assets.pdf
 
 # Compile the complete project DOCX
-$(OUT_DIR)/$(PROJECT_NAME)_Project.docx: paths
+$(OUT_DIR)/$(PROJECT_NAME)_Project.docx:
 	@echo Compile the complete project as DOCX $@
 	pandoc -f markdown -t docx --reference-docx=assets/docx/reference.docx --toc -o $@ $(DOCUMENT_ORDER)
 
-# the "not implemented" message
-$(OUT_DIR)/unimplemented.html: paths
-	cp assets/www/unimplemented.html $@
-
-# redirect the index page to the project guide
-$(OUT_DIR)/index.html: paths
-	cp assets/www/index.html $@
+# Copy web file
+$(OUT_DIR)/%.html: assets/www/%.html
+	@echo copy web file: $<
+	cp -v $< $@
 
 # create output directories
 $(SUBDIR_TARGETS):
 	@echo create directory $@
 	mkdir -p $@
 
-paths: $(SUBDIR_TARGETS)
-
 clean:
 	rm -rf output
 
-.PHONY: all clean paths
+.PHONY: all project clean

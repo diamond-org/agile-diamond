@@ -19,13 +19,11 @@ The relationships between organizations, and between different personae, is roug
 
 ![Organization View](output/agile/{{{project_name}}}_Organization_View.png)
 
-# Stories
+# Stories {.allowframebreaks}
 
 Stories follow the pattern "as a **persona**, I need to perform **an action** so that I achieve **a result**."
 
-as a persona | I need to perform an action | to achieve a result
--------------+-----------------------------+--------------------
-administrator | logs in with username and password | to prevent unauthorized access
+0. **administrator** logs in with username and password *to prevent unauthorized access*
 
 # Story Map
 
