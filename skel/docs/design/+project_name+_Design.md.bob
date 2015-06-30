@@ -1,0 +1,29 @@
+---
+title: "{{{project_name}}} Scope"
+author: "{{{author_name}}}"
+date: "Today"
+back: "../{{{project_name}}}_Project_Guide.html"
+classoption: "aspectratio=169"
+---
+
+Design
+
+# Entity Relationship Diagram {.allowframebreaks}
+
+![Entity Relationship Diagram](output/design/{{{project_name}}}_Entity_Relationship_Diagram.png)
+
+# Site Map {.allowframebreaks}
+
+![Site Map](output/design/{{{project_name}}}_Site_Map.png)
+
+# System Map {.allowframebreaks}
+
+![System Map](output/design/{{{project_name}}}_System_Map.png)
+
+# Process Map {.allowframebreaks}
+
+![Process Map](output/design/{{{project_name}}}_Process_Map.png)
+
+# Wireframes {.allowframebreaks}
+
+![Wireframes](output/design/{{{project_name}}}_Wireframes.png)

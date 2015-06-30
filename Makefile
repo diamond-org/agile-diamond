@@ -14,4 +14,4 @@ clean:
 	rm -rf output
 	mkdir output
 
-.PHONY: all clean skel test test-graffle
+.PHONY: all clean skel test
