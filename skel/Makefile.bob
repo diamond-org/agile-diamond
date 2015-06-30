@@ -74,6 +74,7 @@ define PRESENTATIONS
 $(PROJECT_NAME)_Project_Guide_Presentation.pdf \
 agile/$(PROJECT_NAME)_Charter_Presentation.pdf \
 agile/$(PROJECT_NAME)_Scope_Presentation.pdf \
+design/$(PROJECT_NAME)_Design_Presentation.pdf \
 agile/Agile_Management_Plan_Presentation.pdf
 endef
 
