@@ -31,6 +31,9 @@ test-pdf: skel
 test-presentations: skel
 	cd output && make presentations
 
+test-charter: skel
+	cd output && make charter
+
 clean:
 	rm -rf output
 	mkdir output

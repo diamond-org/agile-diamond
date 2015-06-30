@@ -1,6 +1,6 @@
 ---
 title: "{{{project_name}}} Installation"
 author: "{{{author_name}}}"
-date: Today
-back: "../Project%20Guide.html"
+date: "Today"
+back: "../{{{project_name}}}_Project_Guide.html"
 ---
