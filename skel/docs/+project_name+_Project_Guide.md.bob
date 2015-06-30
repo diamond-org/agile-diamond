@@ -44,6 +44,7 @@ Projects are integrated into the production environment for release to users. Th
 
 A Model-View-Controller architecture is designed in terms of these documents.  The ERD corresponds to the **Model**, the Wireframes correspond to the **View**, and the Processes correspond to the **Controller**.
 
+- [Design Document](design/{{{project_name}}}_Design.html) [[pdf]](design/{{{project_name}}}_Design.pdf) [[docx]](design/{{{project_name}}}_Design.docx) [[Presentation]](design/{{{project_name}}}_Design_Presentation.pdf)
 - [Entity Relationship Diagram](design/{{{project_name}}}_Entity_Relationship_Diagram.pdf) [[zip]](design/{{{project_name}}}_Entity_Relationship_Diagram.zip)
 - [Wireframes](design/{{{project_name}}}_Wireframes.pdf) [[zip]](design/{{{project_name}}}_Wireframes.zip)
 - [Process Map](design/{{{project_name}}}_Process_Map.pdf) [[zip]](design/{{{project_name}}}_Process_Map.zip)
