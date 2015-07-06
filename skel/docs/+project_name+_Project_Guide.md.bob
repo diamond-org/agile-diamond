@@ -61,7 +61,7 @@ Specifications are derived from design documentation. As with design, these spec
 
 # Compliance
 
-When the project must comply with certain standards/criteria, there will be a number of compliance documents that demonstrate compliance.
+When the project must comply with certain standards/criteria, there will be a number of compliance documents that demonstrate compliance.  Further information is described in the [Agile Compliance](agile/Agile_Compliance.html) document.
 
 - [Compliance Report](compliance/{{{project_name}}}_Compliance_Report.html) [[pdf]](compliance/{{{project_name}}}_Compliance_Report.pdf) [[docx]](compliance/{{{project_name}}}_Compliance_Report.docx)
 - [Requirements](compliance/{{{project_name}}}_Requirements.html) [[pdf]](compliance/{{{project_name}}}_Requirements.pdf) [[docx]](compliance/{{{project_name}}}_Requirements.docx)
@@ -85,14 +85,6 @@ This is an agile project that is controlled according to these documents.
 <!-- - [Checklist](agile/{{{project_name}}}_Checklist.pdf) [[docx]](agile/{{{project_name}}}_Checklist.docx) [[zip]](agile/{{{project_name}}}_Checklist.zip)-->
 - [Team Resources Diagram](agile/{{{project_name}}}_Team_Resources_Diagram.pdf) [[zip]](agile/{{{project_name}}}_Team_Resources_Diagram.zip)
 - [Agile Management Plan](agile/Agile_Management_Plan.html) [[pdf]](agile/Agile_Management_Plan.pdf) [[docx]](agile/Agile_Management_Plan.docx) [[Presentation]](agile/Agile_Management_Plan_Presentation.pdf)
-- [Agile Compliance](agile/Agile_Compliance.pdf)
+- [Agile Compliance](agile/Agile_Compliance.html) [[PDF]](agile/Agile_Compliance.pdf)
 - [Complete Project Document]({{{project_name}}}_Project.pdf) [[docx]]({{{project_name}}}_Project.docx)
 - [Project Guide]({{{project_name}}}_Project_Guide.html) [[Presentation]]({{{project_name}}}_Project_Guide_Presentation.pdf)
-- ISO Standards
-    - [AAMI TIR45-2012](iso/AAMI TIR45-2012.pdf)
-    - [ISO 9001-2008](iso/ISO 9001-2008.pdf)
-    - [ISO 13485-2003](iso/ISO 13485-2003.pdf)
-    - [ISO 14971-2012](iso/ISO 14971-2012.pdf)
-    - [ISO 20000-1-2005](iso/ISO 20000-1-2005.pdf)
-    - [ISO 62304-2006](iso/ISO 62304-2006.pdf)
-    - [ISO 90003-2004](iso/ISO 90003-2004.pdf)
