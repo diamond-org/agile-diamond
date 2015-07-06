@@ -6,17 +6,81 @@ PROJECT_NAME={{{project_name}}}
 OUT_DIR=output
 SRC_DIR=docs
 
+# When compiling final project documentation, this is the order for combining sub-documents
+define DOCUMENT_ORDER
+$(SRC_DIR)/agile/$(PROJECT_NAME)_Charter.md \
+$(SRC_DIR)/agile/$(PROJECT_NAME)_Scope.md \
+$(SRC_DIR)/design/$(PROJECT_NAME)_Design.md \
+$(SRC_DIR)/spec/$(PROJECT_NAME)_Data_Model_Specification.md \
+$(SRC_DIR)/spec/$(PROJECT_NAME)_Functional_Specification.md \
+$(SRC_DIR)/spec/$(PROJECT_NAME)_Technical_Specification.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Requirements.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Tests_Register.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Risks_Register.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Hazards_Register.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Mitigations_Register.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Security.md \
+$(SRC_DIR)/itops/$(PROJECT_NAME)_Installation.md \
+$(SRC_DIR)/itops/$(PROJECT_NAME)_Upgrading.md \
+$(SRC_DIR)/usage/$(PROJECT_NAME)_Admin_Guide.md \
+$(SRC_DIR)/usage/$(PROJECT_NAME)_User_Guide.md \
+$(SRC_DIR)/agile/Agile_Management_Plan.md
+endef
+
+# When compiling final project documentation, this is the order of attachments
+define ASSET_ORDER
+$(OUT_DIR)/agile/$(PROJECT_NAME)_Organization_View.pdf \
+$(OUT_DIR)/agile/$(PROJECT_NAME)_Team_Resources_Diagram.pdf \
+$(OUT_DIR)/agile/$(PROJECT_NAME)_Timeline.pdf \
+$(OUT_DIR)/design/$(PROJECT_NAME)_Entity_Relationship_Diagram.pdf \
+$(OUT_DIR)/design/$(PROJECT_NAME)_Process_Map.pdf \
+$(OUT_DIR)/design/$(PROJECT_NAME)_Site_Map.pdf \
+$(OUT_DIR)/design/$(PROJECT_NAME)_System_Map.pdf \
+$(OUT_DIR)/design/$(PROJECT_NAME)_Wireframes.pdf
+endef
+
+# These are the documents that should be rendered as presentations
+define PRESENTATIONS
+$(PROJECT_NAME)_Project_Guide_Presentation.pdf \
+agile/$(PROJECT_NAME)_Charter_Presentation.pdf \
+agile/$(PROJECT_NAME)_Scope_Presentation.pdf \
+design/$(PROJECT_NAME)_Design_Presentation.pdf \
+agile/Agile_Management_Plan_Presentation.pdf
+endef
+
+# These are the source compliance documents
+define COMPLIANCE_SOURCES
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Requirements.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Tests_Register.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Risks_Register.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Hazards_Register.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Mitigations_Register.md \
+$(SRC_DIR)/compliance/$(PROJECT_NAME)_Security.md
+endef
+
+define COMPLIANCE_TARGETS
+$(OUT_DIR)/compliance/$(PROJECT_NAME)_Compliance_Report.html \
+$(OUT_DIR)/compliance/$(PROJECT_NAME)_Compliance_Report.docx \
+$(OUT_DIR)/compliance/$(PROJECT_NAME)_Compliance_Report.pdf
+endef
+
+define WWW_FILES
+$(OUT_DIR)/index.html \
+$(OUT_DIR)/unimplemented.html
+endef
+
 SUBDIRS=agile compliance design itops spec usage
 SUBDIR_TARGETS=$(addprefix $(OUT_DIR)/,$(SUBDIRS))
+
+EXTRA_FILES=$(COMPLIANCE_TARGETS) $(WWW_FILES)
+PROJECT_TARGETS=$(OUT_DIR)/$(PROJECT_NAME)_Project.pdf $(OUT_DIR)/$(PROJECT_NAME)_Project.docx
+PRESENTATION_TARGETS=$(addprefix $(OUT_DIR)/,$(PRESENTATIONS))
 
 MD=$(subst $(SRC_DIR)/,,$(wildcard $(SRC_DIR)/**/*.md)) $(PROJECT_NAME)_Project_Guide.md
 HTML=$(addprefix $(OUT_DIR)/,$(MD:.md=.html))
 PDF=$(addprefix $(OUT_DIR)/,$(MD:.md=.pdf))
 DOCX=$(addprefix $(OUT_DIR)/,$(MD:.md=.docx))
-DOC_TARGETS=$(DOCX) $(HTML) $(PDF)
-
-WWW_FILES=$(OUT_DIR)/index.html $(OUT_DIR)/unimplemented.html
-PROJECT_TARGETS=$(OUT_DIR)/$(PROJECT_NAME)_Project.pdf $(OUT_DIR)/$(PROJECT_NAME)_Project.docx
+DOC_TARGETS=$(DOCX) $(HTML) $(PDF) $(EXTRA_FILES)
 
 GRAFFLE=$(subst $(SRC_DIR)/,,$(wildcard $(SRC_DIR)/**/*.graffle))
 GRAFFLE_ZIP=$(addprefix $(OUT_DIR)/,$(GRAFFLE:.graffle=.zip))
@@ -36,51 +100,8 @@ OO3_ZIP=$(addprefix $(OUT_DIR)/,$(OO3:.oo3=.zip))
 #OO3_PNG=$(addprefix $(OUT_DIR)/,$(OO3:.oo3=.png))
 OO3_TARGETS=$(OO3_ZIP) $(OO3_PDF) $(OO3_PNG)
 
-# When compiling final project documentation, this is the order for combining sub-documents
-define DOCUMENT_ORDER
-docs/agile/$(PROJECT_NAME)_Charter.md \
-docs/agile/$(PROJECT_NAME)_Scope.md \
-docs/design/$(PROJECT_NAME)_Design.md \
-docs/spec/$(PROJECT_NAME)_Data_Model_Specification.md \
-docs/spec/$(PROJECT_NAME)_Functional_Specification.md \
-docs/spec/$(PROJECT_NAME)_Technical_Specification.md \
-docs/compliance/$(PROJECT_NAME)_Requirements.md \
-docs/compliance/$(PROJECT_NAME)_Tests_Register.md \
-docs/compliance/$(PROJECT_NAME)_Risks_Register.md \
-docs/compliance/$(PROJECT_NAME)_Hazards_Register.md \
-docs/compliance/$(PROJECT_NAME)_Mitigations_Register.md \
-docs/compliance/$(PROJECT_NAME)_Security.md \
-docs/itops/$(PROJECT_NAME)_Installation.md \
-docs/itops/$(PROJECT_NAME)_Upgrading.md \
-docs/usage/$(PROJECT_NAME)_Admin_Guide.md \
-docs/usage/$(PROJECT_NAME)_User_Guide.md \
-docs/agile/Agile_Management_Plan.md
-endef
-
-# When compiling final project documentation, this is the order of attachments
-define ASSET_ORDER
-output/agile/$(PROJECT_NAME)_Organization_View.pdf \
-output/agile/$(PROJECT_NAME)_Team_Resources_Diagram.pdf \
-output/agile/$(PROJECT_NAME)_Timeline.pdf \
-output/design/$(PROJECT_NAME)_Entity_Relationship_Diagram.pdf \
-output/design/$(PROJECT_NAME)_Process_Map.pdf \
-output/design/$(PROJECT_NAME)_Site_Map.pdf \
-output/design/$(PROJECT_NAME)_System_Map.pdf \
-output/design/$(PROJECT_NAME)_Wireframes.pdf
-endef
-
-# These are the documents that should be rendered as presentations
-define PRESENTATIONS
-$(PROJECT_NAME)_Project_Guide_Presentation.pdf \
-agile/$(PROJECT_NAME)_Charter_Presentation.pdf \
-agile/$(PROJECT_NAME)_Scope_Presentation.pdf \
-design/$(PROJECT_NAME)_Design_Presentation.pdf \
-agile/Agile_Management_Plan_Presentation.pdf
-endef
-
-PRESENTATION_TARGETS=$(addprefix $(OUT_DIR)/,$(PRESENTATIONS))
-
-all: $(SUBDIR_TARGETS) $(OO3_TARGETS) $(OPLX_TARGETS) $(GRAFFLE_TARGETS) $(DOC_TARGETS) $(PRESENTATION_TARGETS) $(WWW_FILES)
+all: $(SUBDIR_TARGETS) $(OO3_TARGETS) $(OPLX_TARGETS) $(GRAFFLE_TARGETS) $(DOC_TARGETS) $(PRESENTATION_TARGETS)
+	cp -r assets/iso output
 	@echo done
 
 project: all $(PROJECT_TARGETS)
@@ -129,7 +150,7 @@ $(OUT_DIR)/%.pdf: $(SRC_DIR)/%.oo3
 		"$$PWD/$<" /tmp/outliner.rtf "public.rtf" && \
 		textutil -convert docx /tmp/outliner.rtf -output /tmp/outliner.docx && \
 		pandoc --latex-engine=xelatex -o /tmp/outliner.pdf /tmp/outliner.docx && \
-		mv /tmp/outliner.pdf "output/agile/$(PROJECT_NAME) Checklist.pdf"
+		mv /tmp/outliner.pdf "$(OUT_DIR)/agile/$(PROJECT_NAME) Checklist.pdf"
 
 # OmniOutliner -> DOCX
 $(OUT_DIR)/%.docx: $(SRC_DIR)/%.oo3
@@ -177,7 +198,28 @@ $(OUT_DIR)/$(PROJECT_NAME)_Project.docx:
 	@echo Compile the complete project as DOCX $@
 	pandoc -f markdown -t docx --reference-docx=assets/docx/reference.docx --toc -o $@ $(DOCUMENT_ORDER)
 
-# Copy web file
+# Compile the compliance document
+$(OUT_DIR)/compliance/$(PROJECT_NAME)_Compliance_Report.html: $(COMPLIANCE_SOURCES)
+	@echo Compile the compliance document $@
+
+	cat $(COMPLIANCE_SOURCES) > /tmp/step1.md
+
+	assets/script/amalgamate.pl /tmp/step1.md > /tmp/compliance.md
+
+	pandoc -f markdown -t html --chapters --toc --template assets/www/template.html \
+		-c assets/www/ryangray-style.css -c assets/www/style.css -s --self-contained $(SRC_DIR)/compliance/$(PROJECT_NAME)_Compliance_Header.md /tmp/compliance.md -o $@
+
+# Compile the compliance document
+$(OUT_DIR)/compliance/$(PROJECT_NAME)_Compliance_Report.docx: $(OUT_DIR)/compliance/$(PROJECT_NAME)_Compliance_Report.html
+	@echo Compile the compliance document as DOCX $@
+	pandoc -f html -t docx $< -o $@
+
+# Compile the compliance document
+$(OUT_DIR)/compliance/$(PROJECT_NAME)_Compliance_Report.pdf: $(OUT_DIR)/compliance/$(PROJECT_NAME)_Compliance_Report.html
+	@echo Compile the compliance document as PDF $@
+	pandoc -f html -t latex --latex-engine=xelatex $< -o $@
+
+# Copy a web file
 $(OUT_DIR)/%.html: assets/www/%.html
 	@echo copy web file: $<
 	cp -v $< $@

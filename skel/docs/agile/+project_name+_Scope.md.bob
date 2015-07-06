@@ -19,6 +19,16 @@ The relationships between organizations, and between different personae, is roug
 
 ![Organization View](output/agile/{{{project_name}}}_Organization_View.png)
 
+# Deliverables
+
+What is the project work to be completed?  The deliverables can be scoped out to capture the minimum set that would support the relationships in the Organization view.
+
+0.
+
+# Features
+
+What will the project actually do?  A feature is a very high-level business activity.  Each feature is decomposed into Epics and Stories during later analysis.
+
 # Stories {.allowframebreaks}
 
 Stories follow the pattern "as a **persona**, I need to perform **an action** so that I achieve **a result**."
