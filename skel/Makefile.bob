@@ -80,7 +80,7 @@ MD=$(subst $(SRC_DIR)/,,$(wildcard $(SRC_DIR)/**/*.md)) $(PROJECT_NAME)_Project_
 HTML=$(addprefix $(OUT_DIR)/,$(MD:.md=.html))
 PDF=$(addprefix $(OUT_DIR)/,$(MD:.md=.pdf))
 DOCX=$(addprefix $(OUT_DIR)/,$(MD:.md=.docx))
-DOC_TARGETS=$(DOCX) $(HTML) $(PDF) $(EXTRA_FILES)
+DOC_TARGETS=$(HTML) $(DOCX) $(PDF) $(EXTRA_FILES)
 
 GRAFFLE=$(subst $(SRC_DIR)/,,$(wildcard $(SRC_DIR)/**/*.graffle))
 GRAFFLE_ZIP=$(addprefix $(OUT_DIR)/,$(GRAFFLE:.graffle=.zip))
