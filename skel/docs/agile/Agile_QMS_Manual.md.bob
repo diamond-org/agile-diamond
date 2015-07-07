@@ -1,5 +1,5 @@
 ---
-title: "Agile Quality Management System Manual"
+title: "Agile QMS Manual"
 author: "Ian Dennis Miller"
 date: "Today"
 back: "../{{{project_name}}}_Project_Guide.html"
@@ -11,6 +11,8 @@ classoption: "aspectratio=169"
 ## 1.1 Description of Organization
 
 ## 1.2 Scope of Certification
+
+This document is set up for ISO 9001:2008 certification.  However, these headings will roughly generalize to other ISO QMS certifications, such as ISO 13485.
 
 ## 1.3 Third Party Certification
 
