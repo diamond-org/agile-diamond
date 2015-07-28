@@ -8,8 +8,8 @@ SRC_DIR=docs
 
 # When compiling final project documentation, this is the order for combining sub-documents
 define DOCUMENT_ORDER
-$(SRC_DIR)/agile/$(PROJECT_NAME)_Charter.md \
-$(SRC_DIR)/agile/$(PROJECT_NAME)_Scope.md \
+$(SRC_DIR)/planning/$(PROJECT_NAME)_Charter.md \
+$(SRC_DIR)/planning/$(PROJECT_NAME)_Scope.md \
 $(SRC_DIR)/design/$(PROJECT_NAME)_Design.md \
 $(SRC_DIR)/spec/$(PROJECT_NAME)_Data_Model_Specification.md \
 $(SRC_DIR)/spec/$(PROJECT_NAME)_Functional_Specification.md \
@@ -20,18 +20,18 @@ $(SRC_DIR)/compliance/$(PROJECT_NAME)_Risks_Register.md \
 $(SRC_DIR)/compliance/$(PROJECT_NAME)_Hazards_Register.md \
 $(SRC_DIR)/compliance/$(PROJECT_NAME)_Mitigations_Register.md \
 $(SRC_DIR)/compliance/$(PROJECT_NAME)_Security.md \
-$(SRC_DIR)/itops/$(PROJECT_NAME)_Installation.md \
-$(SRC_DIR)/itops/$(PROJECT_NAME)_Upgrading.md \
+$(SRC_DIR)/operation/$(PROJECT_NAME)_Installation.md \
+$(SRC_DIR)/operation/$(PROJECT_NAME)_Upgrading.md \
 $(SRC_DIR)/usage/$(PROJECT_NAME)_Admin_Guide.md \
 $(SRC_DIR)/usage/$(PROJECT_NAME)_User_Guide.md \
-$(SRC_DIR)/agile/Agile_Management_Plan.md
+$(SRC_DIR)/planning/Agile_Management_Plan.md
 endef
 
 # When compiling final project documentation, this is the order of attachments
 define ASSET_ORDER
-$(OUT_DIR)/agile/$(PROJECT_NAME)_Organization_View.pdf \
-$(OUT_DIR)/agile/$(PROJECT_NAME)_Team_Resources_Diagram.pdf \
-$(OUT_DIR)/agile/$(PROJECT_NAME)_Timeline.pdf \
+$(OUT_DIR)/planning/$(PROJECT_NAME)_Organization_View.pdf \
+$(OUT_DIR)/planning/$(PROJECT_NAME)_Team_Resources_Diagram.pdf \
+$(OUT_DIR)/planning/$(PROJECT_NAME)_Timeline.pdf \
 $(OUT_DIR)/design/$(PROJECT_NAME)_Entity_Relationship_Diagram.pdf \
 $(OUT_DIR)/design/$(PROJECT_NAME)_Process_Map.pdf \
 $(OUT_DIR)/design/$(PROJECT_NAME)_Site_Map.pdf \
@@ -42,10 +42,10 @@ endef
 # These are the documents that should be rendered as presentations
 define PRESENTATIONS
 $(PROJECT_NAME)_Project_Guide_Presentation.pdf \
-agile/$(PROJECT_NAME)_Charter_Presentation.pdf \
-agile/$(PROJECT_NAME)_Scope_Presentation.pdf \
+planning/$(PROJECT_NAME)_Charter_Presentation.pdf \
+planning/$(PROJECT_NAME)_Scope_Presentation.pdf \
 design/$(PROJECT_NAME)_Design_Presentation.pdf \
-agile/Agile_Management_Plan_Presentation.pdf
+planning/Agile_Management_Plan_Presentation.pdf
 endef
 
 # These are the source compliance documents
@@ -150,7 +150,7 @@ $(OUT_DIR)/%.pdf: $(SRC_DIR)/%.oo3
 		"$$PWD/$<" /tmp/outliner.rtf "public.rtf" && \
 		textutil -convert docx /tmp/outliner.rtf -output /tmp/outliner.docx && \
 		pandoc --latex-engine=xelatex -o /tmp/outliner.pdf /tmp/outliner.docx && \
-		mv /tmp/outliner.pdf "$(OUT_DIR)/agile/$(PROJECT_NAME) Checklist.pdf"
+		mv /tmp/outliner.pdf "$(OUT_DIR)/planning/$(PROJECT_NAME) Checklist.pdf"
 
 # OmniOutliner -> DOCX
 $(OUT_DIR)/%.docx: $(SRC_DIR)/%.oo3

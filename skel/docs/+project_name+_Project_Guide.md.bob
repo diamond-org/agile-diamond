@@ -66,7 +66,7 @@ Specifications are derived from design documentation. As with design, these spec
 
 # Compliance Records
 
-When the project must comply with certain standards/criteria, there will be a number of compliance records that demonstrate compliance.  Further information is described in the [Agile Compliance](agile/Agile_Compliance.html) document.
+When the project must comply with certain standards/criteria, there will be a number of compliance records that demonstrate compliance.  Further information is described in the [Agile Compliance](planning/Agile_Compliance.html) document.
 
 - [Compliance Report](compliance/{{{project_name}}}_Compliance_Report.html) [[pdf]](compliance/{{{project_name}}}_Compliance_Report.pdf) [[docx]](compliance/{{{project_name}}}_Compliance_Report.docx)
 - [Tests Register](compliance/{{{project_name}}}_Tests_Register.html) [[pdf]](compliance/{{{project_name}}}_Tests_Register.pdf) [[docx]](compliance/{{{project_name}}}_Tests_Register.docx)
@@ -77,18 +77,18 @@ When the project must comply with certain standards/criteria, there will be a nu
 
 # Planning
 
-- [Charter](agile/{{{project_name}}}_Charter.html) [[pdf]](agile/{{{project_name}}}_Charter.pdf) [[docx]](agile/{{{project_name}}}_Charter.docx) [[Presentation]](agile/{{{project_name}}}_Charter_Presentation.pdf)
-- [Organization View](agile/{{{project_name}}}_Organization_View.pdf) [[zip]](agile/{{{project_name}}}_Organization_View.zip)
-- [Scope](agile/{{{project_name}}}_Scope.html) [[pdf]](agile/{{{project_name}}}_Scope.pdf) [[docx]](agile/{{{project_name}}}_Scope.docx) [[Presentation]](agile/{{{project_name}}}_Scope_Presentation.pdf)
-- [Timeline](agile/{{{project_name}}}_Timeline.pdf) [[zip]](agile/{{{project_name}}}_Timeline.zip)
+- [Charter](planning/{{{project_name}}}_Charter.html) [[pdf]](planning/{{{project_name}}}_Charter.pdf) [[docx]](planning/{{{project_name}}}_Charter.docx) [[Presentation]](planning/{{{project_name}}}_Charter_Presentation.pdf)
+- [Organization View](planning/{{{project_name}}}_Organization_View.pdf) [[zip]](planning/{{{project_name}}}_Organization_View.zip)
+- [Scope](planning/{{{project_name}}}_Scope.html) [[pdf]](planning/{{{project_name}}}_Scope.pdf) [[docx]](planning/{{{project_name}}}_Scope.docx) [[Presentation]](planning/{{{project_name}}}_Scope_Presentation.pdf)
+- [Timeline](planning/{{{project_name}}}_Timeline.pdf) [[zip]](planning/{{{project_name}}}_Timeline.zip)
 
 # Agile Management
 
 This is an agile project that is controlled according to these documents.
 
-<!-- - [Checklist](agile/{{{project_name}}}_Checklist.pdf) [[docx]](agile/{{{project_name}}}_Checklist.docx) [[zip]](agile/{{{project_name}}}_Checklist.zip)-->
-- [Team Resources Diagram](agile/{{{project_name}}}_Team_Resources_Diagram.pdf) [[zip]](agile/{{{project_name}}}_Team_Resources_Diagram.zip)
-- [Agile Management Plan](agile/Agile_Management_Plan.html) [[pdf]](agile/Agile_Management_Plan.pdf) [[docx]](agile/Agile_Management_Plan.docx) [[Presentation]](agile/Agile_Management_Plan_Presentation.pdf)
-- [QMS Manual](agile/QMS_Manual.html) [[pdf]](agile/QMS_Manual.pdf) [[docx]](agile/QMS_Manual.docx)
+<!-- - [Checklist](planning/{{{project_name}}}_Checklist.pdf) [[docx]](planning/{{{project_name}}}_Checklist.docx) [[zip]](planning/{{{project_name}}}_Checklist.zip)-->
+- [Team Resources Diagram](planning/{{{project_name}}}_Team_Resources_Diagram.pdf) [[zip]](planning/{{{project_name}}}_Team_Resources_Diagram.zip)
+- [Agile Management Plan](planning/Agile_Management_Plan.html) [[pdf]](planning/Agile_Management_Plan.pdf) [[docx]](planning/Agile_Management_Plan.docx) [[Presentation]](planning/Agile_Management_Plan_Presentation.pdf)
+- [QMS Manual](planning/QMS_Manual.html) [[pdf]](planning/QMS_Manual.pdf) [[docx]](planning/QMS_Manual.docx)
 - [Complete Project Document]({{{project_name}}}_Project.pdf) [[docx]]({{{project_name}}}_Project.docx)
 - [Project Guide]({{{project_name}}}_Project_Guide.html) [[Presentation]]({{{project_name}}}_Project_Guide_Presentation.pdf)

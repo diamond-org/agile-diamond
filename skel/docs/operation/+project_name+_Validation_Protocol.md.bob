@@ -11,21 +11,25 @@ Once the system has been integrated and configured, the validation protocol can 
 
 ## This is the name of a step
 
-### Action
+### Actions
 
-Do the following action...
+0. first do this thing
+1. and then do this thing
 
-### Expected Result
+### Expected Results
 
-The output should roughly match the following...
+0. this is the first indication that it's working
+1. this is another indication that it's working
 
 ## This is the name of a step
 
-### Action
+### Actions
 
-Do the following action...
+0. first do this thing
+1. and then do this thing
 
-### Expected Result
+### Expected Results
 
-The output should roughly match the following...
+0. this is the first indication that it's working
+1. this is another indication that it's working
 
