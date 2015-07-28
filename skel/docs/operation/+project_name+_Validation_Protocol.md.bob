@@ -1,0 +1,31 @@
+---
+title: "{{{project_name}}} Validation Protocol"
+author: "{{{author_name}}}"
+date: "Today"
+back: "../{{{project_name}}}_Project_Guide.html"
+---
+
+Once the system has been integrated and configured, the validation protocol can be used to assess the functioning of the system.  The Validation Protocol presents a sequence of operations based upon the processes and flowcharts that were mapped during design.  The basic approach to validation is to perform an action and then ensure the outcome matches expectations.
+
+# The Unnamed Process
+
+## This is the name of a step
+
+### Action
+
+Do the following action...
+
+### Expected Result
+
+The output should roughly match the following...
+
+## This is the name of a step
+
+### Action
+
+Do the following action...
+
+### Expected Result
+
+The output should roughly match the following...
+
