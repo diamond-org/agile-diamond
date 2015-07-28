@@ -33,12 +33,14 @@ Different sorts of users (personae) have different functional uses of the projec
 - [User Guide](usage/{{{project_name}}}_User_Guide.html) [[pdf]](usage/{{{project_name}}}_User_Guide.pdf) [[docx]](usage/{{{project_name}}}_User_Guide.docx)
 - [Admin Guide](usage/{{{project_name}}}_Admin_Guide.html) [[pdf]](usage/{{{project_name}}}_Admin_Guide.pdf) [[docx]](usage/{{{project_name}}}_Admin_Guide.docx)
 
-# Integration
+# System Operation
 
-Projects are integrated into the production environment for release to users. The release cycle describes the interaction between development and integration.  The following documents describe IT Ops tasks during the release cycle.
+Projects are integrated into the production environment for release to users. The release cycle describes the interaction between development and integration.  The following documents describe system operation tasks during the release cycle.
 
-- [Installation](itops/{{{project_name}}}_Installation.html) [[pdf]](itops/{{{project_name}}}_Installation.pdf) [[docx]](itops/{{{project_name}}}_Installation.docx)
-- [Upgrading](itops/{{{project_name}}}_Upgrading.html) [[pdf]](itops/{{{project_name}}}_Upgrading.pdf) [[docx]](itops/{{{project_name}}}_Upgrading.docx)
+- [Installation](operation/{{{project_name}}}_Installation.html) [[pdf]](operation/{{{project_name}}}_Installation.pdf) [[docx]](operation/{{{project_name}}}_Installation.docx)
+- [Configuration Guide](operation/{{{project_name}}}_Configuration_Guide.html) [[pdf]](operation/{{{project_name}}}_Configuration_Guide.pdf) [[docx]](operation/{{{project_name}}}_Configuration_Guide.docx)
+- [Upgrading](operation/{{{project_name}}}_Upgrading.html) [[pdf]](operation/{{{project_name}}}_Upgrading.pdf) [[docx]](operation/{{{project_name}}}_Upgrading.docx)
+- [Validation Protocol](compliance/{{{project_name}}}_Validation_Protocol.html) [[pdf]](compliance/{{{project_name}}}_Validation_Protocol.pdf) [[docx]](compliance/{{{project_name}}}_Validation_Protocol.docx)
 
 # Design
 
@@ -48,6 +50,7 @@ A Model-View-Controller architecture is designed in terms of these documents.  T
 - [Entity Relationship Diagram](design/{{{project_name}}}_Entity_Relationship_Diagram.pdf) [[zip]](design/{{{project_name}}}_Entity_Relationship_Diagram.zip)
 - [Wireframes](design/{{{project_name}}}_Wireframes.pdf) [[zip]](design/{{{project_name}}}_Wireframes.zip)
 - [Process Map](design/{{{project_name}}}_Process_Map.pdf) [[zip]](design/{{{project_name}}}_Process_Map.zip)
+- [Flowcharts](design/{{{project_name}}}_Flowcharts.pdf) [[zip]](design/{{{project_name}}}_Flowcharts.zip)
 - [System Map](design/{{{project_name}}}_System_Map.pdf) [[zip]](design/{{{project_name}}}_System_Map.zip)
 - [Site Map](design/{{{project_name}}}_Site_Map.pdf) [[zip]](design/{{{project_name}}}_Site_Map.zip)
 
@@ -55,6 +58,8 @@ A Model-View-Controller architecture is designed in terms of these documents.  T
 
 Specifications are derived from design documentation. As with design, these specifications correspond to the Model-View-Controller architecture.
 
+- [System Requirements](spec/{{{project_name}}}_System_Requirements.html) [[pdf]](spec/{{{project_name}}}_System_Requirements.pdf) [[docx]](spec/{{{project_name}}}_System_Requirements.docx)
+- [Customer Requirements](compliance/{{{project_name}}}_Customer_Requirements.html) [[pdf]](compliance/{{{project_name}}}_Customer_Requirements.pdf) [[docx]](compliance/{{{project_name}}}_Customer_Requirements.docx)
 - [Data Model Specification](spec/{{{project_name}}}_Data_Model_Specification.html) [[pdf]](spec/{{{project_name}}}_Data_Model_Specification.pdf) [[docx]](spec/{{{project_name}}}_Data_Model_Specification.docx)
 - [Functional Specification](spec/{{{project_name}}}_Functional_Specification.html) [[pdf]](spec/{{{project_name}}}_Functional_Specification.pdf) [[docx]](spec/{{{project_name}}}_Functional_Specification.docx)
 - [Technical Specification](spec/{{{project_name}}}_Technical_Specification.html) [[pdf]](spec/{{{project_name}}}_Technical_Specification.pdf) [[docx]](spec/{{{project_name}}}_Technical_Specification.docx)
@@ -64,7 +69,6 @@ Specifications are derived from design documentation. As with design, these spec
 When the project must comply with certain standards/criteria, there will be a number of compliance records that demonstrate compliance.  Further information is described in the [Agile Compliance](agile/Agile_Compliance.html) document.
 
 - [Compliance Report](compliance/{{{project_name}}}_Compliance_Report.html) [[pdf]](compliance/{{{project_name}}}_Compliance_Report.pdf) [[docx]](compliance/{{{project_name}}}_Compliance_Report.docx)
-- [Requirements](compliance/{{{project_name}}}_Requirements.html) [[pdf]](compliance/{{{project_name}}}_Requirements.pdf) [[docx]](compliance/{{{project_name}}}_Requirements.docx)
 - [Tests Register](compliance/{{{project_name}}}_Tests_Register.html) [[pdf]](compliance/{{{project_name}}}_Tests_Register.pdf) [[docx]](compliance/{{{project_name}}}_Tests_Register.docx)
 - [Risks Register](compliance/{{{project_name}}}_Risks_Register.html) [[pdf]](compliance/{{{project_name}}}_Risks_Register.pdf) [[docx]](compliance/{{{project_name}}}_Risks_Register.docx)
 - [Hazards Register](compliance/{{{project_name}}}_Hazards_Register.html) [[pdf]](compliance/{{{project_name}}}_Hazards_Register.pdf) [[docx]](compliance/{{{project_name}}}_Hazards_Register.docx)

@@ -1,0 +1,9 @@
+---
+title: "{{{project_name}}} Configuration Guide"
+author: "{{{author_name}}}"
+date: "Today"
+back: "../{{{project_name}}}_Project_Guide.html"
+---
+
+The Configuration Guide describes the configuration file and the configuration options contained within.  This guide is intended to be used during for controlling the operation of the system.
+
