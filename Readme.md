@@ -26,3 +26,6 @@ Also, test the graffle-rendering function
 
     make test-graffle
 
+## Application Development with Flask-Diamond
+
+Agile-Diamond is well suited to application development using the [Flask-Diamond](http://flask-diamond.org) framework.  **Flask-Diamond** is a batteries-included Flask framework. Easily scaffold a working application with sensible defaults, then override the defaults to customize it for your goals.
