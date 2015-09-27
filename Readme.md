@@ -1,16 +1,19 @@
-# project-management skeleton
+# Agile-Diamond
 
-The **project-management** skeleton contains everything needed to start and control an Agile software project.
+**Agile-Diamond** contains everything needed to start and control an Agile software project.
+
+## Install python pre-requisites
+
+    pip install mr.bob
 
 ## Clone the skeleton
 
-    git clone git@oxford.saperea.com:skel/project-management.git ~/scratch/project-management
+    git clone https://github.com/diamond-org/agile-diamond.git /tmp/agile-diamond
 
 ## Scaffold the skeleton in the current directory
 
-    workon mrbob
-    mrbob -w ~/scratch/project-management/skel
-    deactivate mrbob
+    mkdir my-agile-project && cd my-agile-project
+    mrbob -w /tmp/agile-diamond/skel
     less Readme.md
 
 ## Test the skeleton
