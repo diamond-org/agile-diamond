@@ -69,7 +69,7 @@ $(OUT_DIR)/index.html \
 $(OUT_DIR)/unimplemented.html
 endef
 
-SUBDIRS=agile compliance design itops spec usage
+SUBDIRS=planning operation compliance design itops spec usage
 SUBDIR_TARGETS=$(addprefix $(OUT_DIR)/,$(SUBDIRS))
 
 EXTRA_FILES=$(COMPLIANCE_TARGETS) $(WWW_FILES)
