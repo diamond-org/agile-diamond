@@ -101,7 +101,7 @@ OO3_ZIP=$(addprefix $(OUT_DIR)/,$(OO3:.oo3=.zip))
 OO3_TARGETS=$(OO3_ZIP) $(OO3_PDF) $(OO3_PNG)
 
 all: $(SUBDIR_TARGETS) $(OO3_TARGETS) $(OPLX_TARGETS) $(GRAFFLE_TARGETS) $(DOC_TARGETS) $(PRESENTATION_TARGETS)
-	cp -r assets/iso output
+	-cp -r assets/iso output
 	@echo done
 
 project: all $(PROJECT_TARGETS)
