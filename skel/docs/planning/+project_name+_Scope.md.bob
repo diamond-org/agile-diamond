@@ -17,7 +17,7 @@ The scope is a planning concept that describes the boundaries of the project.  I
 
 The relationships between organizations, and between different personae, is roughly captured by this diagram.  This diagram is used to help determine the scope.
 
-![Organization View](output/agile/{{{project_name}}}_Organization_View.png)
+![Organization View](output/planning/{{{project_name}}}_Organization_View.png)
 
 # Deliverables
 
@@ -47,4 +47,4 @@ This defines the releases.
 
 Releases are plotted on the timeline in terms of sprints.  Using Agile techniques, each sprint contains the stories that make up a Release.
 
-![Timeline](output/agile/{{{project_name}}}_Timeline.png)
+![Timeline](output/planning/{{{project_name}}}_Timeline.png)
