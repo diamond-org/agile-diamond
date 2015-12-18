@@ -14,4 +14,14 @@ clean:
 	rm -rf output
 	mkdir output
 
-.PHONY: all clean skel test
+docs:
+	rm -rf var/sphinx/build
+	sphinx-build -b html docs var/sphinx/build
+
+open:
+	open var/sphinx/build/index.html
+
+release:
+	python setup.py sdist upload -r https://pypi.python.org/pypi
+
+.PHONY: all clean skel test docs open release

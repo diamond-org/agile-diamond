@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>System Requirements &mdash; Agile-Diamond Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Agile-Diamond Documentation 0.1.0 documentation" href="../index.html" />
+    <link rel="next" title="Agile-Diamond License" href="../about/license.html" />
+    <link rel="prev" title="Quick Start" href="quick-start.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="system-requirements">
+<h1>System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h1>
+<p>Agile-Diamond requires some software to be installed in order to function.  Once you have installed these requirements, you can follow the <a class="reference internal" href="quick-start.html"><em>Quick Start</em></a> to start your first project.  The following packages should be installed globally, as the superuser, for all users on the system to access.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.python.org/download/releases/2.7/">Python 2.7.x</a>.</li>
+<li>Python development libraries (i.e. header files for compiling C code)</li>
+<li><a class="reference external" href="http://pip.readthedocs.org/en/latest/">pip</a></li>
+<li><a class="reference external" href="http://virtualenv.readthedocs.org/en/latest/">virtualenv</a></li>
+<li><a class="reference external" href="http://virtualenvwrapper.readthedocs.org/en/latest/">virtualenvwrapper</a></li>
+</ul>
+<p>The following sections describe the process for installing these requirements on various systems.  In each of the following examples, it is assumed you will be using a root account (or some other privileged account).</p>
+<p>If you do not have root access, then refer to the section <a class="reference internal" href="#unprivileged-installation"><span>Unprivileged Installation</span></a> for information about creating a virtualenv in your user account.</p>
+<div class="section" id="debian-ubuntu">
+<h2>Debian/Ubuntu<a class="headerlink" href="#debian-ubuntu" title="Permalink to this headline">¶</a></h2>
+<p>Agile-Diamond installs cleanly on Debian and Ubuntu systems released after 2011.</p>
+<div class="highlight-python"><div class="highlight"><pre>apt-get install python python-dev python-pip build-essential
+apt-get install sqlite-dev
+pip install --upgrade pip
+pip install --upgrade virtualenv
+pip install virtualenvwrapper
+</pre></div>
+</div>
+</div>
+<div class="section" id="redhat">
+<h2>Redhat<a class="headerlink" href="#redhat" title="Permalink to this headline">¶</a></h2>
+<p>Agile-Diamond can be installed on RedHat, but ensure your package manager is installing Python 2.7; as of August 2015, RHEL provides an older version.</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install python python-devel python-pip
+yum install sqlite-devel
+pip install --upgrade pip
+pip install --upgrade virtualenv
+pip install virtualenvwrapper
+</pre></div>
+</div>
+</div>
+<div class="section" id="osx-with-homebrew">
+<h2>OSX with Homebrew<a class="headerlink" href="#osx-with-homebrew" title="Permalink to this headline">¶</a></h2>
+<p>Agile-Diamond installs pretty easily on OSX with Homebrew.  Make sure you are using the <em>admin</em> user for this process, just like a normal Homebrew operation.</p>
+<div class="highlight-python"><div class="highlight"><pre>brew install python --universal --framework
+brew install pyenv-virtualenv
+brew install pyenv-virtualenvwrapper
+brew install sqlite
+pip install --upgrade pip
+</pre></div>
+</div>
+</div>
+<div class="section" id="windows-with-cygwin">
+<h2>Windows with Cygwin<a class="headerlink" href="#windows-with-cygwin" title="Permalink to this headline">¶</a></h2>
+<p>Here are a few resources to get you started:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.pdxpixel.com/blog/setting-up-python-and-virtualenv-windows-cygwin/">http://www.pdxpixel.com/blog/setting-up-python-and-virtualenv-windows-cygwin/</a></li>
+<li><a class="reference external" href="http://atbrox.com/2009/09/21/how-to-get-pipvirtualenvfabric-working-on-cygwin/">http://atbrox.com/2009/09/21/how-to-get-pipvirtualenvfabric-working-on-cygwin/</a></li>
+<li><a class="reference external" href="http://anythingsimple.blogspot.ca/2010/04/using-pip-virtualenv-and.html">http://anythingsimple.blogspot.ca/2010/04/using-pip-virtualenv-and.html</a></li>
+<li><a class="reference external" href="http://stackoverflow.com/questions/2173963/how-do-i-get-virtualenvwrapper-and-cygwin-to-co-operate">http://stackoverflow.com/questions/2173963/how-do-i-get-virtualenvwrapper-and-cygwin-to-co-operate</a></li>
+</ul>
+<p><strong>Note</strong>: Have you done this install successfully?  Let us know!</p>
+</div>
+<div class="section" id="unprivileged-installation">
+<span id="id1"></span><h2>Unprivileged Installation<a class="headerlink" href="#unprivileged-installation" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes, you do not have root access to the system.  It is still possible to use Agile-Diamond, but the installation process is slightly different because it does not use virtualenvwrapper.  Instead, you will create your virtualenv directly and use the <cite>activate</cite> macro to work on it.</p>
+<div class="highlight-python"><div class="highlight"><pre>curl -O https://raw.github.com/pypa/virtualenv/master/virtualenv.py
+python virtualenv.py my-diamond-app
+. my-diamond-app/bin/activate
+pip install Agile-Diamond
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/agile-small.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">System Requirements</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/license.html">Agile-Diamond License</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="http://diamond-methods.org">Diamond Methods</a></li>
+    
+    <li class="toctree-l1"><a href="https://pypi.python.org/pypi/Agile-Diamond">Python Project on PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="http://github.com/diamond-org/agile-diamond">GitHub Project Page</a></li>
+    
+    <li class="toctree-l1"><a href="http://github.com/diamond-org/agile-diamond/issues">Issue Tracker</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="quick-start.html" title="previous chapter">Quick Start</a></li>
+      <li>Next: <a href="../about/license.html" title="next chapter">Agile-Diamond License</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015 Ian Dennis Miller.
+      
+      |
+      <a href="../_sources/intro/system-requirements.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-70449362-1']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+  </body>
+</html>

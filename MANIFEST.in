@@ -1,0 +1,4 @@
+recursive-include skels *
+recursive-include puppet *
+include Readme.rst
+include requirements.txt
