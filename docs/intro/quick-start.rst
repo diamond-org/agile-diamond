@@ -13,6 +13,7 @@ Install
 
 ::
 
+    mkvirtualenv agile-diamond
     pip install Agile-Diamond
 
 Scaffold
