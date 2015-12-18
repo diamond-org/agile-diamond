@@ -1,1 +1,5 @@
-output
+/build
+/dist
+*.egg-info
+/var/sphinx
+/output
