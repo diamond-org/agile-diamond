@@ -41,38 +41,28 @@
   <div class="section" id="quick-start">
 <h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
 <p><strong>Agile-Diamond</strong> contains everything needed to start and control an Agile software project.</p>
-<div class="section" id="pre-requisites">
-<h2>Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permalink to this headline">¶</a></h2>
-<p>Install python pre-requisites.</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install mr.bob
-</pre></div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>See the <a class="reference internal" href="system-requirements.html"><em>System Requirements</em></a> for help installing prerequisites.</p>
 </div>
-</div>
-<div class="section" id="clone">
-<h2>Clone<a class="headerlink" href="#clone" title="Permalink to this headline">¶</a></h2>
-<p>Clone the skeleton.</p>
-<div class="highlight-python"><div class="highlight"><pre>git clone https://github.com/diamond-org/agile-diamond.git /tmp/agile-diamond
+<div class="section" id="install">
+<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>pip install Agile-Diamond
 </pre></div>
 </div>
 </div>
 <div class="section" id="scaffold">
 <h2>Scaffold<a class="headerlink" href="#scaffold" title="Permalink to this headline">¶</a></h2>
-<p>Scaffold the skeleton in the current directory</p>
-<div class="highlight-python"><div class="highlight"><pre>mkdir my-agile-project &amp;&amp; cd my-agile-project
-mrbob -w /tmp/agile-diamond/skel
-less Readme.md
+<p>Scaffold into a new directory</p>
+<div class="highlight-python"><div class="highlight"><pre>mkdir my-agile-project
+agile-new.sh software my-agile-project
 </pre></div>
 </div>
 </div>
-<div class="section" id="test">
-<h2>Test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
-<p>Test the skeleton</p>
-<p>It is possible to test the skeleton in the local directory.  The following process will build everything.</p>
-<div class="highlight-python"><div class="highlight"><pre>make test
-</pre></div>
-</div>
-<p>Also, test the graffle-rendering function</p>
-<div class="highlight-python"><div class="highlight"><pre>make test-graffle
+<div class="section" id="use-it">
+<h2>Use it<a class="headerlink" href="#use-it" title="Permalink to this headline">¶</a></h2>
+<p>Edit the files to capture your work and then render a Project document.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">make</span>
 </pre></div>
 </div>
 </div>

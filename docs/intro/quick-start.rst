@@ -3,51 +3,36 @@ Quick Start
 
 **Agile-Diamond** contains everything needed to start and control an Agile software project.
 
-Pre-requisites
---------------
+Prerequisites
+-------------
 
-Install python pre-requisites.
+See the :doc:`system-requirements` for help installing prerequisites.
 
-::
-
-    pip install mr.bob
-
-Clone
------
-
-Clone the skeleton.
+Install
+-------
 
 ::
 
-    git clone https://github.com/diamond-org/agile-diamond.git /tmp/agile-diamond
+    pip install Agile-Diamond
 
 Scaffold
 --------
 
-Scaffold the skeleton in the current directory
+Scaffold into a new directory
 
 ::
 
-    mkdir my-agile-project && cd my-agile-project
-    mrbob -w /tmp/agile-diamond/skel
-    less Readme.md
+    mkdir my-agile-project
+    agile-new.sh software my-agile-project
 
-Test
-----
+Use it
+------
 
-Test the skeleton
-
-It is possible to test the skeleton in the local directory.  The following process will build everything.
+Edit the files to capture your work and then render a Project document.
 
 ::
 
-    make test
-
-Also, test the graffle-rendering function
-
-::
-
-    make test-graffle
+    make
 
 Flask-Diamond
 -------------
